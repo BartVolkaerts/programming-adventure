@@ -1,0 +1,256 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+__stm32_tick        0x4               obj/exceptions.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00030000         xrw
+FLASH            0x08000000         0x00100000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj/low_level_init.o
+LOAD obj/exceptions.o
+LOAD obj/main.o
+LOAD obj/startup.o
+                0x20020000                _estack = 0x20020000
+                0x00000000                . = 0x0
+
+.text           0x08000000      0x528
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 obj/startup.o
+                0x08000000                g_pfnVectors
+ *(.text)
+ .text          0x08000188      0x21c obj/low_level_init.o
+                0x08000188                low_level_init
+ .text          0x080003a4       0x74 obj/exceptions.o
+                0x080003a4                NMI_Handler
+                0x080003b0                HardFault_Handler
+                0x080003b8                MemManage_Handler
+                0x080003c0                BusFault_Handler
+                0x080003c8                UsageFault_Handler
+                0x080003d0                SVC_Handler
+                0x080003dc                DebugMon_Handler
+                0x080003e8                PendSV_Handler
+                0x080003f4                SysTick_Handler
+ .text          0x08000418       0x9c obj/main.o
+                0x08000418                main
+ .text          0x080004b4       0x14 obj/startup.o
+ *(.text*)
+ .text.Reset_Handler
+                0x080004c8       0x5c obj/startup.o
+                0x080004c8                Reset_Handler
+ .text.Default_Handler
+                0x08000524        0x4 obj/startup.o
+                0x08000524                RTC_Alarm_IRQHandler
+                0x08000524                HASH_RNG_IRQHandler
+                0x08000524                EXTI2_IRQHandler
+                0x08000524                TIM8_CC_IRQHandler
+                0x08000524                TIM1_CC_IRQHandler
+                0x08000524                DMA2_Stream5_IRQHandler
+                0x08000524                DMA1_Stream5_IRQHandler
+                0x08000524                PVD_IRQHandler
+                0x08000524                SDIO_IRQHandler
+                0x08000524                TAMP_STAMP_IRQHandler
+                0x08000524                CAN2_RX1_IRQHandler
+                0x08000524                EXTI3_IRQHandler
+                0x08000524                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000524                TIM1_UP_TIM10_IRQHandler
+                0x08000524                TIM8_UP_TIM13_IRQHandler
+                0x08000524                I2C3_ER_IRQHandler
+                0x08000524                EXTI0_IRQHandler
+                0x08000524                I2C2_EV_IRQHandler
+                0x08000524                DMA1_Stream2_IRQHandler
+                0x08000524                CAN1_RX0_IRQHandler
+                0x08000524                FPU_IRQHandler
+                0x08000524                OTG_HS_WKUP_IRQHandler
+                0x08000524                CAN2_SCE_IRQHandler
+                0x08000524                DMA2_Stream2_IRQHandler
+                0x08000524                SPI1_IRQHandler
+                0x08000524                TIM6_DAC_IRQHandler
+                0x08000524                TIM1_BRK_TIM9_IRQHandler
+                0x08000524                DCMI_IRQHandler
+                0x08000524                CAN2_RX0_IRQHandler
+                0x08000524                DMA2_Stream3_IRQHandler
+                0x08000524                USART6_IRQHandler
+                0x08000524                USART3_IRQHandler
+                0x08000524                CRYP_IRQHandler
+                0x08000524                CAN1_RX1_IRQHandler
+                0x08000524                UART5_IRQHandler
+                0x08000524                DMA2_Stream0_IRQHandler
+                0x08000524                TIM4_IRQHandler
+                0x08000524                I2C1_EV_IRQHandler
+                0x08000524                DMA1_Stream6_IRQHandler
+                0x08000524                DMA1_Stream1_IRQHandler
+                0x08000524                UART4_IRQHandler
+                0x08000524                TIM3_IRQHandler
+                0x08000524                RCC_IRQHandler
+                0x08000524                TIM8_BRK_TIM12_IRQHandler
+                0x08000524                Default_Handler
+                0x08000524                EXTI15_10_IRQHandler
+                0x08000524                ADC_IRQHandler
+                0x08000524                DMA1_Stream7_IRQHandler
+                0x08000524                TIM7_IRQHandler
+                0x08000524                CAN2_TX_IRQHandler
+                0x08000524                TIM5_IRQHandler
+                0x08000524                DMA2_Stream7_IRQHandler
+                0x08000524                I2C3_EV_IRQHandler
+                0x08000524                EXTI9_5_IRQHandler
+                0x08000524                RTC_WKUP_IRQHandler
+                0x08000524                ETH_WKUP_IRQHandler
+                0x08000524                SPI2_IRQHandler
+                0x08000524                OTG_HS_EP1_IN_IRQHandler
+                0x08000524                DMA1_Stream0_IRQHandler
+                0x08000524                CAN1_TX_IRQHandler
+                0x08000524                EXTI4_IRQHandler
+                0x08000524                FSMC_IRQHandler
+                0x08000524                ETH_IRQHandler
+                0x08000524                OTG_HS_EP1_OUT_IRQHandler
+                0x08000524                WWDG_IRQHandler
+                0x08000524                TIM2_IRQHandler
+                0x08000524                OTG_FS_WKUP_IRQHandler
+                0x08000524                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000524                OTG_HS_IRQHandler
+                0x08000524                EXTI1_IRQHandler
+                0x08000524                USART2_IRQHandler
+                0x08000524                I2C2_ER_IRQHandler
+                0x08000524                DMA2_Stream1_IRQHandler
+                0x08000524                CAN1_SCE_IRQHandler
+                0x08000524                FLASH_IRQHandler
+                0x08000524                DMA2_Stream4_IRQHandler
+                0x08000524                USART1_IRQHandler
+                0x08000524                OTG_FS_IRQHandler
+                0x08000524                SPI3_IRQHandler
+                0x08000524                DMA1_Stream4_IRQHandler
+                0x08000524                I2C1_ER_IRQHandler
+                0x08000524                DMA2_Stream6_IRQHandler
+                0x08000524                DMA1_Stream3_IRQHandler
+ *(.rodata)
+ *(.rodata*)
+                0x08000528                _sidata = LOADADDR (.data)
+
+.glue_7         0x08000528        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000528        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000528        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000528        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000528        0x0
+ .iplt          0x00000000        0x0 obj/low_level_init.o
+
+.rel.dyn        0x08000528        0x0
+ .rel.iplt      0x00000000        0x0 obj/low_level_init.o
+
+.data           0x20000000       0x14 load address 0x08000528
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000       0x14 obj/low_level_init.o
+                0x20000000                SystemCoreClock
+                0x20000004                AHBPrescTable
+ .data          0x20000014        0x0 obj/exceptions.o
+ .data          0x20000014        0x0 obj/main.o
+ .data          0x20000014        0x0 obj/startup.o
+ *(.data*)
+                0x20000014                . = ALIGN (0x4)
+                0x20000014                _edata = .
+
+.igot.plt       0x20000014        0x0 load address 0x0800053c
+ .igot.plt      0x00000000        0x0 obj/low_level_init.o
+
+.bss            0x20000014        0x8 load address 0x0800053c
+                0x20000014                . = ALIGN (0x4)
+                0x20000014                _sbss = .
+                0x20000014                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x20000014        0x0 obj/low_level_init.o
+ .bss           0x20000014        0x0 obj/exceptions.o
+ .bss           0x20000014        0x1 obj/main.o
+ .bss           0x20000015        0x0 obj/startup.o
+ *(.bss*)
+ *(COMMON)
+ *fill*         0x20000015        0x3 00
+ COMMON         0x20000018        0x4 obj/exceptions.o
+                0x20000018                __stm32_tick
+                0x2000001c                . = ALIGN (0x4)
+                0x2000001c                _ebss = .
+                0x2000001c                __bss_end__ = _ebss
+                0x2000001c                _end = .
+                0x2000001c                PROVIDE (end, .)
+OUTPUT(out/main.elf elf32-littlearm)
+
+.debug_info     0x00000000      0xb29
+ .debug_info    0x00000000      0x58b obj/low_level_init.o
+ .debug_info    0x0000058b      0x174 obj/exceptions.o
+ .debug_info    0x000006ff      0x3a1 obj/main.o
+ .debug_info    0x00000aa0       0x89 obj/startup.o
+
+.debug_abbrev   0x00000000      0x27a
+ .debug_abbrev  0x00000000      0x10f obj/low_level_init.o
+ .debug_abbrev  0x0000010f       0x78 obj/exceptions.o
+ .debug_abbrev  0x00000187       0xe1 obj/main.o
+ .debug_abbrev  0x00000268       0x12 obj/startup.o
+
+.debug_loc      0x00000000      0x248
+ .debug_loc     0x00000000       0x64 obj/low_level_init.o
+ .debug_loc     0x00000064      0x18c obj/exceptions.o
+ .debug_loc     0x000001f0       0x58 obj/main.o
+
+.debug_aranges  0x00000000       0x88
+ .debug_aranges
+                0x00000000       0x20 obj/low_level_init.o
+ .debug_aranges
+                0x00000020       0x20 obj/exceptions.o
+ .debug_aranges
+                0x00000040       0x20 obj/main.o
+ .debug_aranges
+                0x00000060       0x28 obj/startup.o
+
+.debug_line     0x00000000      0x2c8
+ .debug_line    0x00000000       0xe2 obj/low_level_init.o
+ .debug_line    0x000000e2       0xc4 obj/exceptions.o
+ .debug_line    0x000001a6       0xb1 obj/main.o
+ .debug_line    0x00000257       0x71 obj/startup.o
+
+.debug_str      0x00000000      0x43f
+ .debug_str     0x00000000      0x300 obj/low_level_init.o
+                                0x346 (size before relaxing)
+ .debug_str     0x00000300       0xae obj/exceptions.o
+                                0x1f9 (size before relaxing)
+ .debug_str     0x000003ae       0x91 obj/main.o
+                                0x292 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 obj/low_level_init.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 obj/exceptions.o
+ .comment       0x00000000       0x71 obj/main.o
+
+.ARM.attributes
+                0x00000000       0x39
+ .ARM.attributes
+                0x00000000       0x3b obj/low_level_init.o
+ .ARM.attributes
+                0x0000003b       0x3b obj/exceptions.o
+ .ARM.attributes
+                0x00000076       0x3b obj/main.o
+ .ARM.attributes
+                0x000000b1       0x21 obj/startup.o
+
+.debug_frame    0x00000000      0x174
+ .debug_frame   0x00000000       0x48 obj/low_level_init.o
+ .debug_frame   0x00000048       0xe8 obj/exceptions.o
+ .debug_frame   0x00000130       0x44 obj/main.o
+
+.debug_ranges   0x00000000       0x20
+ .debug_ranges  0x00000000       0x20 obj/startup.o

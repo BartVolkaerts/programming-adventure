@@ -1,0 +1,22 @@
+1) echo 123-4567 | sed 's/[0-9]\{2\}/xx/'
+2) echo "Volkaerts, Bart 123-4567" | sed 's/, [A-Z][a-z]*//' > new.txt
+3) echo "Volkaerts, Bart 123-4567" | sed 's/[0-9]*-/555-/'
+4) echo "Volkaerts, Bart 123-4567" | sed 's/, \([A-Z]\)[a-z]*/, \1./' 
+5) echo "Volkaerts, Bart 123-4567" | sed 's/[1-4]..-/555-/> s/[6-9]..-/666-/'
+
+6) echo "Volkaerts, Bart 123-4567" | sed '/^V/d'
+
+8) sed -n '1,2p' test.txt
+9) sed -n '/.*[4-8[B].*/p' test.txt
+
+10) echo "Volkaerts, Bart 123-4567" | sed '$a\
+> \
+> '
+
+11) echo "Volkaerts, Bart 123-4567" | sed '1i\
+> Name:    Phone:    '
+
+12) sed '3,4c\
+Line deleted\
+Line deleted' test.txt
+

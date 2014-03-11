@@ -1,0 +1,56 @@
+
+main.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+08000000 <exception_vectors>:
+ 8000000:	00 08 00 20 11 00 00 08 29 00 00 08 31 00 00 08     ... ....)...1...
+
+08000010 <reset_handler>:
+    (unsigned int *) hardfault_handler  // HardFault exception
+};
+
+/* Reset exception handler */
+int reset_handler(void)
+{
+ 8000010:	b480      	push	{r7}
+ 8000012:	b083      	sub	sp, #12
+ 8000014:	af00      	add	r7, sp, #0
+    int i=0;
+ 8000016:	f04f 0300 	mov.w	r3, #0
+ 800001a:	607b      	str	r3, [r7, #4]
+
+    for EVER
+    {
+        i++;
+ 800001c:	687b      	ldr	r3, [r7, #4]
+ 800001e:	f103 0301 	add.w	r3, r3, #1
+ 8000022:	607b      	str	r3, [r7, #4]
+    }
+ 8000024:	e7fa      	b.n	800001c <reset_handler+0xc>
+ 8000026:	bf00      	nop
+
+08000028 <nmi_handler>:
+}
+
+/* Non-Maskable Interrupt handler */
+void nmi_handler(void)
+{
+ 8000028:	b480      	push	{r7}
+ 800002a:	af00      	add	r7, sp, #0
+    for EVER;
+ 800002c:	e7fe      	b.n	800002c <nmi_handler+0x4>
+ 800002e:	bf00      	nop
+
+08000030 <hardfault_handler>:
+}
+
+/* HardFault handler */
+void hardfault_handler(void)
+{
+ 8000030:	b480      	push	{r7}
+ 8000032:	af00      	add	r7, sp, #0
+    for EVER;
+ 8000034:	e7fe      	b.n	8000034 <hardfault_handler+0x4>
+ 8000036:	bf00      	nop

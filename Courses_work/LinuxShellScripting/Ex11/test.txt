@@ -1,0 +1,6 @@
+1) cat /etc/passwd | awk -F: '{print $1, $7}'
+2) cat /etc/passwd | awk -F: 'BEGIN {print "BEGIN ------>"}
+{print $1 " " $7}
+END {print "END ------------->"}'
+
+

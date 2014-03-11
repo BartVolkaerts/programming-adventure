@@ -1,0 +1,5 @@
+Books about Real-Time systems development
+-----------------------------------------
+
+http://www.amazon.co.uk/Real-Time-Systems-Development-Rob-Williams/dp/0750664711/ref=sr_1_2?ie=UTF8&qid=1380872967&sr=8-2&keywords=real+time+software
+http://www.amazon.co.uk/Software-Engineering-Real-time-Systems-Cooling/dp/0201596202/ref=sr_1_6?s=books&ie=UTF8&qid=1380872975&sr=1-6&keywords=real+time+software

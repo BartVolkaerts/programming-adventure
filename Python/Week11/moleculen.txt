@@ -1,0 +1,7 @@
+ammoniak        N       1       H       3
+bleekwater      Ca      1       O       2       Cl      2
+ethanol         C       2       H       6       O       1
+natronloog      Na      1       O       1       H       1
+roest           Fe      2       O       3
+zand            Si      1       O       2
+azijn           C       2       H       4       O       2

@@ -1,0 +1,1 @@
+tar -cf test.tar $(find . -regex "^./[^.].*" -mtime -7); scp test.tar localhost:~/test2.tar; rm test.rar

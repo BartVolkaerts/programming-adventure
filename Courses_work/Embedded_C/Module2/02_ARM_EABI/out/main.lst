@@ -1,0 +1,18 @@
+
+out/main.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+08000000 <increment>:
+
+unsigned char increment(unsigned char val)
+{
+    unsigned char i=1;
+    unsigned char j=2;
+    return val + i + j;
+ 8000000:	3003      	adds	r0, #3
+}
+ 8000002:	b2c0      	uxtb	r0, r0
+ 8000004:	4770      	bx	lr
+ 8000006:	bf00      	nop
