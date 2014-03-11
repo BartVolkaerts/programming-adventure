@@ -1,0 +1,35 @@
+Installation 
+-------------
+
+1. Install pip
+    sudo apt-get install python-pip python-dev build-essential
+    sudo pip install --upgrade pip
+
+2. Install RobotFrameWork
+    sudo pip install robotframework
+
+3. Install Selenium2library
+    sudo pip install robotframework-selenium2library
+
+
+Getting started
+---------------
+
+The quickest way to get started is by downloading and running an example.
+On https://bitbucket.org/robotframework/webdemo/wiki/Home you'll find a good
+example that runs directly.
+  wget https://bitbucket.org/robotframework/webdemo/downloads/WebDemo-20130308.zip
+Unzip and run the testcases by using following syntax:
+  pybot <path to testcase>
+
+
+Using different browsers
+------------------------
+- Chrome: First you'll have to download the ChromeDriver and put it in the path.
+          Download the latest release on http://chromedriver.storage.googleapis.com/index.html
+          Unzip and move content to /usr/local/bin
+
+ For using another browser using pybot simply type:
+  pybot --variable BROWSER:Chrome <path to testcase>
+  pybot --variable BROWSER:IE     <path to testcase>
+

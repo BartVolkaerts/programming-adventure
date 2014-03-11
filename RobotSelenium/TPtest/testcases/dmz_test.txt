@@ -1,0 +1,31 @@
+*** Settings ***
+Documentation       A test suite to check if dmz settings can be changed.
+Resource            dmz.txt
+Suite Setup         Open Browser to config page
+Suite Teardown      Close Browser
+Test Setup          Login
+Test Teardown       Logout
+
+*** Test Cases ***
+Enable DMZ
+  [Documentation]   Enables DMZ and fill in IP
+                    Go to DMZ
+                    Select Radio Button                 enable      1
+  ${RANDOM}         Evaluate                            random.randint(100,255)   random
+                    Input Text                          ipAddr      192.168.1.${RANDOM}
+                    Click Button                        Save
+                    Logout
+                    Login
+                    Go to DMZ
+                    Radio Button Should Be Set To       enable      1
+                    Textfield Value Should Be           ipAddr      192.168.1.${RANDOM}
+
+Disable DMZ
+  [Documentation]   Disables DMZ
+                    Go to DMZ
+                    Select Radio Button                 enable      0
+                    Click Button                        Save
+                    Logout
+                    Login
+                    Go to DMZ
+                    Radio Button Should Be Set To       enable      0

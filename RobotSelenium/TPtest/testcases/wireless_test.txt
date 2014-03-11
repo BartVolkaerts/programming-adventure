@@ -1,0 +1,44 @@
+*** Settings ***
+Documentation       A test suite to check if wireless settings can be changed.
+Resource            wireless.txt
+Suite Setup         Open Browser to config page
+Suite Teardown      Close Browser
+Test Setup          Login
+Test Teardown       Logout
+
+*** Test Cases ***
+Enable Wireless
+  [Documentation]   Enables Wireless and check if enabled
+                    Go to Wireless
+                    Select Checkbox           ap
+                    Select Checkbox           broadcast
+                    Click Button              Save
+                    Click Link                click here
+                    Click Button              reboot
+                    Choose Ok On Next Confirmation
+                    Confirm Action
+                    Wait Until Page Contains Element        mainFrame    70    
+                    Select Frame                            mainFrame
+                    Table Cell Should Contain               autoWidth    12  2  Enable
+
+Disable Wireless
+  [Documentation]   Disables Wireless and check if disabled
+                    Go to Wireless
+                    Unselect Checkbox         ap
+                    Unselect Checkbox         broadcast
+                    Click Button              Save
+                    Click Link                click here
+                    Click Button              reboot
+                    Choose Ok On Next Confirmation
+                    Confirm Action
+                    Wait Until Page Contains Element        mainFrame    70    
+                    Select Frame                            mainFrame
+                    Table Cell Should Contain               autoWidth    12  2  Disable
+
+Select test
+                    Go To Wireless
+                    Input Text                ssid          Tass_Demo_Network
+                    Select From List          region        Belgium
+
+Failing test
+                    Table Cell Should Contain               autoWidth    13  2  Tass_Demo_Network

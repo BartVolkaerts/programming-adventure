@@ -1,0 +1,48 @@
+*** Settings ***
+Documentation       A test suite to check if login is going correctly.
+Resource            login.txt
+Suite Setup         Open Browser to config page
+Suite Teardown      Close Browser
+Test Teardown       Clear
+
+*** Test Cases ***
+Login correct
+  [Documentation]   Check if the user is able to login and logout
+                    Login
+                    Logout
+  [Teardown]
+
+# On the router we only have three attempt before security kicks in.
+# Therefor after every wrong attempt we 'clear' (log in correctly in Test Teardown)
+Wrong user
+  [Documentation]   Test of the system rejects false login attempts.
+                    Login with user pass          test            test
+                    Element Should Contain        tip
+  ...               The username or password is incorrect, please input again.
+  [Teardown]
+
+Wrong user input
+  [Documentation]   Test of the system rejects false login attempts.
+                    Login with user pass          }?              test
+                    Element Should Contain        tip
+  ...               The username should only consist of letters, numbers or quotation marks.
+                    
+Wrong password input    
+  [Documentation]   Test of the system rejects false login attempts.
+                    Login with user pass          admin           }?
+                    Element Should Contain        tip
+  ...               The password should only consist of letters, numbers or quotation marks.
+  [Teardown]
+
+User and pass empty
+  [Documentation]   Test of the system rejects false login attempts.
+                    Login with user pass          ${EMPTY}        ${EMPTY}
+                    Element Should Contain        tip
+  ...               The username should only consist of letters, numbers or quotation marks.
+
+Pass empty
+  [Documentation]   Test of the system rejects false login attempts.
+                    Login with user pass          admin           ${EMPTY}
+                    Element Should Contain        tip
+  ...               The password should only consist of letters, numbers or quotation marks.
+  [Teardown]

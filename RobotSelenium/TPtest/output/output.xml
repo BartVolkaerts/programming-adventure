@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140307 14:36:39.466" generator="Robot 2.8.1 (Python 2.7.3 on linux2)">
+<suite source="/home/bart/Work/RobotSelenium/TPtest/testcases/login_test.txt" id="s1" name="Login Test">
+<kw type="setup" name="global.Open Browser to config page">
+<doc>Opens the config page</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Open Browser To Page">
+<doc>Opens the browser to provided URL</doc>
+<arguments>
+<arg>${DUT}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:39.547" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.1.1'</msg>
+<status status="PASS" endtime="20140307 14:36:42.801" starttime="20140307 14:36:39.546"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:43.024" starttime="20140307 14:36:42.801"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:43.025" starttime="20140307 14:36:43.025"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:43.025" starttime="20140307 14:36:39.546"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:43.026" starttime="20140307 14:36:39.546"></status>
+</kw>
+<test id="s1-t1" name="Login correct">
+<kw type="kw" name="global.Login">
+<doc>Logs in with right credentials</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>admin</arg>
+<arg>admin</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.028" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:43.192" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:43.192" starttime="20140307 14:36:43.065"></status>
+</kw>
+<msg timestamp="20140307 14:36:43.193" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.</msg>
+<status status="FAIL" endtime="20140307 14:36:43.193" starttime="20140307 14:36:43.028"></status>
+</kw>
+<msg timestamp="20140307 14:36:43.193" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.")</msg>
+<status status="PASS" endtime="20140307 14:36:43.193" starttime="20140307 14:36:43.028"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:43.193" starttime="20140307 14:36:43.193"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.194" level="INFO">Typing text 'admin' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:43.267" starttime="20140307 14:36:43.194"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.268" level="INFO">Typing text 'admin' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:43.350" starttime="20140307 14:36:43.267"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.351" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:43.567" starttime="20140307 14:36:43.351"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:43.568" starttime="20140307 14:36:43.027"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:43.568" starttime="20140307 14:36:43.027"></status>
+</kw>
+<kw type="kw" name="global.Logout">
+<doc>Logs out</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Unselect Frame">
+<doc>Sets the top frame as the current frame.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:43.570" starttime="20140307 14:36:43.569"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select Frame">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>bottomLeftFrame</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.571" level="INFO">Selecting frame 'bottomLeftFrame'.</msg>
+<status status="PASS" endtime="20140307 14:36:43.701" starttime="20140307 14:36:43.570"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Logout</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.701" level="INFO">Clicking link 'Logout'.</msg>
+<status status="PASS" endtime="20140307 14:36:43.893" starttime="20140307 14:36:43.701"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:43.893" starttime="20140307 14:36:43.568"></status>
+</kw>
+<doc>Check if the user is able to login and logout</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:43.893" critical="yes" starttime="20140307 14:36:43.026"></status>
+</test>
+<test id="s1-t2" name="Wrong user">
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>test</arg>
+<arg>test</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:43.895" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:44.033" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:44.033" starttime="20140307 14:36:43.923"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.033" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.</msg>
+<status status="FAIL" endtime="20140307 14:36:44.034" starttime="20140307 14:36:43.895"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.034" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.")</msg>
+<status status="PASS" endtime="20140307 14:36:44.034" starttime="20140307 14:36:43.895"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:44.034" starttime="20140307 14:36:44.034"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.035" level="INFO">Typing text 'test' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:44.101" starttime="20140307 14:36:44.034"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.101" level="INFO">Typing text 'test' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:44.166" starttime="20140307 14:36:44.101"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.166" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:44.288" starttime="20140307 14:36:44.166"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:44.288" starttime="20140307 14:36:43.894"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>The username or password is incorrect, please input again.</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.289" level="INFO">Verifying element 'tip' contains text 'The username or password is incorrect, please input again.'.</msg>
+<status status="PASS" endtime="20140307 14:36:44.313" starttime="20140307 14:36:44.289"></status>
+</kw>
+<doc>Test of the system rejects false login attempts.</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:44.313" critical="yes" starttime="20140307 14:36:43.893"></status>
+</test>
+<test id="s1-t3" name="Wrong user input">
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>}?</arg>
+<arg>test</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.315" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:44.434" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:44.434" starttime="20140307 14:36:44.327"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.434" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username or password is incorrect, please input again.'.</msg>
+<status status="FAIL" endtime="20140307 14:36:44.434" starttime="20140307 14:36:44.315"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.434" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username or password is incorrect, please input again.'.")</msg>
+<status status="PASS" endtime="20140307 14:36:44.434" starttime="20140307 14:36:44.315"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:44.435" starttime="20140307 14:36:44.435"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.435" level="INFO">Typing text '}?' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:44.493" starttime="20140307 14:36:44.435"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.494" level="INFO">Typing text 'test' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:44.555" starttime="20140307 14:36:44.493"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.555" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:44.586" starttime="20140307 14:36:44.555"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:44.586" starttime="20140307 14:36:44.314"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>The username should only consist of letters, numbers or quotation marks.</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.586" level="INFO">Verifying element 'tip' contains text 'The username should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="PASS" endtime="20140307 14:36:44.599" starttime="20140307 14:36:44.586"></status>
+</kw>
+<kw type="teardown" name="login.Clear">
+<doc>Logs in and out to 'reset' inlog attempts counter</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Login">
+<doc>Logs in with right credentials</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>admin</arg>
+<arg>admin</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.601" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:44.713" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:44.713" starttime="20140307 14:36:44.611"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.714" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="FAIL" endtime="20140307 14:36:44.714" starttime="20140307 14:36:44.601"></status>
+</kw>
+<msg timestamp="20140307 14:36:44.714" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username should only consist of letters, numbers or quotation marks.'.")</msg>
+<status status="PASS" endtime="20140307 14:36:44.714" starttime="20140307 14:36:44.600"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:44.714" starttime="20140307 14:36:44.714"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.715" level="INFO">Typing text 'admin' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:44.752" starttime="20140307 14:36:44.715"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.753" level="INFO">Typing text 'admin' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:44.791" starttime="20140307 14:36:44.753"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.792" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:44.989" starttime="20140307 14:36:44.791"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:44.989" starttime="20140307 14:36:44.600"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:44.989" starttime="20140307 14:36:44.599"></status>
+</kw>
+<kw type="kw" name="global.Logout">
+<doc>Logs out</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Unselect Frame">
+<doc>Sets the top frame as the current frame.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:44.991" starttime="20140307 14:36:44.990"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select Frame">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>bottomLeftFrame</arg>
+</arguments>
+<msg timestamp="20140307 14:36:44.991" level="INFO">Selecting frame 'bottomLeftFrame'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.121" starttime="20140307 14:36:44.991"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Logout</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.121" level="INFO">Clicking link 'Logout'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.301" starttime="20140307 14:36:45.121"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:45.301" starttime="20140307 14:36:44.989"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:45.301" starttime="20140307 14:36:44.599"></status>
+</kw>
+<doc>Test of the system rejects false login attempts.</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:45.301" critical="yes" starttime="20140307 14:36:44.313"></status>
+</test>
+<test id="s1-t4" name="Wrong password input">
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>admin</arg>
+<arg>}?</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.303" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:45.437" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:45.437" starttime="20140307 14:36:45.325"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.437" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.</msg>
+<status status="FAIL" endtime="20140307 14:36:45.437" starttime="20140307 14:36:45.303"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.437" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.")</msg>
+<status status="PASS" endtime="20140307 14:36:45.437" starttime="20140307 14:36:45.303"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:45.438" starttime="20140307 14:36:45.438"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.438" level="INFO">Typing text 'admin' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:45.504" starttime="20140307 14:36:45.438"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.505" level="INFO">Typing text '}?' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:45.566" starttime="20140307 14:36:45.505"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.567" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.599" starttime="20140307 14:36:45.566"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:45.599" starttime="20140307 14:36:45.302"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>The password should only consist of letters, numbers or quotation marks.</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.600" level="INFO">Verifying element 'tip' contains text 'The password should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.612" starttime="20140307 14:36:45.599"></status>
+</kw>
+<doc>Test of the system rejects false login attempts.</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:45.612" critical="yes" starttime="20140307 14:36:45.302"></status>
+</test>
+<test id="s1-t5" name="User and pass empty">
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.614" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:45.736" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:45.736" starttime="20140307 14:36:45.625"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.736" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The password should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="FAIL" endtime="20140307 14:36:45.736" starttime="20140307 14:36:45.614"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.737" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The password should only consist of letters, numbers or quotation marks.'.")</msg>
+<status status="PASS" endtime="20140307 14:36:45.737" starttime="20140307 14:36:45.614"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:45.737" starttime="20140307 14:36:45.737"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.737" level="INFO">Typing text '' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:45.767" starttime="20140307 14:36:45.737"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.767" level="INFO">Typing text '' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:45.794" starttime="20140307 14:36:45.767"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.794" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.813" starttime="20140307 14:36:45.794"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:45.813" starttime="20140307 14:36:45.613"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>The username should only consist of letters, numbers or quotation marks.</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.814" level="INFO">Verifying element 'tip' contains text 'The username should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="PASS" endtime="20140307 14:36:45.826" starttime="20140307 14:36:45.813"></status>
+</kw>
+<kw type="teardown" name="login.Clear">
+<doc>Logs in and out to 'reset' inlog attempts counter</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Login">
+<doc>Logs in with right credentials</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>admin</arg>
+<arg>admin</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.828" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:45.946" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:45.946" starttime="20140307 14:36:45.840"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.946" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="FAIL" endtime="20140307 14:36:45.946" starttime="20140307 14:36:45.828"></status>
+</kw>
+<msg timestamp="20140307 14:36:45.946" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was 'The username should only consist of letters, numbers or quotation marks.'.")</msg>
+<status status="PASS" endtime="20140307 14:36:45.946" starttime="20140307 14:36:45.828"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:45.947" starttime="20140307 14:36:45.947"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.947" level="INFO">Typing text 'admin' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:45.983" starttime="20140307 14:36:45.947"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:45.984" level="INFO">Typing text 'admin' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:46.064" starttime="20140307 14:36:45.984"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.064" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:46.271" starttime="20140307 14:36:46.064"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:46.271" starttime="20140307 14:36:45.827"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:46.271" starttime="20140307 14:36:45.827"></status>
+</kw>
+<kw type="kw" name="global.Logout">
+<doc>Logs out</doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Unselect Frame">
+<doc>Sets the top frame as the current frame.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:46.273" starttime="20140307 14:36:46.272"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select Frame">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>bottomLeftFrame</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.274" level="INFO">Selecting frame 'bottomLeftFrame'.</msg>
+<status status="PASS" endtime="20140307 14:36:46.417" starttime="20140307 14:36:46.273"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Logout</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.417" level="INFO">Clicking link 'Logout'.</msg>
+<status status="PASS" endtime="20140307 14:36:46.617" starttime="20140307 14:36:46.417"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:46.617" starttime="20140307 14:36:46.271"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:46.617" starttime="20140307 14:36:45.826"></status>
+</kw>
+<doc>Test of the system rejects false login attempts.</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:46.617" critical="yes" starttime="20140307 14:36:45.613"></status>
+</test>
+<test id="s1-t6" name="Pass empty">
+<kw type="kw" name="global.Login with user pass">
+<doc>Tries to login with the credentials provided</doc>
+<arguments>
+<arg>admin</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw type="kw" name="${status} = BuiltIn.Run Keyword And Ignore Error">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Element Should Contain</arg>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>You have exceeded three attempts, please try again</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.619" level="INFO">Verifying element 'tip' contains text 'You have exceeded three attempts, please try again'.</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140307 14:36:46.758" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140307 14:36:46.758" starttime="20140307 14:36:46.651"></status>
+</kw>
+<msg timestamp="20140307 14:36:46.758" level="FAIL">Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.</msg>
+<status status="FAIL" endtime="20140307 14:36:46.758" starttime="20140307 14:36:46.619"></status>
+</kw>
+<msg timestamp="20140307 14:36:46.758" level="INFO">${status} = ('FAIL', u"Element 'tip' should have contained text 'You have exceeded three attempts, please try again' but its text was ''.")</msg>
+<status status="PASS" endtime="20140307 14:36:46.758" starttime="20140307 14:36:46.619"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${status[0]}' == 'PASS'</arg>
+<arg>Sleep</arg>
+<arg>180</arg>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:46.759" starttime="20140307 14:36:46.759"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>userName</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.759" level="INFO">Typing text 'admin' into text field 'userName'</msg>
+<status status="PASS" endtime="20140307 14:36:46.832" starttime="20140307 14:36:46.759"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>pcPassword</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.833" level="INFO">Typing text '' into text field 'pcPassword'</msg>
+<status status="PASS" endtime="20140307 14:36:46.896" starttime="20140307 14:36:46.832"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>loginBtn</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.897" level="INFO">Clicking element 'loginBtn'.</msg>
+<status status="PASS" endtime="20140307 14:36:46.950" starttime="20140307 14:36:46.897"></status>
+</kw>
+<status status="PASS" endtime="20140307 14:36:46.950" starttime="20140307 14:36:46.618"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>tip</arg>
+<arg>The password should only consist of letters, numbers or quotation marks.</arg>
+</arguments>
+<msg timestamp="20140307 14:36:46.951" level="INFO">Verifying element 'tip' contains text 'The password should only consist of letters, numbers or quotation marks.'.</msg>
+<status status="PASS" endtime="20140307 14:36:46.963" starttime="20140307 14:36:46.950"></status>
+</kw>
+<doc>Test of the system rejects false login attempts.</doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140307 14:36:46.963" critical="yes" starttime="20140307 14:36:46.617"></status>
+</test>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140307 14:36:47.021" starttime="20140307 14:36:46.965"></status>
+</kw>
+<doc>A test suite to check if login is going correctly.</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140307 14:36:47.021" starttime="20140307 14:36:39.466"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="6" id="s1" name="Login Test">Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

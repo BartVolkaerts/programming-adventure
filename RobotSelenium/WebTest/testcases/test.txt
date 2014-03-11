@@ -1,0 +1,20 @@
+*** Settings ***
+Documentation     A test suite with a simple test to search something in google
+
+Resource          resource.txt
+
+*** Test Cases ***
+Test
+    Open Browser To Page          http://www.google.com
+    Input Text                    gbqfq       TASS Belgie
+    Click Button                  gbqfb
+    Input Text                    gbqfq       facebook
+    Click Button                  gbqfb
+    Input Text                    gbqfq       googleok
+    Click Button                  gbqfb
+    Input Text                    gbqfq       dierenok
+    Click Button                  gbqfb
+    Input Text                    gbqfq       plantenk
+    Click Button                  gbqfb
+    Input Text                    gbqfq       testbook
+    Click Button                  gbqfb

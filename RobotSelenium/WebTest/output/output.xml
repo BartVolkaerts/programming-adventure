@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140228 17:53:18.979" generator="Robot 2.8.4 (Python 2.7.3 on linux2)">
+<suite source="/home/bart/Work/RobotSelenium/WebTest/testcases/test.txt" id="s1" name="Test">
+<test id="s1-t1" name="Test">
+<kw type="kw" name="resource.Open Browser To Page">
+<doc></doc>
+<arguments>
+<arg>http://www.google.com</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140228 17:53:19.062" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20140228 17:53:23.574" starttime="20140228 17:53:19.062"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140228 17:53:23.792" starttime="20140228 17:53:23.574"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140228 17:53:23.793" starttime="20140228 17:53:23.792"></status>
+</kw>
+<status status="PASS" endtime="20140228 17:53:23.793" starttime="20140228 17:53:19.061"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>TASS Belgie</arg>
+</arguments>
+<msg timestamp="20140228 17:53:23.793" level="INFO">Typing text 'TASS Belgie' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:23.973" starttime="20140228 17:53:23.793"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:23.973" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.148" starttime="20140228 17:53:23.973"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>facebook</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.149" level="INFO">Typing text 'facebook' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:24.233" starttime="20140228 17:53:24.149"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.234" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.279" starttime="20140228 17:53:24.233"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>googleok</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.279" level="INFO">Typing text 'googleok' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:24.345" starttime="20140228 17:53:24.279"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.345" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.374" starttime="20140228 17:53:24.345"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>dierenok</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.374" level="INFO">Typing text 'dierenok' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:24.441" starttime="20140228 17:53:24.374"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.441" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.472" starttime="20140228 17:53:24.441"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>plantenk</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.473" level="INFO">Typing text 'plantenk' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:24.541" starttime="20140228 17:53:24.472"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.542" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.576" starttime="20140228 17:53:24.541"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>gbqfq</arg>
+<arg>testbook</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.577" level="INFO">Typing text 'testbook' into text field 'gbqfq'</msg>
+<status status="PASS" endtime="20140228 17:53:24.634" starttime="20140228 17:53:24.576"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>gbqfb</arg>
+</arguments>
+<msg timestamp="20140228 17:53:24.635" level="INFO">Clicking button 'gbqfb'.</msg>
+<status status="PASS" endtime="20140228 17:53:24.665" starttime="20140228 17:53:24.635"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140228 17:53:24.665" critical="yes" starttime="20140228 17:53:19.061"></status>
+</test>
+<doc>A test suite with a simple test to search something in google</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140228 17:53:24.666" starttime="20140228 17:53:18.980"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
