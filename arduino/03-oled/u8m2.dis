@@ -1,0 +1,3682 @@
+
+u8m2.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	ff c4       	rjmp	.+2558   	; 0xa00 <__ctors_end>
+       2:	00 00       	nop
+       4:	18 c5       	rjmp	.+2608   	; 0xa36 <__bad_interrupt>
+       6:	00 00       	nop
+       8:	16 c5       	rjmp	.+2604   	; 0xa36 <__bad_interrupt>
+       a:	00 00       	nop
+       c:	14 c5       	rjmp	.+2600   	; 0xa36 <__bad_interrupt>
+       e:	00 00       	nop
+      10:	12 c5       	rjmp	.+2596   	; 0xa36 <__bad_interrupt>
+      12:	00 00       	nop
+      14:	10 c5       	rjmp	.+2592   	; 0xa36 <__bad_interrupt>
+      16:	00 00       	nop
+      18:	0e c5       	rjmp	.+2588   	; 0xa36 <__bad_interrupt>
+      1a:	00 00       	nop
+      1c:	0c c5       	rjmp	.+2584   	; 0xa36 <__bad_interrupt>
+      1e:	00 00       	nop
+      20:	0a c5       	rjmp	.+2580   	; 0xa36 <__bad_interrupt>
+      22:	00 00       	nop
+      24:	08 c5       	rjmp	.+2576   	; 0xa36 <__bad_interrupt>
+      26:	00 00       	nop
+      28:	06 c5       	rjmp	.+2572   	; 0xa36 <__bad_interrupt>
+      2a:	00 00       	nop
+      2c:	04 c5       	rjmp	.+2568   	; 0xa36 <__bad_interrupt>
+      2e:	00 00       	nop
+      30:	02 c5       	rjmp	.+2564   	; 0xa36 <__bad_interrupt>
+      32:	00 00       	nop
+      34:	00 c5       	rjmp	.+2560   	; 0xa36 <__bad_interrupt>
+      36:	00 00       	nop
+      38:	fe c4       	rjmp	.+2556   	; 0xa36 <__bad_interrupt>
+      3a:	00 00       	nop
+      3c:	fc c4       	rjmp	.+2552   	; 0xa36 <__bad_interrupt>
+      3e:	00 00       	nop
+      40:	fa c4       	rjmp	.+2548   	; 0xa36 <__bad_interrupt>
+      42:	00 00       	nop
+      44:	f8 c4       	rjmp	.+2544   	; 0xa36 <__bad_interrupt>
+      46:	00 00       	nop
+      48:	f6 c4       	rjmp	.+2540   	; 0xa36 <__bad_interrupt>
+      4a:	00 00       	nop
+      4c:	f4 c4       	rjmp	.+2536   	; 0xa36 <__bad_interrupt>
+      4e:	00 00       	nop
+      50:	f2 c4       	rjmp	.+2532   	; 0xa36 <__bad_interrupt>
+      52:	00 00       	nop
+      54:	f0 c4       	rjmp	.+2528   	; 0xa36 <__bad_interrupt>
+      56:	00 00       	nop
+      58:	ee c4       	rjmp	.+2524   	; 0xa36 <__bad_interrupt>
+      5a:	00 00       	nop
+      5c:	ec c4       	rjmp	.+2520   	; 0xa36 <__bad_interrupt>
+      5e:	00 00       	nop
+      60:	ea c4       	rjmp	.+2516   	; 0xa36 <__bad_interrupt>
+      62:	00 00       	nop
+      64:	e8 c4       	rjmp	.+2512   	; 0xa36 <__bad_interrupt>
+	...
+
+00000068 <u8g_avr_port_P>:
+      68:	00 00 25 00 28 00 2b 00                             ..%.(.+.
+
+00000070 <u8g_avr_ddr_P>:
+      70:	00 00 24 00 27 00 2a 00                             ..$.'.*.
+
+00000078 <u8g_dev_ssd13xx_sleep_off>:
+      78:	ff e0 ff d1 af ff 32 ff d0 ff fe                    ......2....
+
+00000083 <u8g_dev_ssd13xx_sleep_on>:
+      83:	ff e0 ff d1 ae ff d0 ff fe                          .........
+
+0000008c <u8g_dev_ssd1306_128x64_data_start>:
+      8c:	ff e0 ff d1 10 00 ff fe                             ........
+
+00000094 <u8g_dev_ssd1306_128x64_adafruit2_init_seq>:
+      94:	ff d0 ff e0 ff c1 ff d1 ae d5 80 a8 3f d3 00 40     ............?..@
+      a4:	8d 14 20 00 a1 c8 da 12 81 cf d9 f1 db 40 2e a4     .. ..........@..
+      b4:	a6 af ff d0 ff fe                                   ......
+
+000000ba <u8g_font_7x14>:
+      ba:	01 07 0e 00 fe 0a 01 8a 03 1e 20 ff fe 0c fe 0b     .......... .....
+      ca:	fe 0e 00 70 32 1a 7a 80 80 80 80 80 80 80 00 80     ...p2.z.........
+      da:	80 29 34 74 a0 a0 a0 a0 12 5a 7a 50 50 50 f8 50     .)4t.....ZzPPP.P
+      ea:	50 f8 50 50 50 01 6b 7b 10 78 94 94 50 38 14 94     P.PPP.k{.x..P8..
+      fa:	94 78 10 02 6a 7a 64 94 98 70 10 20 38 64 a4 98     .x..jzd..p. 8d..
+     10a:	02 6a 7a 30 48 48 48 30 64 94 88 98 64 39 14 74     .jz0HHH0d...d9.t
+     11a:	80 80 80 80 20 4d 7d 10 20 40 40 80 80 80 80 80     .... M}. @@.....
+     12a:	40 40 20 10 10 4d 7d 80 40 20 20 10 10 10 10 10     @@ ..M}.@  .....
+     13a:	20 20 40 80 13 57 77 20 a8 70 20 70 a8 20 13 57       @..Ww .p p. .W
+     14a:	77 20 20 20 f8 20 20 20 20 24 74 c0 40 40 80 16     w   .    $t.@@..
+     15a:	51 71 f8 21 33 73 40 e0 40 00 6d 7d 04 04 08 08     Qq.!3s@.@.m}....
+     16a:	10 10 10 20 20 40 40 80 80 02 6a 7a 30 48 84 84     ...  @@...jz0H..
+     17a:	84 84 84 84 48 30 12 5a 7a 20 60 a0 20 20 20 20     ....H0.Zz `.    
+     18a:	20 20 f8 02 6a 7a 78 84 84 04 08 08 10 20 40 fc       ..jzx...... @.
+     19a:	02 6a 7a fc 04 08 10 38 04 04 84 84 78 02 6a 7a     .jz....8....x.jz
+     1aa:	08 18 28 28 48 48 88 fc 08 08 02 6a 7a fc 80 80     ..((HH.....jz...
+     1ba:	f8 84 04 04 84 84 78 02 6a 7a 38 40 80 80 b8 c4     ......x.jz8@....
+     1ca:	84 84 84 78 02 6a 7a fc 04 08 08 10 10 20 20 40     ...x.jz......  @
+     1da:	40 02 6a 7a 78 84 84 48 30 48 84 84 84 78 02 6a     @.jzx..H0H...x.j
+     1ea:	7a 78 84 84 84 8c 74 04 84 88 70 22 38 78 40 e0     zx....t...p"8x@.
+     1fa:	40 00 00 40 e0 40 21 28 78 c0 c0 00 00 c0 40 40     @..@.@!(x.....@@
+     20a:	80 12 59 79 08 10 20 40 80 40 20 10 08 05 64 74     ..Yy.. @.@ ...dt
+     21a:	fc 00 00 fc 12 59 79 80 40 20 10 08 10 20 40 80     .....Yy.@ ... @.
+     22a:	02 6a 7a 78 84 84 08 10 10 10 00 10 10 02 6a 7a     .jzx..........jz
+     23a:	38 44 9c a4 a4 a4 a4 9c 40 3c 02 6a 7a 30 48 84     8D......@<.jz0H.
+     24a:	84 84 fc 84 84 84 84 02 6a 7a f0 88 84 88 f0 88     ........jz......
+     25a:	84 84 88 f0 02 6a 7a 78 84 84 80 80 80 80 84 84     .....jzx........
+     26a:	78 02 6a 7a f0 88 84 84 84 84 84 84 88 f0 02 6a     x.jz...........j
+     27a:	7a fc 80 80 80 f0 80 80 80 80 fc 02 6a 7a fc 80     z...........jz..
+     28a:	80 80 f0 80 80 80 80 80 02 6a 7a 78 84 84 80 80     .........jzx....
+     29a:	9c 84 84 8c 74 02 6a 7a 84 84 84 84 fc 84 84 84     ....t.jz........
+     2aa:	84 84 12 5a 7a f8 20 20 20 20 20 20 20 20 f8 02     ...Zz.        ..
+     2ba:	6a 7a 1c 08 08 08 08 08 08 88 88 70 02 6a 7a 84     jz.........p.jz.
+     2ca:	88 90 a0 c0 a0 90 88 84 84 02 6a 7a 80 80 80 80     ..........jz....
+     2da:	80 80 80 80 80 fc 02 6a 7a 84 cc cc b4 b4 84 84     .......jz.......
+     2ea:	84 84 84 02 6a 7a 84 84 c4 c4 a4 94 8c 8c 84 84     ....jz..........
+     2fa:	02 6a 7a 78 84 84 84 84 84 84 84 84 78 02 6a 7a     .jzx........x.jz
+     30a:	f8 84 84 84 84 f8 80 80 80 80 00 6c 7c 78 84 84     ...........l|x..
+     31a:	84 84 84 e4 94 8c 78 08 04 02 6a 7a f8 84 84 84     ......x...jz....
+     32a:	84 f8 90 88 84 84 02 6a 7a 78 84 84 80 60 18 04     .......jzx...`..
+     33a:	84 84 78 02 7a 7a fe 10 10 10 10 10 10 10 10 10     ..x.zz..........
+     34a:	02 6a 7a 84 84 84 84 84 84 84 84 84 78 02 6a 7a     .jz.........x.jz
+     35a:	84 84 84 84 48 48 48 30 30 30 12 5a 7a 88 88 88     ....HHH000.Zz...
+     36a:	88 88 88 a8 a8 a8 50 02 6a 7a 84 84 48 48 30 30     ......P.jz..HH00
+     37a:	48 48 84 84 12 5a 7a 88 88 88 50 50 20 20 20 20     HH...Zz...PP    
+     38a:	20 02 6a 7a fc 04 08 10 10 20 40 40 80 fc 20 4d      .jz..... @@.. M
+     39a:	7d f0 80 80 80 80 80 80 80 80 80 80 80 f0 00 6d     }..............m
+     3aa:	7d 80 80 40 40 20 20 20 10 10 08 08 04 04 10 4d     }..@@   .......M
+     3ba:	7d f0 10 10 10 10 10 10 10 10 10 10 10 f0 0a 63     }..............c
+     3ca:	73 30 48 84 00 61 71 fc 2a 33 73 80 40 20 02 67     s0H..aq.*3s.@ .g
+     3da:	77 78 84 04 7c 84 84 7c 02 6a 7a 80 80 80 b8 c4     wx..|..|.jz.....
+     3ea:	84 84 84 c4 b8 02 67 77 78 84 80 80 80 84 78 02     ......gwx.....x.
+     3fa:	6a 7a 04 04 04 74 8c 84 84 84 8c 74 02 67 77 78     jz...t.....t.gwx
+     40a:	84 84 fc 80 84 78 02 6a 7a 18 24 20 20 f8 20 20     .....x.jz.$  .  
+     41a:	20 20 20 00 69 79 74 88 88 88 70 40 b8 84 78 02        .iyt...p@..x.
+     42a:	6a 7a 80 80 80 b8 c4 84 84 84 84 84 12 5a 7a 20     jz...........Zz 
+     43a:	20 00 60 20 20 20 20 20 f8 10 5c 7c 08 08 00 18      .`     ..\|....
+     44a:	08 08 08 08 08 88 88 70 02 6a 7a 80 80 80 88 90     .......p.jz.....
+     45a:	a0 e0 90 88 84 12 5a 7a 60 20 20 20 20 20 20 20     ......Zz`       
+     46a:	20 f8 12 57 77 d0 a8 a8 a8 a8 a8 88 02 67 77 b8      ..Ww........gw.
+     47a:	c4 84 84 84 84 84 02 67 77 78 84 84 84 84 84 78     .......gwx.....x
+     48a:	00 69 79 b8 c4 84 84 84 c4 b8 80 80 00 69 79 74     .iy..........iyt
+     49a:	8c 84 84 84 8c 74 04 04 02 67 77 b8 c4 84 80 80     .....t...gw.....
+     4aa:	80 80 02 67 77 78 84 40 30 08 84 78 02 6a 7a 20     ...gwx.@0..x.jz 
+     4ba:	20 20 f8 20 20 20 20 24 18 02 67 77 84 84 84 84       .    $..gw....
+     4ca:	84 8c 74 12 57 77 88 88 88 50 50 20 20 12 57 77     ..t.Ww...PP  .Ww
+     4da:	88 88 a8 a8 a8 a8 50 02 67 77 84 84 48 30 48 84     ......P.gw..H0H.
+     4ea:	84 00 69 79 84 84 84 84 8c 74 04 84 78 02 67 77     ..iy.....t..x.gw
+     4fa:	fc 08 10 20 20 40 fc 20 4d 7d 30 40 40 40 40 40     ...  @. M}0@@@@@
+     50a:	80 40 40 40 40 40 30 30 1d 7d 80 80 80 80 80 80     .@@@@@00.}......
+     51a:	80 80 80 80 80 80 80 10 4d 7d c0 20 20 20 20 20     ........M}.     
+     52a:	10 20 20 20 20 20 c0 09 64 74 40 a4 94 08 ff ff     .     ..dt@.....
+     53a:	ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff     ................
+     54a:	ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 0e     ................
+     55a:	00 70 32 1a 7a 80 80 00 80 80 80 80 80 80 80 01     .p2.z...........
+     56a:	69 79 20 78 a4 a0 a0 a0 a4 78 20 12 59 79 30 48     iy x.....x .Yy0H
+     57a:	40 40 f0 40 40 f0 48 04 66 76 84 78 48 48 78 84     @@.@@.H.fv.xHHx.
+     58a:	12 5a 7a 88 50 50 20 f8 20 f8 20 20 20 32 1a 7a     .Zz.PP . .   2.z
+     59a:	80 80 80 80 00 00 80 80 80 80 02 6b 7b 78 84 40     ...........k{x.@
+     5aa:	30 48 84 48 30 08 84 78 1b 42 72 90 90 02 6b 7b     0H.H0..x.Br...k{
+     5ba:	78 84 b4 cc c4 c4 c4 cc b4 84 78 15 58 78 70 88     x.........x.Xxp.
+     5ca:	78 88 98 68 00 f8 02 67 77 14 28 50 a0 50 28 14     x..h...gw.(P.P(.
+     5da:	12 54 74 f8 08 08 08 16 41 71 f0 02 6b 7b 78 84     .Tt.....Aq..k{x.
+     5ea:	f4 cc cc f4 cc cc cc 84 78 1b 51 71 f8 19 44 74     ........x.Qq..Dt
+     5fa:	60 90 90 60 12 56 76 20 20 f8 20 20 f8 16 47 77     `..`.Vv  .  ..Gw
+     60a:	60 90 10 20 40 80 f0 16 47 77 60 90 10 60 10 90     `.. @...Gw`..`..
+     61a:	60 2a 33 73 20 40 80 10 58 78 88 88 88 88 d8 a8     `*3s @..Xx......
+     62a:	80 80 10 5c 7c 78 a8 a8 a8 a8 68 28 28 28 28 28     ...\|x....h(((((
+     63a:	38 37 11 71 80 20 23 73 40 40 80 26 37 77 40 c0     87.q. #s@@.&7w@.
+     64a:	40 40 40 40 e0 16 46 76 60 90 90 60 00 f0 02 67     @@@@..Fv`..`...g
+     65a:	77 a0 50 28 14 28 50 a0 02 6a 7a 40 c4 48 48 50     w.P(.(P..jz@.HHP
+     66a:	24 2c 54 9c 84 02 6a 7a 40 c4 48 48 50 28 34 44     $,T...jz@.HHP(4D
+     67a:	88 9c 02 6a 7a c4 24 48 30 d0 24 4c 54 9c 04 00     ...jz.$H0.$LT...
+     68a:	6b 7b 20 20 00 20 20 20 20 40 84 84 78 02 6c 7c     k{  .    @..x.l|
+     69a:	20 10 00 30 48 84 84 fc 84 84 84 84 02 6c 7c 10      ..0H........l|.
+     6aa:	20 00 30 48 84 84 fc 84 84 84 84 02 6c 7c 30 48      .0H........l|0H
+     6ba:	00 30 48 84 84 fc 84 84 84 84 02 6c 7c 64 98 00     .0H........l|d..
+     6ca:	30 48 84 84 fc 84 84 84 84 02 6b 7b 48 00 30 48     0H........k{H.0H
+     6da:	84 84 fc 84 84 84 84 02 6b 7b 30 48 30 48 84 84     ........k{0H0H..
+     6ea:	fc 84 84 84 84 02 6a 7a 3c 50 90 90 fc 90 90 90     ......jz<P......
+     6fa:	90 9c 00 6c 7c 78 84 84 80 80 80 80 84 84 78 10     ...l|x........x.
+     70a:	20 02 6c 7c 20 10 00 fc 80 80 80 f8 80 80 80 fc      .l| ...........
+     71a:	02 6c 7c 10 20 00 fc 80 80 80 f8 80 80 80 fc 02     .l|. ...........
+     72a:	6c 7c 30 48 00 fc 80 80 80 f8 80 80 80 fc 02 6b     l|0H...........k
+     73a:	7b 48 00 fc 80 80 80 f8 80 80 80 fc 12 5c 7c 40     {H...........\|@
+     74a:	20 00 f8 20 20 20 20 20 20 20 f8 12 5c 7c 10 20      ..       ..\|. 
+     75a:	00 f8 20 20 20 20 20 20 20 f8 12 5c 7c 20 50 00     ..       ..\| P.
+     76a:	f8 20 20 20 20 20 20 20 f8 12 5b 7b 50 00 f8 20     .       ..[{P.. 
+     77a:	20 20 20 20 20 20 f8 02 7a 7a 78 44 42 42 f2 42           ..zzxDBB.B
+     78a:	42 42 44 78 02 6c 7c 64 98 00 c4 c4 a4 a4 94 94     BBDx.l|d........
+     79a:	94 8c 8c 02 6c 7c 20 10 00 78 84 84 84 84 84 84     ....l| ..x......
+     7aa:	84 78 02 6c 7c 10 20 00 78 84 84 84 84 84 84 84     .x.l|. .x.......
+     7ba:	78 02 6c 7c 30 48 00 78 84 84 84 84 84 84 84 78     x.l|0H.x.......x
+     7ca:	02 6c 7c 64 98 00 78 84 84 84 84 84 84 84 78 02     .l|d..x.......x.
+     7da:	6b 7b 48 00 78 84 84 84 84 84 84 84 78 02 77 77     k{H.x.......x.ww
+     7ea:	82 44 28 10 28 44 82 00 6e 7e 04 04 78 8c 94 94     .D(.(D..n~..x...
+     7fa:	94 a4 a4 a4 c4 78 80 80 02 6c 7c 20 10 00 84 84     .....x...l| ....
+     80a:	84 84 84 84 84 84 78 02 6c 7c 10 20 00 84 84 84     ......x.l|. ....
+     81a:	84 84 84 84 84 78 02 6c 7c 30 48 00 84 84 84 84     .....x.l|0H.....
+     82a:	84 84 84 84 78 02 6b 7b 48 00 84 84 84 84 84 84     ....x.k{H.......
+     83a:	84 84 78 12 5c 7c 10 20 00 88 88 50 50 20 20 20     ..x.\|. ...PP   
+     84a:	20 20 02 6a 7a 80 80 f8 84 84 84 84 f8 80 80 02       .jz...........
+     85a:	6a 7a 30 48 48 48 70 48 44 44 44 f8 02 6a 7a 20     jz0HHHpHDDD..jz 
+     86a:	10 00 78 84 04 7c 84 84 7c 02 6a 7a 08 10 00 78     ..x..|..|.jz...x
+     87a:	84 04 7c 84 84 7c 02 6a 7a 30 48 00 78 84 04 7c     ..|..|.jz0H.x..|
+     88a:	84 84 7c 02 6a 7a 64 98 00 78 84 04 7c 84 84 7c     ..|.jzd..x..|..|
+     89a:	02 69 79 48 00 78 84 04 7c 84 84 7c 02 6b 7b 30     .iyH.x..|..|.k{0
+     8aa:	48 30 00 78 84 04 7c 84 84 7c 02 77 77 7c 92 32     H0.x..|..|.ww|.2
+     8ba:	5e 90 92 7c 00 69 79 78 84 80 80 80 84 78 10 20     ^..|.iyx.....x. 
+     8ca:	02 6a 7a 20 10 00 78 84 84 fc 80 84 78 02 6a 7a     .jz ..x.....x.jz
+     8da:	10 20 00 78 84 84 fc 80 84 78 02 6a 7a 30 48 00     . .x.....x.jz0H.
+     8ea:	78 84 84 fc 80 84 78 02 69 79 48 00 78 84 84 fc     x.....x.iyH.x...
+     8fa:	80 84 78 12 5a 7a 40 20 00 60 20 20 20 20 20 f8     ..x.Zz@ .`     .
+     90a:	12 5a 7a 10 20 00 60 20 20 20 20 20 f8 12 5a 7a     .Zz. .`     ..Zz
+     91a:	60 90 00 60 20 20 20 20 20 f8 12 59 79 50 00 60     `..`     ..YyP.`
+     92a:	20 20 20 20 20 f8 12 5b 7b 50 20 50 08 78 88 88          ..[{P P.x..
+     93a:	88 88 88 70 02 6a 7a 64 98 00 b8 c4 84 84 84 84     ...p.jzd........
+     94a:	84 02 6a 7a 20 10 00 78 84 84 84 84 84 78 02 6a     ..jz ..x.....x.j
+     95a:	7a 10 20 00 78 84 84 84 84 84 78 02 6a 7a 30 48     z. .x.....x.jz0H
+     96a:	00 78 84 84 84 84 84 78 02 6a 7a 64 98 00 78 84     .x.....x.jzd..x.
+     97a:	84 84 84 84 78 02 69 79 48 00 78 84 84 84 84 84     ....x.iyH.x.....
+     98a:	78 02 65 75 30 00 fc 00 30 00 6b 7b 04 08 78 94     x.eu0...0.k{..x.
+     99a:	94 a4 a4 c4 78 80 80 02 6a 7a 20 10 00 84 84 84     ....x...jz .....
+     9aa:	84 84 8c 74 02 6a 7a 10 20 00 84 84 84 84 84 8c     ...t.jz. .......
+     9ba:	74 02 6a 7a 30 48 00 84 84 84 84 84 8c 74 02 69     t.jz0H.......t.i
+     9ca:	79 48 00 84 84 84 84 84 8c 74 00 6c 7c 10 20 00     yH.......t.l|. .
+     9da:	84 84 44 48 28 38 10 90 60 00 6c 7c 80 80 80 b8     ..DH(8..`.l|....
+     9ea:	c4 84 84 84 c4 b8 80 80 00 6b 7b 48 00 84 84 44     .........k{H...D
+     9fa:	48 28 38 10 90 60                                   H(8..`
+
+00000a00 <__ctors_end>:
+     a00:	11 24       	eor	r1, r1
+     a02:	1f be       	out	0x3f, r1	; 63
+     a04:	cf ef       	ldi	r28, 0xFF	; 255
+     a06:	d8 e0       	ldi	r29, 0x08	; 8
+     a08:	de bf       	out	0x3e, r29	; 62
+     a0a:	cd bf       	out	0x3d, r28	; 61
+
+00000a0c <__do_copy_data>:
+     a0c:	11 e0       	ldi	r17, 0x01	; 1
+     a0e:	a0 e0       	ldi	r26, 0x00	; 0
+     a10:	b1 e0       	ldi	r27, 0x01	; 1
+     a12:	e0 ed       	ldi	r30, 0xD0	; 208
+     a14:	f7 e1       	ldi	r31, 0x17	; 23
+     a16:	02 c0       	rjmp	.+4      	; 0xa1c <__do_copy_data+0x10>
+     a18:	05 90       	lpm	r0, Z+
+     a1a:	0d 92       	st	X+, r0
+     a1c:	a8 31       	cpi	r26, 0x18	; 24
+     a1e:	b1 07       	cpc	r27, r17
+     a20:	d9 f7       	brne	.-10     	; 0xa18 <__do_copy_data+0xc>
+
+00000a22 <__do_clear_bss>:
+     a22:	11 e0       	ldi	r17, 0x01	; 1
+     a24:	a8 e1       	ldi	r26, 0x18	; 24
+     a26:	b1 e0       	ldi	r27, 0x01	; 1
+     a28:	01 c0       	rjmp	.+2      	; 0xa2c <.do_clear_bss_start>
+
+00000a2a <.do_clear_bss_loop>:
+     a2a:	1d 92       	st	X+, r1
+
+00000a2c <.do_clear_bss_start>:
+     a2c:	a2 3d       	cpi	r26, 0xD2	; 210
+     a2e:	b1 07       	cpc	r27, r17
+     a30:	e1 f7       	brne	.-8      	; 0xa2a <.do_clear_bss_loop>
+     a32:	a0 d0       	rcall	.+320    	; 0xb74 <main>
+     a34:	cb c6       	rjmp	.+3478   	; 0x17cc <_exit>
+
+00000a36 <__bad_interrupt>:
+     a36:	e4 ca       	rjmp	.-2616   	; 0x0 <__vectors>
+
+00000a38 <u8g_i2c_set_error>:
+
+#if defined(__AVR__)
+
+static void u8g_i2c_set_error(uint8_t code, uint8_t pos)
+{
+  if ( u8g_i2c_err_code > 0 )
+     a38:	90 91 1a 01 	lds	r25, 0x011A
+     a3c:	91 11       	cpse	r25, r1
+     a3e:	04 c0       	rjmp	.+8      	; 0xa48 <u8g_i2c_set_error+0x10>
+    return;
+  u8g_i2c_err_code |= code;
+     a40:	80 93 1a 01 	sts	0x011A, r24
+  u8g_i2c_err_pos = pos;
+     a44:	60 93 18 01 	sts	0x0118, r22
+     a48:	08 95       	ret
+
+00000a4a <u8g_i2c_clear_error>:
+static uint8_t u8g_i2c_err_pos;
+
+
+void u8g_i2c_clear_error(void)
+{
+  u8g_i2c_err_code = U8G_I2C_ERR_NONE;
+     a4a:	10 92 1a 01 	sts	0x011A, r1
+  u8g_i2c_err_pos = 0;
+     a4e:	10 92 18 01 	sts	0x0118, r1
+     a52:	08 95       	ret
+
+00000a54 <u8g_i2c_init>:
+    TWSR = 0;
+	--> 400KHz
+
+    F_CPU/(2*100000)-8  --> calculate TWBR value for 100KHz
+*/
+  u8g_i2c_opt = options;
+     a54:	80 93 19 01 	sts	0x0119, r24
+  TWSR = 0;
+     a58:	10 92 b9 00 	sts	0x00B9, r1
+  if ( options & U8G_I2C_OPT_FAST )
+     a5c:	84 ff       	sbrs	r24, 4
+     a5e:	02 c0       	rjmp	.+4      	; 0xa64 <u8g_i2c_init+0x10>
+  {
+    TWBR = F_CPU/(2*400000)-8;
+     a60:	8c e0       	ldi	r24, 0x0C	; 12
+     a62:	01 c0       	rjmp	.+2      	; 0xa66 <u8g_i2c_init+0x12>
+  }
+  else
+  {  
+    TWBR = F_CPU/(2*100000)-8;
+     a64:	88 e4       	ldi	r24, 0x48	; 72
+     a66:	80 93 b8 00 	sts	0x00B8, r24
+  }
+  u8g_i2c_clear_error();
+     a6a:	ef cf       	rjmp	.-34     	; 0xa4a <u8g_i2c_clear_error>
+
+00000a6c <u8g_i2c_wait>:
+}
+
+uint8_t u8g_i2c_wait(uint8_t mask, uint8_t pos)
+{
+     a6c:	a2 e0       	ldi	r26, 0x02	; 2
+     a6e:	b0 e0       	ldi	r27, 0x00	; 0
+     a70:	eb e3       	ldi	r30, 0x3B	; 59
+     a72:	f5 e0       	ldi	r31, 0x05	; 5
+     a74:	7b c6       	rjmp	.+3318   	; 0x176c <__prologue_saves__+0x20>
+     a76:	20 ed       	ldi	r18, 0xD0	; 208
+  volatile uint16_t cnt = 2000;	/* timout value should be > 280 for 50KHz Bus and 16 Mhz CPU, however the start condition might need longer */
+     a78:	37 e0       	ldi	r19, 0x07	; 7
+     a7a:	3a 83       	std	Y+2, r19	; 0x02
+	{
+	  u8g_i2c_set_error(U8G_I2C_ERR_TIMEOUT, pos);
+	  return 0; /* error */
+	}
+      }
+      cnt--;
+     a7c:	29 83       	std	Y+1, r18	; 0x01
+     a7e:	90 91 bc 00 	lds	r25, 0x00BC
+}
+
+uint8_t u8g_i2c_wait(uint8_t mask, uint8_t pos)
+{
+  volatile uint16_t cnt = 2000;	/* timout value should be > 280 for 50KHz Bus and 16 Mhz CPU, however the start condition might need longer */
+  while( !(TWCR & mask) )
+     a82:	98 23       	and	r25, r24
+     a84:	89 f4       	brne	.+34     	; 0xaa8 <u8g_i2c_wait+0x3c>
+     a86:	29 81       	ldd	r18, Y+1	; 0x01
+  {
+      if ( cnt == 0 )
+     a88:	3a 81       	ldd	r19, Y+2	; 0x02
+     a8a:	23 2b       	or	r18, r19
+     a8c:	41 f4       	brne	.+16     	; 0xa9e <u8g_i2c_wait+0x32>
+     a8e:	80 91 19 01 	lds	r24, 0x0119
+      {
+	if ( u8g_i2c_opt & U8G_I2C_OPT_NO_ACK )
+     a92:	81 fd       	sbrc	r24, 1
+     a94:	09 c0       	rjmp	.+18     	; 0xaa8 <u8g_i2c_wait+0x3c>
+     a96:	81 e0       	ldi	r24, 0x01	; 1
+	{
+	  return 1;	/* all ok */
+	}
+	else
+	{
+	  u8g_i2c_set_error(U8G_I2C_ERR_TIMEOUT, pos);
+     a98:	cf df       	rcall	.-98     	; 0xa38 <u8g_i2c_set_error>
+     a9a:	80 e0       	ldi	r24, 0x00	; 0
+     a9c:	06 c0       	rjmp	.+12     	; 0xaaa <u8g_i2c_wait+0x3e>
+	  return 0; /* error */
+     a9e:	29 81       	ldd	r18, Y+1	; 0x01
+     aa0:	3a 81       	ldd	r19, Y+2	; 0x02
+	}
+      }
+      cnt--;
+     aa2:	21 50       	subi	r18, 0x01	; 1
+     aa4:	31 09       	sbc	r19, r1
+     aa6:	e9 cf       	rjmp	.-46     	; 0xa7a <u8g_i2c_wait+0xe>
+     aa8:	81 e0       	ldi	r24, 0x01	; 1
+     aaa:	22 96       	adiw	r28, 0x02	; 2
+  {
+      if ( cnt == 0 )
+      {
+	if ( u8g_i2c_opt & U8G_I2C_OPT_NO_ACK )
+	{
+	  return 1;	/* all ok */
+     aac:	e2 e0       	ldi	r30, 0x02	; 2
+	}
+      }
+      cnt--;
+    }
+  return 1;	/* all ok */
+}
+     aae:	7a c6       	rjmp	.+3316   	; 0x17a4 <__epilogue_restores__+0x20>
+
+00000ab0 <u8g_i2c_start>:
+
+/* sla includes all 8 bits (with r/w bit), assums master transmit */
+uint8_t u8g_i2c_start(uint8_t sla)
+{
+     ab0:	cf 93       	push	r28
+     ab2:	c8 2f       	mov	r28, r24
+  register uint8_t status;
+  
+  /* send start */
+  TWCR = _BV(TWINT) |  _BV(TWSTA)  |  _BV(TWEN);
+     ab4:	84 ea       	ldi	r24, 0xA4	; 164
+     ab6:	80 93 bc 00 	sts	0x00BC, r24
+   
+  /* wait */
+  if ( u8g_i2c_wait(_BV(TWINT), 1) == 0 )
+     aba:	61 e0       	ldi	r22, 0x01	; 1
+     abc:	80 e8       	ldi	r24, 0x80	; 128
+     abe:	d6 df       	rcall	.-84     	; 0xa6c <u8g_i2c_wait>
+     ac0:	88 23       	and	r24, r24
+     ac2:	f9 f0       	breq	.+62     	; 0xb02 <u8g_i2c_start+0x52>
+     ac4:	90 91 b9 00 	lds	r25, 0x00B9
+    return 0;
+  
+  status = TW_STATUS;
+     ac8:	98 7f       	andi	r25, 0xF8	; 248
+     aca:	98 30       	cpi	r25, 0x08	; 8
+ 
+  /* check status after start */  
+  if ( status != TW_START && status != TW_REP_START )
+     acc:	21 f0       	breq	.+8      	; 0xad6 <u8g_i2c_start+0x26>
+     ace:	90 31       	cpi	r25, 0x10	; 16
+     ad0:	11 f0       	breq	.+4      	; 0xad6 <u8g_i2c_start+0x26>
+     ad2:	61 e0       	ldi	r22, 0x01	; 1
+  {
+    u8g_i2c_set_error(U8G_I2C_ERR_BUS, 1);
+     ad4:	14 c0       	rjmp	.+40     	; 0xafe <u8g_i2c_start+0x4e>
+     ad6:	c0 93 bb 00 	sts	0x00BB, r28
+    return 0;
+  }
+
+  /* set slave address */  
+  TWDR = sla;
+     ada:	84 e8       	ldi	r24, 0x84	; 132
+  
+  /* enable sla transfer */
+  TWCR = _BV(TWINT)  |  _BV(TWEN);
+     adc:	80 93 bc 00 	sts	0x00BC, r24
+     ae0:	62 e0       	ldi	r22, 0x02	; 2
+
+  /* wait */
+  if ( u8g_i2c_wait(_BV(TWINT), 2) == 0 )
+     ae2:	80 e8       	ldi	r24, 0x80	; 128
+     ae4:	c3 df       	rcall	.-122    	; 0xa6c <u8g_i2c_wait>
+     ae6:	88 23       	and	r24, r24
+     ae8:	61 f0       	breq	.+24     	; 0xb02 <u8g_i2c_start+0x52>
+     aea:	80 91 19 01 	lds	r24, 0x0119
+    return 0;
+
+  if ( u8g_i2c_opt & U8G_I2C_OPT_NO_ACK )
+     aee:	81 fd       	sbrc	r24, 1
+     af0:	0a c0       	rjmp	.+20     	; 0xb06 <u8g_i2c_start+0x56>
+     af2:	80 91 b9 00 	lds	r24, 0x00B9
+  {
+    /* do not check for ACK */
+  }
+  else
+  {
+    status = TW_STATUS;
+     af6:	88 7f       	andi	r24, 0xF8	; 248
+     af8:	88 31       	cpi	r24, 0x18	; 24
+     afa:	29 f0       	breq	.+10     	; 0xb06 <u8g_i2c_start+0x56>
+    /* check status after sla */  
+    if ( status != TW_MT_SLA_ACK )
+     afc:	62 e0       	ldi	r22, 0x02	; 2
+     afe:	82 e0       	ldi	r24, 0x02	; 2
+    {
+      u8g_i2c_set_error(U8G_I2C_ERR_BUS, 2);
+     b00:	9b df       	rcall	.-202    	; 0xa38 <u8g_i2c_set_error>
+     b02:	80 e0       	ldi	r24, 0x00	; 0
+     b04:	01 c0       	rjmp	.+2      	; 0xb08 <u8g_i2c_start+0x58>
+     b06:	81 e0       	ldi	r24, 0x01	; 1
+      return 0;
+     b08:	cf 91       	pop	r28
+     b0a:	08 95       	ret
+
+00000b0c <u8g_i2c_send_byte>:
+}
+
+uint8_t u8g_i2c_send_byte(uint8_t data)
+{
+  register uint8_t status;
+  TWDR = data;
+     b0c:	80 93 bb 00 	sts	0x00BB, r24
+  TWCR = _BV(TWINT)  |  _BV(TWEN);
+     b10:	84 e8       	ldi	r24, 0x84	; 132
+     b12:	80 93 bc 00 	sts	0x00BC, r24
+  if ( u8g_i2c_wait(_BV(TWINT), 3) == 0 )
+     b16:	63 e0       	ldi	r22, 0x03	; 3
+     b18:	80 e8       	ldi	r24, 0x80	; 128
+     b1a:	a8 df       	rcall	.-176    	; 0xa6c <u8g_i2c_wait>
+     b1c:	88 23       	and	r24, r24
+     b1e:	61 f0       	breq	.+24     	; 0xb38 <u8g_i2c_send_byte+0x2c>
+     b20:	80 91 19 01 	lds	r24, 0x0119
+    return 0;
+    
+  if ( u8g_i2c_opt & U8G_I2C_OPT_NO_ACK )
+     b24:	81 fd       	sbrc	r24, 1
+     b26:	0a c0       	rjmp	.+20     	; 0xb3c <u8g_i2c_send_byte+0x30>
+     b28:	80 91 b9 00 	lds	r24, 0x00B9
+  {
+    /* do not check for ACK */
+  }
+  else
+  {
+    status = TW_STATUS;  
+     b2c:	88 7f       	andi	r24, 0xF8	; 248
+     b2e:	88 32       	cpi	r24, 0x28	; 40
+    if ( status != TW_MT_DATA_ACK )
+     b30:	29 f0       	breq	.+10     	; 0xb3c <u8g_i2c_send_byte+0x30>
+     b32:	63 e0       	ldi	r22, 0x03	; 3
+    {
+      u8g_i2c_set_error(U8G_I2C_ERR_BUS, 3);
+     b34:	82 e0       	ldi	r24, 0x02	; 2
+     b36:	80 df       	rcall	.-256    	; 0xa38 <u8g_i2c_set_error>
+     b38:	80 e0       	ldi	r24, 0x00	; 0
+     b3a:	08 95       	ret
+{
+  register uint8_t status;
+  TWDR = data;
+  TWCR = _BV(TWINT)  |  _BV(TWEN);
+  if ( u8g_i2c_wait(_BV(TWINT), 3) == 0 )
+    return 0;
+     b3c:	81 e0       	ldi	r24, 0x01	; 1
+     b3e:	08 95       	ret
+
+00000b40 <u8g_i2c_stop>:
+}
+
+void u8g_i2c_stop(void)
+{
+  /* write stop */
+  TWCR = _BV(TWINT) | _BV(TWEN) | _BV(TWSTO);
+     b40:	84 e9       	ldi	r24, 0x94	; 148
+     b42:	80 93 bc 00 	sts	0x00BC, r24
+
+  /* no error is checked for the stop condition */  
+  u8g_i2c_wait(_BV(TWSTO), 4);
+     b46:	64 e0       	ldi	r22, 0x04	; 4
+     b48:	80 e1       	ldi	r24, 0x10	; 16
+     b4a:	90 cf       	rjmp	.-224    	; 0xa6c <u8g_i2c_wait>
+
+00000b4c <u8g_setup>:
+
+u8g_t u8g;
+ 
+void u8g_setup(void)
+{
+    u8g_SetPinLevel(PD0, 1); u8g_SetPinOutput(PD0);
+     b4c:	61 e0       	ldi	r22, 0x01	; 1
+     b4e:	80 e0       	ldi	r24, 0x00	; 0
+     b50:	57 d0       	rcall	.+174    	; 0xc00 <u8g_SetPinLevel>
+     b52:	80 e0       	ldi	r24, 0x00	; 0
+     b54:	3f d0       	rcall	.+126    	; 0xbd4 <u8g_SetPinOutput>
+     b56:	61 e0       	ldi	r22, 0x01	; 1
+     b58:	81 e0       	ldi	r24, 0x01	; 1
+    u8g_SetPinLevel(PD1, 1); u8g_SetPinOutput(PD1);
+     b5a:	52 d0       	rcall	.+164    	; 0xc00 <u8g_SetPinLevel>
+     b5c:	81 e0       	ldi	r24, 0x01	; 1
+     b5e:	3a d0       	rcall	.+116    	; 0xbd4 <u8g_SetPinOutput>
+     b60:	40 e0       	ldi	r20, 0x00	; 0
+     b62:	60 e0       	ldi	r22, 0x00	; 0
+     b64:	71 e0       	ldi	r23, 0x01	; 1
+     b66:	8b e9       	ldi	r24, 0x9B	; 155
+    u8g_InitI2C(&u8g, &u8g_dev_ssd1306_128x64_i2c, U8G_I2C_OPT_NONE);
+     b68:	91 e0       	ldi	r25, 0x01	; 1
+     b6a:	80 d3       	rcall	.+1792   	; 0x126c <u8g_InitI2C>
+     b6c:	61 e0       	ldi	r22, 0x01	; 1
+     b6e:	8b e9       	ldi	r24, 0x9B	; 155
+     b70:	91 e0       	ldi	r25, 0x01	; 1
+     b72:	b3 c3       	rjmp	.+1894   	; 0x12da <u8g_SetColorIndex>
+
+00000b74 <main>:
+    u8g_SetColorIndex(&u8g, 1);
+}
+
+int main(void)
+{
+    CLKPR=0x80;
+     b74:	80 e8       	ldi	r24, 0x80	; 128
+     b76:	80 93 61 00 	sts	0x0061, r24
+    //DDRD=0xff; //set all pins of portD to output
+    //PORTD=0xff; //internal pullups
+    u8g_setup();
+     b7a:	e8 df       	rcall	.-48     	; 0xb4c <u8g_setup>
+     b7c:	6a eb       	ldi	r22, 0xBA	; 186
+    while(1)
+    {
+        u8g_SetFont(&u8g, u8g_font_7x14);
+     b7e:	70 e0       	ldi	r23, 0x00	; 0
+     b80:	8b e9       	ldi	r24, 0x9B	; 155
+     b82:	91 e0       	ldi	r25, 0x01	; 1
+     b84:	66 d2       	rcall	.+1228   	; 0x1052 <u8g_SetFont>
+     b86:	8b e9       	ldi	r24, 0x9B	; 155
+     b88:	91 e0       	ldi	r25, 0x01	; 1
+        u8g_FirstPage(&u8g);
+     b8a:	83 d3       	rcall	.+1798   	; 0x1292 <u8g_FirstPage>
+     b8c:	2e e0       	ldi	r18, 0x0E	; 14
+     b8e:	31 e0       	ldi	r19, 0x01	; 1
+     b90:	4a e0       	ldi	r20, 0x0A	; 10
+        do
+        {
+            u8g_DrawStr(&u8g, 0, 10, "Liesje <3");
+     b92:	60 e0       	ldi	r22, 0x00	; 0
+     b94:	8b e9       	ldi	r24, 0x9B	; 155
+     b96:	91 e0       	ldi	r25, 0x01	; 1
+     b98:	d8 d1       	rcall	.+944    	; 0xf4a <u8g_DrawStr>
+     b9a:	8b e9       	ldi	r24, 0x9B	; 155
+     b9c:	91 e0       	ldi	r25, 0x01	; 1
+     b9e:	7d d3       	rcall	.+1786   	; 0x129a <u8g_NextPage>
+     ba0:	81 11       	cpse	r24, r1
+        }while(u8g_NextPage(&u8g));
+     ba2:	f4 cf       	rjmp	.-24     	; 0xb8c <main+0x18>
+     ba4:	84 e6       	ldi	r24, 0x64	; 100
+     ba6:	90 e0       	ldi	r25, 0x00	; 0
+     ba8:	55 d0       	rcall	.+170    	; 0xc54 <u8g_Delay>
+     baa:	e8 cf       	rjmp	.-48     	; 0xb7c <main+0x8>
+
+00000bac <u8g_get_avr_io_ptr>:
+#endif
+#endif
+};
+
+static volatile uint8_t *u8g_get_avr_io_ptr(const IO_PTR *base, uint8_t offset)
+{
+     bac:	a2 e0       	ldi	r26, 0x02	; 2
+     bae:	b0 e0       	ldi	r27, 0x00	; 0
+     bb0:	eb ed       	ldi	r30, 0xDB	; 219
+     bb2:	f5 e0       	ldi	r31, 0x05	; 5
+     bb4:	db c5       	rjmp	.+2998   	; 0x176c <__prologue_saves__+0x20>
+     bb6:	86 0f       	add	r24, r22
+  volatile uint8_t * tmp;
+  base += offset;
+     bb8:	91 1d       	adc	r25, r1
+     bba:	86 0f       	add	r24, r22
+     bbc:	91 1d       	adc	r25, r1
+     bbe:	42 e0       	ldi	r20, 0x02	; 2
+  memcpy_P(&tmp, base, sizeof(volatile uint8_t * PROGMEM));
+     bc0:	50 e0       	ldi	r21, 0x00	; 0
+     bc2:	bc 01       	movw	r22, r24
+     bc4:	ce 01       	movw	r24, r28
+     bc6:	01 96       	adiw	r24, 0x01	; 1
+     bc8:	f8 d5       	rcall	.+3056   	; 0x17ba <memcpy_P>
+     bca:	89 81       	ldd	r24, Y+1	; 0x01
+     bcc:	9a 81       	ldd	r25, Y+2	; 0x02
+  return tmp; 
+}
+     bce:	22 96       	adiw	r28, 0x02	; 2
+     bd0:	e2 e0       	ldi	r30, 0x02	; 2
+     bd2:	e8 c5       	rjmp	.+3024   	; 0x17a4 <__epilogue_restores__+0x20>
+
+00000bd4 <u8g_SetPinOutput>:
+
+/* set direction to output of the specified pin (internal pin number) */
+void u8g_SetPinOutput(uint8_t internal_pin_number)
+{
+     bd4:	cf 93       	push	r28
+     bd6:	c8 2f       	mov	r28, r24
+  *u8g_get_avr_io_ptr(u8g_avr_ddr_P, internal_pin_number>>3) |= _BV(internal_pin_number&7);
+     bd8:	68 2f       	mov	r22, r24
+     bda:	66 95       	lsr	r22
+     bdc:	66 95       	lsr	r22
+     bde:	66 95       	lsr	r22
+     be0:	80 e7       	ldi	r24, 0x70	; 112
+     be2:	90 e0       	ldi	r25, 0x00	; 0
+     be4:	e3 df       	rcall	.-58     	; 0xbac <u8g_get_avr_io_ptr>
+     be6:	fc 01       	movw	r30, r24
+     be8:	90 81       	ld	r25, Z
+     bea:	c7 70       	andi	r28, 0x07	; 7
+     bec:	21 e0       	ldi	r18, 0x01	; 1
+     bee:	30 e0       	ldi	r19, 0x00	; 0
+     bf0:	01 c0       	rjmp	.+2      	; 0xbf4 <u8g_SetPinOutput+0x20>
+     bf2:	22 0f       	add	r18, r18
+     bf4:	ca 95       	dec	r28
+     bf6:	ea f7       	brpl	.-6      	; 0xbf2 <u8g_SetPinOutput+0x1e>
+     bf8:	92 2b       	or	r25, r18
+     bfa:	90 83       	st	Z, r25
+     bfc:	cf 91       	pop	r28
+}
+     bfe:	08 95       	ret
+
+00000c00 <u8g_SetPinLevel>:
+{
+  *u8g_get_avr_io_ptr(u8g_avr_ddr_P, internal_pin_number>>3) &= ~_BV(internal_pin_number&7);
+}
+
+void u8g_SetPinLevel(uint8_t internal_pin_number, uint8_t level)
+{
+     c00:	cf 93       	push	r28
+     c02:	df 93       	push	r29
+     c04:	c8 2f       	mov	r28, r24
+     c06:	d6 2f       	mov	r29, r22
+  volatile uint8_t * tmp = u8g_get_avr_io_ptr(u8g_avr_port_P, internal_pin_number>>3);
+     c08:	68 2f       	mov	r22, r24
+     c0a:	66 95       	lsr	r22
+     c0c:	66 95       	lsr	r22
+     c0e:	66 95       	lsr	r22
+     c10:	88 e6       	ldi	r24, 0x68	; 104
+     c12:	90 e0       	ldi	r25, 0x00	; 0
+     c14:	cb df       	rcall	.-106    	; 0xbac <u8g_get_avr_io_ptr>
+     c16:	fc 01       	movw	r30, r24
+     c18:	c7 70       	andi	r28, 0x07	; 7
+     c1a:	8f b7       	in	r24, 0x3f	; 63
+  
+  if ( level == 0 )
+  {
+    U8G_ATOMIC_AND(tmp, ~_BV(internal_pin_number&7));
+     c1c:	d1 11       	cpse	r29, r1
+
+void u8g_SetPinLevel(uint8_t internal_pin_number, uint8_t level)
+{
+  volatile uint8_t * tmp = u8g_get_avr_io_ptr(u8g_avr_port_P, internal_pin_number>>3);
+  
+  if ( level == 0 )
+     c1e:	0c c0       	rjmp	.+24     	; 0xc38 <u8g_SetPinLevel+0x38>
+     c20:	f8 94       	cli
+  {
+    U8G_ATOMIC_AND(tmp, ~_BV(internal_pin_number&7));
+     c22:	90 81       	ld	r25, Z
+     c24:	21 e0       	ldi	r18, 0x01	; 1
+     c26:	30 e0       	ldi	r19, 0x00	; 0
+     c28:	0c 2e       	mov	r0, r28
+     c2a:	01 c0       	rjmp	.+2      	; 0xc2e <u8g_SetPinLevel+0x2e>
+     c2c:	22 0f       	add	r18, r18
+     c2e:	0a 94       	dec	r0
+     c30:	ea f7       	brpl	.-6      	; 0xc2c <u8g_SetPinLevel+0x2c>
+     c32:	20 95       	com	r18
+     c34:	92 23       	and	r25, r18
+     c36:	09 c0       	rjmp	.+18     	; 0xc4a <u8g_SetPinLevel+0x4a>
+     c38:	f8 94       	cli
+   // *tmp &= ~_BV(internal_pin_number&7);
+  }
+  else
+  {
+    U8G_ATOMIC_OR(tmp, _BV(internal_pin_number&7));
+     c3a:	90 81       	ld	r25, Z
+     c3c:	21 e0       	ldi	r18, 0x01	; 1
+     c3e:	30 e0       	ldi	r19, 0x00	; 0
+     c40:	01 c0       	rjmp	.+2      	; 0xc44 <u8g_SetPinLevel+0x44>
+     c42:	22 0f       	add	r18, r18
+     c44:	ca 95       	dec	r28
+     c46:	ea f7       	brpl	.-6      	; 0xc42 <u8g_SetPinLevel+0x42>
+     c48:	92 2b       	or	r25, r18
+     c4a:	90 83       	st	Z, r25
+     c4c:	8f bf       	out	0x3f, r24	; 63
+     c4e:	df 91       	pop	r29
+    //*tmp |= _BV(internal_pin_number&7);
+  }
+  
+}
+     c50:	cf 91       	pop	r28
+     c52:	08 95       	ret
+
+00000c54 <u8g_Delay>:
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+     c54:	2e e9       	ldi	r18, 0x9E	; 158
+     c56:	3f e0       	ldi	r19, 0x0F	; 15
+  ==> must be devided by 4, rounded up 7/4 = 2
+*/
+void u8g_Delay(uint16_t val)
+{
+  /* old version did a call to the arduino lib: delay(val); */
+  while( val != 0 )
+     c58:	00 97       	sbiw	r24, 0x00	; 0
+     c5a:	29 f0       	breq	.+10     	; 0xc66 <u8g_Delay+0x12>
+     c5c:	f9 01       	movw	r30, r18
+     c5e:	31 97       	sbiw	r30, 0x01	; 1
+     c60:	f1 f7       	brne	.-4      	; 0xc5e <u8g_Delay+0xa>
+  {
+    _delay_loop_2( (F_CPU / 4000 ) -2);
+    val--;
+     c62:	01 97       	sbiw	r24, 0x01	; 1
+     c64:	f9 cf       	rjmp	.-14     	; 0xc58 <u8g_Delay+0x4>
+  }
+}
+     c66:	08 95       	ret
+
+00000c68 <u8g_dev_ssd1306_128x64_fn>:
+  U8G_ESC_CS(0),             /* disable chip, bugfix 12 nov 2014 */
+  U8G_ESC_END                /* end of sequence */
+};
+
+uint8_t u8g_dev_ssd1306_128x64_fn(u8g_t *u8g, u8g_dev_t *dev, uint8_t msg, void *arg)
+{
+     c68:	a0 e0       	ldi	r26, 0x00	; 0
+     c6a:	b0 e0       	ldi	r27, 0x00	; 0
+     c6c:	e9 e3       	ldi	r30, 0x39	; 57
+     c6e:	f6 e0       	ldi	r31, 0x06	; 6
+     c70:	76 c5       	rjmp	.+2796   	; 0x175e <__prologue_saves__+0x12>
+     c72:	8c 01       	movw	r16, r24
+     c74:	eb 01       	movw	r28, r22
+     c76:	b4 2e       	mov	r11, r20
+     c78:	69 01       	movw	r12, r18
+     c7a:	80 e1       	ldi	r24, 0x10	; 16
+  switch(msg)
+     c7c:	48 17       	cp	r20, r24
+     c7e:	79 f1       	breq	.+94     	; 0xcde <u8g_dev_ssd1306_128x64_fn+0x76>
+     c80:	84 17       	cp	r24, r20
+     c82:	60 f0       	brcs	.+24     	; 0xc9c <u8g_dev_ssd1306_128x64_fn+0x34>
+     c84:	ea e0       	ldi	r30, 0x0A	; 10
+     c86:	4e 13       	cpse	r20, r30
+     c88:	34 c0       	rjmp	.+104    	; 0xcf2 <u8g_dev_ssd1306_128x64_fn+0x8a>
+     c8a:	42 e0       	ldi	r20, 0x02	; 2
+  {
+    case U8G_DEV_MSG_INIT:
+      u8g_InitCom(u8g, dev, U8G_SPI_CLK_CYCLE_300NS);
+     c8c:	c8 01       	movw	r24, r16
+     c8e:	45 d4       	rcall	.+2186   	; 0x151a <u8g_InitCom>
+     c90:	44 e9       	ldi	r20, 0x94	; 148
+     c92:	50 e0       	ldi	r21, 0x00	; 0
+      u8g_WriteEscSeqP(u8g, dev, u8g_dev_ssd1306_128x64_adafruit2_init_seq);
+     c94:	be 01       	movw	r22, r28
+     c96:	c8 01       	movw	r24, r16
+     c98:	86 d4       	rcall	.+2316   	; 0x15a6 <u8g_WriteEscSeqP>
+     c9a:	2b c0       	rjmp	.+86     	; 0xcf2 <u8g_dev_ssd1306_128x64_fn+0x8a>
+     c9c:	f1 e1       	ldi	r31, 0x11	; 17
+     c9e:	4f 17       	cp	r20, r31
+      break;
+     ca0:	09 f1       	breq	.+66     	; 0xce4 <u8g_dev_ssd1306_128x64_fn+0x7c>
+  U8G_ESC_END                /* end of sequence */
+};
+
+uint8_t u8g_dev_ssd1306_128x64_fn(u8g_t *u8g, u8g_dev_t *dev, uint8_t msg, void *arg)
+{
+  switch(msg)
+     ca2:	85 e1       	ldi	r24, 0x15	; 21
+     ca4:	48 13       	cpse	r20, r24
+     ca6:	25 c0       	rjmp	.+74     	; 0xcf2 <u8g_dev_ssd1306_128x64_fn+0x8a>
+     ca8:	ea 80       	ldd	r14, Y+2	; 0x02
+     caa:	fb 80       	ldd	r15, Y+3	; 0x03
+     cac:	4c e8       	ldi	r20, 0x8C	; 140
+      break;
+    case U8G_DEV_MSG_STOP:
+      break;
+    case U8G_DEV_MSG_PAGE_NEXT:
+      {
+        u8g_pb_t *pb = (u8g_pb_t *)(dev->dev_mem);
+     cae:	50 e0       	ldi	r21, 0x00	; 0
+     cb0:	c8 01       	movw	r24, r16
+        u8g_WriteEscSeqP(u8g, dev, u8g_dev_ssd1306_128x64_data_start);    
+     cb2:	79 d4       	rcall	.+2290   	; 0x15a6 <u8g_WriteEscSeqP>
+     cb4:	f7 01       	movw	r30, r14
+     cb6:	44 81       	ldd	r20, Z+4	; 0x04
+     cb8:	40 6b       	ori	r20, 0xB0	; 176
+     cba:	be 01       	movw	r22, r28
+        u8g_WriteByte(u8g, dev, 0x0b0 | pb->p.page); /* select current page (SSD1306) */
+     cbc:	c8 01       	movw	r24, r16
+     cbe:	61 d4       	rcall	.+2242   	; 0x1582 <u8g_WriteByte>
+     cc0:	41 e0       	ldi	r20, 0x01	; 1
+     cc2:	be 01       	movw	r22, r28
+     cc4:	c8 01       	movw	r24, r16
+     cc6:	53 d4       	rcall	.+2214   	; 0x156e <u8g_SetAddress>
+     cc8:	ae 01       	movw	r20, r28
+        u8g_SetAddress(u8g, dev, 1);           /* data mode */
+     cca:	b8 01       	movw	r22, r16
+     ccc:	c7 01       	movw	r24, r14
+     cce:	fb d3       	rcall	.+2038   	; 0x14c6 <u8g_pb_WriteBuffer>
+     cd0:	88 23       	and	r24, r24
+     cd2:	a9 f0       	breq	.+42     	; 0xcfe <u8g_dev_ssd1306_128x64_fn+0x96>
+        if ( u8g_pb_WriteBuffer(pb, u8g, dev) == 0 )
+     cd4:	40 e0       	ldi	r20, 0x00	; 0
+     cd6:	be 01       	movw	r22, r28
+     cd8:	c8 01       	movw	r24, r16
+     cda:	29 d4       	rcall	.+2130   	; 0x152e <u8g_SetChipSelect>
+     cdc:	0a c0       	rjmp	.+20     	; 0xcf2 <u8g_dev_ssd1306_128x64_fn+0x8a>
+     cde:	43 e8       	ldi	r20, 0x83	; 131
+     ce0:	50 e0       	ldi	r21, 0x00	; 0
+          return 0;
+        u8g_SetChipSelect(u8g, dev, 0);
+     ce2:	02 c0       	rjmp	.+4      	; 0xce8 <u8g_dev_ssd1306_128x64_fn+0x80>
+     ce4:	48 e7       	ldi	r20, 0x78	; 120
+     ce6:	50 e0       	ldi	r21, 0x00	; 0
+     ce8:	be 01       	movw	r22, r28
+     cea:	c8 01       	movw	r24, r16
+      }
+      break;
+     cec:	5c d4       	rcall	.+2232   	; 0x15a6 <u8g_WriteEscSeqP>
+    case U8G_DEV_MSG_SLEEP_ON:
+      u8g_WriteEscSeqP(u8g, dev, u8g_dev_ssd13xx_sleep_on);    
+     cee:	81 e0       	ldi	r24, 0x01	; 1
+     cf0:	07 c0       	rjmp	.+14     	; 0xd00 <u8g_dev_ssd1306_128x64_fn+0x98>
+     cf2:	96 01       	movw	r18, r12
+      return 1;
+    case U8G_DEV_MSG_SLEEP_OFF:
+      u8g_WriteEscSeqP(u8g, dev, u8g_dev_ssd13xx_sleep_off);    
+     cf4:	4b 2d       	mov	r20, r11
+     cf6:	be 01       	movw	r22, r28
+     cf8:	c8 01       	movw	r24, r16
+     cfa:	60 d3       	rcall	.+1728   	; 0x13bc <u8g_dev_pb8v1_base_fn>
+     cfc:	01 c0       	rjmp	.+2      	; 0xd00 <u8g_dev_ssd1306_128x64_fn+0x98>
+     cfe:	80 e0       	ldi	r24, 0x00	; 0
+      return 1;
+     d00:	cd b7       	in	r28, 0x3d	; 61
+     d02:	de b7       	in	r29, 0x3e	; 62
+  }
+  return u8g_dev_pb8v1_base_fn(u8g, dev, msg, arg);
+     d04:	e9 e0       	ldi	r30, 0x09	; 9
+     d06:	47 c5       	rjmp	.+2702   	; 0x1796 <__epilogue_restores__+0x12>
+
+00000d08 <u8g_font_get_word>:
+
+static uint16_t u8g_font_get_word(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE; 
+static uint16_t u8g_font_get_word(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+    uint16_t pos;
+    font += offset;
+     d08:	fc 01       	movw	r30, r24
+     d0a:	e6 0f       	add	r30, r22
+     d0c:	f1 1d       	adc	r31, r1
+    pos = u8g_pgm_read( (u8g_pgm_uint8_t *)font );
+     d0e:	84 91       	lpm	r24, Z
+     d10:	90 e0       	ldi	r25, 0x00	; 0
+    font++;
+    pos <<= 8;
+     d12:	98 2f       	mov	r25, r24
+     d14:	88 27       	eor	r24, r24
+static uint16_t u8g_font_get_word(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+    uint16_t pos;
+    font += offset;
+    pos = u8g_pgm_read( (u8g_pgm_uint8_t *)font );
+    font++;
+     d16:	31 96       	adiw	r30, 0x01	; 1
+    pos <<= 8;
+    pos += u8g_pgm_read( (u8g_pgm_uint8_t *)font);
+     d18:	e4 91       	lpm	r30, Z
+    return pos;
+}
+     d1a:	8e 0f       	add	r24, r30
+     d1c:	91 1d       	adc	r25, r1
+     d1e:	08 95       	ret
+
+00000d20 <u8g_font_GetFormat>:
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     d20:	fc 01       	movw	r30, r24
+     d22:	84 91       	lpm	r24, Z
+
+static uint8_t u8g_font_GetFormat(const u8g_fntpgm_uint8_t *font) U8G_NOINLINE;
+static uint8_t u8g_font_GetFormat(const u8g_fntpgm_uint8_t *font)
+{
+  return u8g_font_get_byte(font, 0);
+}
+     d24:	08 95       	ret
+
+00000d26 <u8g_font_GetFontGlyphStructureSize>:
+
+static uint8_t u8g_font_GetFontGlyphStructureSize(const u8g_fntpgm_uint8_t *font) U8G_NOINLINE;
+static uint8_t u8g_font_GetFontGlyphStructureSize(const u8g_fntpgm_uint8_t *font)
+{
+  switch(u8g_font_GetFormat(font))
+     d26:	fc df       	rcall	.-8      	; 0xd20 <u8g_font_GetFormat>
+     d28:	88 23       	and	r24, r24
+     d2a:	11 f0       	breq	.+4      	; 0xd30 <u8g_font_GetFontGlyphStructureSize+0xa>
+     d2c:	82 30       	cpi	r24, 0x02	; 2
+     d2e:	11 f4       	brne	.+4      	; 0xd34 <u8g_font_GetFontGlyphStructureSize+0xe>
+     d30:	86 e0       	ldi	r24, 0x06	; 6
+  {
+    case 0: return 6;
+     d32:	08 95       	ret
+     d34:	83 e0       	ldi	r24, 0x03	; 3
+    case 1: return 3;
+     d36:	08 95       	ret
+
+00000d38 <u8g_font_calc_vref_font>:
+/* callback procedures to correct the y position */
+
+u8g_uint_t u8g_font_calc_vref_font(u8g_t *u8g)
+{
+  return 0;
+}
+     d38:	80 e0       	ldi	r24, 0x00	; 0
+     d3a:	08 95       	ret
+
+00000d3c <u8g_font_GetEncoding65Pos>:
+}
+
+uint16_t u8g_font_GetEncoding65Pos(const void *font) U8G_NOINLINE;
+uint16_t u8g_font_GetEncoding65Pos(const void *font)
+{
+    return u8g_font_get_word(font, 6);
+     d3c:	66 e0       	ldi	r22, 0x06	; 6
+     d3e:	e4 cf       	rjmp	.-56     	; 0xd08 <u8g_font_get_word>
+
+00000d40 <u8g_font_GetEncoding97Pos>:
+}
+
+uint16_t u8g_font_GetEncoding97Pos(const void *font) U8G_NOINLINE;
+uint16_t u8g_font_GetEncoding97Pos(const void *font)
+{
+    return u8g_font_get_word(font, 8);
+     d40:	68 e0       	ldi	r22, 0x08	; 8
+     d42:	e2 cf       	rjmp	.-60     	; 0xd08 <u8g_font_get_word>
+
+00000d44 <u8g_font_GetFontStartEncoding>:
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     d44:	0a 96       	adiw	r24, 0x0a	; 10
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     d46:	fc 01       	movw	r30, r24
+     d48:	84 91       	lpm	r24, Z
+}
+
+uint8_t u8g_font_GetFontStartEncoding(const void *font)
+{
+  return u8g_font_get_byte(font, 10);
+}
+     d4a:	08 95       	ret
+
+00000d4c <u8g_font_GetFontEndEncoding>:
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     d4c:	0b 96       	adiw	r24, 0x0b	; 11
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     d4e:	fc 01       	movw	r30, r24
+     d50:	84 91       	lpm	r24, Z
+}
+
+uint8_t u8g_font_GetFontEndEncoding(const void *font)
+{
+  return u8g_font_get_byte(font, 11);
+}
+     d52:	08 95       	ret
+
+00000d54 <u8g_GetGlyph>:
+/*
+  Find (with some speed optimization) and return a pointer to the glyph data structure
+  Also uncompress (format 1) and copy the content of the data structure to the u8g structure
+*/
+u8g_glyph_t u8g_GetGlyph(u8g_t *u8g, uint8_t requested_encoding)
+{
+     d54:	a0 e0       	ldi	r26, 0x00	; 0
+     d56:	b0 e0       	ldi	r27, 0x00	; 0
+     d58:	ef ea       	ldi	r30, 0xAF	; 175
+     d5a:	f6 e0       	ldi	r31, 0x06	; 6
+     d5c:	ff c4       	rjmp	.+2558   	; 0x175c <__prologue_saves__+0x10>
+     d5e:	ec 01       	movw	r28, r24
+     d60:	d6 2e       	mov	r13, r22
+     d62:	0c 81       	ldd	r16, Y+4	; 0x04
+  uint8_t *p = (uint8_t *)(u8g->font);
+     d64:	1d 81       	ldd	r17, Y+5	; 0x05
+     d66:	c8 01       	movw	r24, r16
+  uint8_t font_format = u8g_font_GetFormat(u8g->font);
+     d68:	db df       	rcall	.-74     	; 0xd20 <u8g_font_GetFormat>
+     d6a:	e8 2e       	mov	r14, r24
+     d6c:	c8 01       	movw	r24, r16
+     d6e:	db df       	rcall	.-74     	; 0xd26 <u8g_font_GetFontGlyphStructureSize>
+  uint8_t data_structure_size = u8g_font_GetFontGlyphStructureSize(u8g->font);
+     d70:	a8 2e       	mov	r10, r24
+     d72:	21 e0       	ldi	r18, 0x01	; 1
+     d74:	e2 16       	cp	r14, r18
+     d76:	19 f0       	breq	.+6      	; 0xd7e <u8g_GetGlyph+0x2a>
+  uint8_t start, end;
+  uint16_t pos;
+  uint8_t i;
+  uint8_t mask = 255;
+
+  if ( font_format == 1 )
+     d78:	cc 24       	eor	r12, r12
+     d7a:	ca 94       	dec	r12
+     d7c:	02 c0       	rjmp	.+4      	; 0xd82 <u8g_GetGlyph+0x2e>
+  uint8_t font_format = u8g_font_GetFormat(u8g->font);
+  uint8_t data_structure_size = u8g_font_GetFontGlyphStructureSize(u8g->font);
+  uint8_t start, end;
+  uint16_t pos;
+  uint8_t i;
+  uint8_t mask = 255;
+     d7e:	6f e0       	ldi	r22, 0x0F	; 15
+     d80:	c6 2e       	mov	r12, r22
+     d82:	c8 01       	movw	r24, r16
+
+  if ( font_format == 1 )
+    mask = 15;
+     d84:	df df       	rcall	.-66     	; 0xd44 <u8g_font_GetFontStartEncoding>
+     d86:	f8 2e       	mov	r15, r24
+  
+  start = u8g_font_GetFontStartEncoding(u8g->font);
+     d88:	c8 01       	movw	r24, r16
+     d8a:	e0 df       	rcall	.-64     	; 0xd4c <u8g_font_GetFontEndEncoding>
+     d8c:	b8 2e       	mov	r11, r24
+     d8e:	c8 01       	movw	r24, r16
+  end = u8g_font_GetFontEndEncoding(u8g->font);
+     d90:	d7 df       	rcall	.-82     	; 0xd40 <u8g_font_GetEncoding97Pos>
+     d92:	e0 e6       	ldi	r30, 0x60	; 96
+     d94:	ed 15       	cp	r30, r13
+     d96:	40 f4       	brcc	.+16     	; 0xda8 <u8g_GetGlyph+0x54>
+
+  pos = u8g_font_GetEncoding97Pos(u8g->font);
+     d98:	00 97       	sbiw	r24, 0x00	; 0
+     d9a:	31 f0       	breq	.+12     	; 0xda8 <u8g_GetGlyph+0x54>
+     d9c:	98 01       	movw	r18, r16
+  if ( requested_encoding >= 97 && pos > 0 )
+     d9e:	28 0f       	add	r18, r24
+     da0:	39 1f       	adc	r19, r25
+     da2:	51 e6       	ldi	r21, 0x61	; 97
+     da4:	f5 2e       	mov	r15, r21
+     da6:	0f c0       	rjmp	.+30     	; 0xdc6 <u8g_GetGlyph+0x72>
+  {
+    p+= pos;
+     da8:	c8 01       	movw	r24, r16
+     daa:	c8 df       	rcall	.-112    	; 0xd3c <u8g_font_GetEncoding65Pos>
+     dac:	f0 e4       	ldi	r31, 0x40	; 64
+    start = 97;
+     dae:	98 01       	movw	r18, r16
+     db0:	fd 15       	cp	r31, r13
+     db2:	38 f4       	brcc	.+14     	; 0xdc2 <u8g_GetGlyph+0x6e>
+  }
+  else 
+  {
+    pos = u8g_font_GetEncoding65Pos(u8g->font);
+     db4:	00 97       	sbiw	r24, 0x00	; 0
+     db6:	29 f0       	breq	.+10     	; 0xdc2 <u8g_GetGlyph+0x6e>
+     db8:	28 0f       	add	r18, r24
+    if ( requested_encoding >= 65 && pos > 0 )
+     dba:	39 1f       	adc	r19, r25
+    {
+      p+= pos;
+     dbc:	41 e4       	ldi	r20, 0x41	; 65
+    start = 97;
+  }
+  else 
+  {
+    pos = u8g_font_GetEncoding65Pos(u8g->font);
+    if ( requested_encoding >= 65 && pos > 0 )
+     dbe:	f4 2e       	mov	r15, r20
+     dc0:	02 c0       	rjmp	.+4      	; 0xdc6 <u8g_GetGlyph+0x72>
+     dc2:	2f 5e       	subi	r18, 0xEF	; 239
+     dc4:	3f 4f       	sbci	r19, 0xFF	; 255
+    {
+      p+= pos;
+     dc6:	bd 14       	cp	r11, r13
+     dc8:	40 f4       	brcc	.+16     	; 0xdda <u8g_GetGlyph+0x86>
+      start = 65;
+     dca:	18 8a       	std	Y+16, r1	; 0x10
+     dcc:	1b 8a       	std	Y+19, r1	; 0x13
+     dce:	1c 8a       	std	Y+20, r1	; 0x14
+    }
+    else
+      p += U8G_FONT_DATA_STRUCT_SIZE;       /* skip font general information */  
+     dd0:	19 8a       	std	Y+17, r1	; 0x11
+     dd2:	1a 8a       	std	Y+18, r1	; 0x12
+  }
+  
+  if ( requested_encoding > end )
+     dd4:	80 e0       	ldi	r24, 0x00	; 0
+     dd6:	90 e0       	ldi	r25, 0x00	; 0
+}
+
+//void u8g_FillEmptyGlyphCache(u8g_t *u8g) U8G_NOINLINE;
+static void u8g_FillEmptyGlyphCache(u8g_t *u8g)
+{
+  u8g->glyph_dx = 0;
+     dd8:	4c c0       	rjmp	.+152    	; 0xe72 <u8g_GetGlyph+0x11e>
+  u8g->glyph_width = 0;
+     dda:	bf 14       	cp	r11, r15
+  u8g->glyph_height = 0;
+     ddc:	b0 f3       	brcs	.-20     	; 0xdca <u8g_GetGlyph+0x76>
+  u8g->glyph_x = 0;
+     dde:	4a 2d       	mov	r20, r10
+  u8g->glyph_y = 0;
+     de0:	50 e0       	ldi	r21, 0x00	; 0
+  }
+  
+  if ( requested_encoding > end )
+  {
+    u8g_FillEmptyGlyphCache(u8g);
+    return NULL;                      /* not found */
+     de2:	f9 01       	movw	r30, r18
+     de4:	84 91       	lpm	r24, Z
+     de6:	8f 3f       	cpi	r24, 0xFF	; 255
+  }
+  
+  i = start;
+  if ( i <= end )
+     de8:	19 f4       	brne	.+6      	; 0xdf0 <u8g_GetGlyph+0x9c>
+     dea:	2f 5f       	subi	r18, 0xFF	; 255
+        {
+          u8g_CopyGlyphDataToCache(u8g, p);
+          return p;
+        }
+        p += u8g_pgm_read( ((u8g_pgm_uint8_t *)(p)) + 2 ) & mask;
+        p += data_structure_size;
+     dec:	3f 4f       	sbci	r19, 0xFF	; 255
+     dee:	3c c0       	rjmp	.+120    	; 0xe68 <u8g_GetGlyph+0x114>
+  i = start;
+  if ( i <= end )
+  {
+    for(;;)
+    {
+      if ( u8g_pgm_read((u8g_pgm_uint8_t *)(p)) == 255 )
+     df0:	fd 10       	cpse	r15, r13
+     df2:	32 c0       	rjmp	.+100    	; 0xe58 <u8g_GetGlyph+0x104>
+     df4:	a9 01       	movw	r20, r18
+     df6:	4f 5f       	subi	r20, 0xFF	; 255
+      {
+        p += 1;
+     df8:	5f 4f       	sbci	r21, 0xFF	; 255
+     dfa:	ee 20       	and	r14, r14
+     dfc:	19 f0       	breq	.+6      	; 0xe04 <u8g_GetGlyph+0xb0>
+      }
+      else
+      {
+        if ( i == requested_encoding )
+     dfe:	f2 e0       	ldi	r31, 0x02	; 2
+     e00:	ef 12       	cpse	r14, r31
+     e02:	13 c0       	rjmp	.+38     	; 0xe2a <u8g_GetGlyph+0xd6>
+     e04:	f9 01       	movw	r30, r18
+     e06:	84 91       	lpm	r24, Z
+/* glyph handling */
+
+static void u8g_CopyGlyphDataToCache(u8g_t *u8g, u8g_glyph_t g)
+{
+  uint8_t tmp;
+  switch( u8g_font_GetFormat(u8g->font) )
+     e08:	8b 8b       	std	Y+19, r24	; 0x13
+     e0a:	fa 01       	movw	r30, r20
+     e0c:	44 91       	lpm	r20, Z
+     e0e:	4c 8b       	std	Y+20, r20	; 0x14
+     e10:	f9 01       	movw	r30, r18
+    3             DWIDTH                                          signed
+    4             BBX xoffset                                    signed
+    5             BBX yoffset                                    signed
+  byte 0 == 255 indicates empty glyph
+  */
+      u8g->glyph_width =  u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 0 );
+     e12:	33 96       	adiw	r30, 0x03	; 3
+     e14:	e4 91       	lpm	r30, Z
+     e16:	e8 8b       	std	Y+16, r30	; 0x10
+      u8g->glyph_height =  u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 1 );
+     e18:	f9 01       	movw	r30, r18
+     e1a:	34 96       	adiw	r30, 0x04	; 4
+     e1c:	e4 91       	lpm	r30, Z
+      u8g->glyph_dx =  u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 3 );
+     e1e:	e9 8b       	std	Y+17, r30	; 0x11
+     e20:	f9 01       	movw	r30, r18
+     e22:	35 96       	adiw	r30, 0x05	; 5
+     e24:	e4 91       	lpm	r30, Z
+      u8g->glyph_x =  u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 4 );
+     e26:	ea 8b       	std	Y+18, r30	; 0x12
+     e28:	15 c0       	rjmp	.+42     	; 0xe54 <u8g_GetGlyph+0x100>
+     e2a:	98 2f       	mov	r25, r24
+     e2c:	9f 70       	andi	r25, 0x0F	; 15
+      u8g->glyph_y =  u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 5 );
+     e2e:	92 50       	subi	r25, 0x02	; 2
+     e30:	9a 8b       	std	Y+18, r25	; 0x12
+     e32:	82 95       	swap	r24
+     e34:	8f 70       	andi	r24, 0x0F	; 15
+     e36:	89 8b       	std	Y+17, r24	; 0x11
+  2             DWIDTH                                          signed --> upper  4 Bit
+  byte 0 == 255 indicates empty glyph
+      */
+    
+      tmp = u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 0 );
+      u8g->glyph_y =  tmp & 15;
+     e38:	fa 01       	movw	r30, r20
+     e3a:	44 91       	lpm	r20, Z
+      u8g->glyph_y-=2;
+     e3c:	84 2f       	mov	r24, r20
+     e3e:	8f 70       	andi	r24, 0x0F	; 15
+      tmp >>= 4;
+     e40:	8c 8b       	std	Y+20, r24	; 0x14
+     e42:	42 95       	swap	r20
+      u8g->glyph_x =  tmp;
+     e44:	4f 70       	andi	r20, 0x0F	; 15
+    
+      tmp = u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 1 );
+     e46:	4b 8b       	std	Y+19, r20	; 0x13
+     e48:	f9 01       	movw	r30, r18
+      u8g->glyph_height =  tmp & 15;
+     e4a:	32 96       	adiw	r30, 0x02	; 2
+     e4c:	e4 91       	lpm	r30, Z
+     e4e:	e2 95       	swap	r30
+      tmp >>= 4;
+     e50:	ef 70       	andi	r30, 0x0F	; 15
+     e52:	e8 8b       	std	Y+16, r30	; 0x10
+      u8g->glyph_width =  tmp;
+     e54:	c9 01       	movw	r24, r18
+      
+      tmp = u8g_pgm_read( ((u8g_pgm_uint8_t *)g) + 2 );
+     e56:	0d c0       	rjmp	.+26     	; 0xe72 <u8g_GetGlyph+0x11e>
+     e58:	f9 01       	movw	r30, r18
+     e5a:	32 96       	adiw	r30, 0x02	; 2
+      tmp >>= 4;
+     e5c:	e4 91       	lpm	r30, Z
+     e5e:	ec 21       	and	r30, r12
+      u8g->glyph_dx = tmp;
+     e60:	2e 0f       	add	r18, r30
+     e62:	31 1d       	adc	r19, r1
+     e64:	24 0f       	add	r18, r20
+        if ( i == requested_encoding )
+        {
+          u8g_CopyGlyphDataToCache(u8g, p);
+          return p;
+        }
+        p += u8g_pgm_read( ((u8g_pgm_uint8_t *)(p)) + 2 ) & mask;
+     e66:	35 1f       	adc	r19, r21
+     e68:	fb 14       	cp	r15, r11
+     e6a:	09 f4       	brne	.+2      	; 0xe6e <u8g_GetGlyph+0x11a>
+     e6c:	ae cf       	rjmp	.-164    	; 0xdca <u8g_GetGlyph+0x76>
+     e6e:	f3 94       	inc	r15
+     e70:	b8 cf       	rjmp	.-144    	; 0xde2 <u8g_GetGlyph+0x8e>
+        p += data_structure_size;
+     e72:	cd b7       	in	r28, 0x3d	; 61
+     e74:	de b7       	in	r29, 0x3e	; 62
+      }
+      if ( i == end )
+     e76:	ea e0       	ldi	r30, 0x0A	; 10
+     e78:	8d c4       	rjmp	.+2330   	; 0x1794 <__epilogue_restores__+0x10>
+
+00000e7a <u8g_draw_glyph>:
+  return u8g->glyph_dx;
+}
+#endif
+
+int8_t u8g_draw_glyph(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, uint8_t encoding)
+{
+     e7a:	4f 92       	push	r4
+     e7c:	5f 92       	push	r5
+     e7e:	7f 92       	push	r7
+     e80:	8f 92       	push	r8
+     e82:	9f 92       	push	r9
+     e84:	af 92       	push	r10
+     e86:	bf 92       	push	r11
+     e88:	cf 92       	push	r12
+     e8a:	df 92       	push	r13
+     e8c:	ef 92       	push	r14
+     e8e:	ff 92       	push	r15
+     e90:	0f 93       	push	r16
+     e92:	1f 93       	push	r17
+     e94:	cf 93       	push	r28
+     e96:	df 93       	push	r29
+     e98:	1f 92       	push	r1
+     e9a:	cd b7       	in	r28, 0x3d	; 61
+     e9c:	de b7       	in	r29, 0x3e	; 62
+     e9e:	2c 01       	movw	r4, r24
+     ea0:	16 2f       	mov	r17, r22
+     ea2:	74 2e       	mov	r7, r20
+  uint8_t w, h;
+  uint8_t i, j;
+  u8g_uint_t ix, iy;
+
+  {
+    u8g_glyph_t g = u8g_GetGlyph(u8g, encoding);
+     ea4:	62 2f       	mov	r22, r18
+     ea6:	56 df       	rcall	.-340    	; 0xd54 <u8g_GetGlyph>
+     ea8:	6c 01       	movw	r12, r24
+     eaa:	00 97       	sbiw	r24, 0x00	; 0
+    if ( g == NULL  )
+     eac:	09 f4       	brne	.+2      	; 0xeb0 <u8g_draw_glyph+0x36>
+     eae:	3b c0       	rjmp	.+118    	; 0xf26 <u8g_draw_glyph+0xac>
+     eb0:	f2 01       	movw	r30, r4
+
+
+/* return the data start for a font and the glyph pointer */
+static uint8_t *u8g_font_GetGlyphDataStart(const void *font, u8g_glyph_t g)
+{
+  return ((u8g_fntpgm_uint8_t *)g) + u8g_font_GetFontGlyphStructureSize(font);
+     eb2:	84 81       	ldd	r24, Z+4	; 0x04
+     eb4:	95 81       	ldd	r25, Z+5	; 0x05
+     eb6:	37 df       	rcall	.-402    	; 0xd26 <u8g_font_GetFontGlyphStructureSize>
+     eb8:	f8 2e       	mov	r15, r24
+     eba:	f2 01       	movw	r30, r4
+     ebc:	83 88       	ldd	r8, Z+19	; 0x13
+    if ( g == NULL  )
+      return 0;
+    data = u8g_font_GetGlyphDataStart(u8g->font, g);
+  }
+  
+  w = u8g->glyph_width;
+     ebe:	04 89       	ldd	r16, Z+20	; 0x14
+     ec0:	91 88       	ldd	r9, Z+17	; 0x11
+  h = u8g->glyph_height;
+     ec2:	91 0e       	add	r9, r17
+  
+  x += u8g->glyph_x;
+     ec4:	82 89       	ldd	r24, Z+18	; 0x12
+     ec6:	78 1a       	sub	r7, r24
+  y -= u8g->glyph_y;
+  y--;
+  
+  if ( u8g_IsBBXIntersection(u8g, x, y-h+1, w, h) == 0 )
+     ec8:	17 2d       	mov	r17, r7
+     eca:	10 1b       	sub	r17, r16
+     ecc:	28 2d       	mov	r18, r8
+     ece:	41 2f       	mov	r20, r17
+     ed0:	69 2d       	mov	r22, r9
+     ed2:	c2 01       	movw	r24, r4
+     ed4:	00 d3       	rcall	.+1536   	; 0x14d6 <u8g_IsBBXIntersection>
+     ed6:	88 23       	and	r24, r24
+     ed8:	19 f1       	breq	.+70     	; 0xf20 <u8g_draw_glyph+0xa6>
+     eda:	cf 0c       	add	r12, r15
+     edc:	d1 1c       	adc	r13, r1
+     ede:	f7 e0       	ldi	r31, 0x07	; 7
+
+
+/* return the data start for a font and the glyph pointer */
+static uint8_t *u8g_font_GetGlyphDataStart(const void *font, u8g_glyph_t g)
+{
+  return ((u8g_fntpgm_uint8_t *)g) + u8g_font_GetFontGlyphStructureSize(font);
+     ee0:	8f 0e       	add	r8, r31
+     ee2:	86 94       	lsr	r8
+  
+  if ( u8g_IsBBXIntersection(u8g, x, y-h+1, w, h) == 0 )
+    return u8g->glyph_dx;
+
+  /* now, w is reused as bytes per line */
+  w += 7;
+     ee4:	86 94       	lsr	r8
+     ee6:	86 94       	lsr	r8
+  w /= 8;
+     ee8:	a8 2c       	mov	r10, r8
+     eea:	b1 2c       	mov	r11, r1
+     eec:	17 15       	cp	r17, r7
+     eee:	c1 f0       	breq	.+48     	; 0xf20 <u8g_draw_glyph+0xa6>
+     ef0:	39 2d       	mov	r19, r9
+  
+  iy = y;
+  iy -= h;
+  iy++;
+
+  for( j = 0; j < h; j++ )
+     ef2:	76 01       	movw	r14, r12
+     ef4:	8e 2d       	mov	r24, r14
+     ef6:	8c 19       	sub	r24, r12
+     ef8:	88 15       	cp	r24, r8
+     efa:	70 f4       	brcc	.+28     	; 0xf18 <u8g_draw_glyph+0x9e>
+     efc:	f7 01       	movw	r30, r14
+  {
+    ix = x;
+    for( i = 0; i < w; i++ )
+     efe:	04 91       	lpm	r16, Z
+     f00:	20 e0       	ldi	r18, 0x00	; 0
+    {
+      u8g_Draw8Pixel(u8g, ix, iy, 0, u8g_pgm_read(data));
+     f02:	41 2f       	mov	r20, r17
+     f04:	63 2f       	mov	r22, r19
+     f06:	c2 01       	movw	r24, r4
+     f08:	39 83       	std	Y+1, r19	; 0x01
+     f0a:	d6 d1       	rcall	.+940    	; 0x12b8 <u8g_Draw8Pixel>
+     f0c:	ff ef       	ldi	r31, 0xFF	; 255
+     f0e:	ef 1a       	sub	r14, r31
+     f10:	ff 0a       	sbc	r15, r31
+     f12:	39 81       	ldd	r19, Y+1	; 0x01
+      data++;
+     f14:	38 5f       	subi	r19, 0xF8	; 248
+     f16:	ee cf       	rjmp	.-36     	; 0xef4 <u8g_draw_glyph+0x7a>
+     f18:	ca 0c       	add	r12, r10
+      ix+=8;
+     f1a:	db 1c       	adc	r13, r11
+     f1c:	1f 5f       	subi	r17, 0xFF	; 255
+     f1e:	e6 cf       	rjmp	.-52     	; 0xeec <u8g_draw_glyph+0x72>
+     f20:	f2 01       	movw	r30, r4
+     f22:	80 89       	ldd	r24, Z+16	; 0x10
+    }
+    iy++;
+     f24:	01 c0       	rjmp	.+2      	; 0xf28 <u8g_draw_glyph+0xae>
+     f26:	80 e0       	ldi	r24, 0x00	; 0
+  }
+  return u8g->glyph_dx;
+     f28:	0f 90       	pop	r0
+     f2a:	df 91       	pop	r29
+     f2c:	cf 91       	pop	r28
+  u8g_uint_t ix, iy;
+
+  {
+    u8g_glyph_t g = u8g_GetGlyph(u8g, encoding);
+    if ( g == NULL  )
+      return 0;
+     f2e:	1f 91       	pop	r17
+      ix+=8;
+    }
+    iy++;
+  }
+  return u8g->glyph_dx;
+}
+     f30:	0f 91       	pop	r16
+     f32:	ff 90       	pop	r15
+     f34:	ef 90       	pop	r14
+     f36:	df 90       	pop	r13
+     f38:	cf 90       	pop	r12
+     f3a:	bf 90       	pop	r11
+     f3c:	af 90       	pop	r10
+     f3e:	9f 90       	pop	r9
+     f40:	8f 90       	pop	r8
+     f42:	7f 90       	pop	r7
+     f44:	5f 90       	pop	r5
+     f46:	4f 90       	pop	r4
+     f48:	08 95       	ret
+
+00000f4a <u8g_DrawStr>:
+/*========================================================================*/
+/* string drawing procedures */
+
+
+u8g_uint_t u8g_DrawStr(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, const char *s)
+{
+     f4a:	af 92       	push	r10
+     f4c:	bf 92       	push	r11
+     f4e:	df 92       	push	r13
+     f50:	ef 92       	push	r14
+     f52:	ff 92       	push	r15
+     f54:	0f 93       	push	r16
+     f56:	1f 93       	push	r17
+     f58:	cf 93       	push	r28
+     f5a:	df 93       	push	r29
+     f5c:	00 d0       	rcall	.+0      	; 0xf5e <u8g_DrawStr+0x14>
+     f5e:	cd b7       	in	r28, 0x3d	; 61
+     f60:	de b7       	in	r29, 0x3e	; 62
+     f62:	8c 01       	movw	r16, r24
+     f64:	e6 2e       	mov	r14, r22
+     f66:	f4 2e       	mov	r15, r20
+  int8_t d;
+  
+  //u8g_uint_t u8g_GetStrWidth(u8g, s);
+  //u8g_font_GetFontAscent(u8g->font)-u8g_font_GetFontDescent(u8g->font);
+  
+  y += u8g->font_calc_vref(u8g);
+     f68:	dc 01       	movw	r26, r24
+     f6a:	55 96       	adiw	r26, 0x15	; 21
+     f6c:	ed 91       	ld	r30, X+
+     f6e:	fc 91       	ld	r31, X
+     f70:	56 97       	sbiw	r26, 0x16	; 22
+     f72:	29 83       	std	Y+1, r18	; 0x01
+     f74:	3a 83       	std	Y+2, r19	; 0x02
+     f76:	09 95       	icall
+     f78:	f8 0e       	add	r15, r24
+     f7a:	29 81       	ldd	r18, Y+1	; 0x01
+     f7c:	a2 2e       	mov	r10, r18
+     f7e:	3a 81       	ldd	r19, Y+2	; 0x02
+     f80:	b3 2e       	mov	r11, r19
+/* string drawing procedures */
+
+
+u8g_uint_t u8g_DrawStr(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, const char *s)
+{
+  u8g_uint_t t = 0;
+     f82:	d1 2c       	mov	r13, r1
+  //u8g_uint_t u8g_GetStrWidth(u8g, s);
+  //u8g_font_GetFontAscent(u8g->font)-u8g_font_GetFontDescent(u8g->font);
+  
+  y += u8g->font_calc_vref(u8g);
+  
+  while( *s != '\0' )
+     f84:	f5 01       	movw	r30, r10
+     f86:	21 91       	ld	r18, Z+
+     f88:	5f 01       	movw	r10, r30
+     f8a:	22 23       	and	r18, r18
+     f8c:	39 f0       	breq	.+14     	; 0xf9c <u8g_DrawStr+0x52>
+  {
+    d = u8g_draw_glyph(u8g, x, y, *s);
+     f8e:	4f 2d       	mov	r20, r15
+     f90:	6e 2d       	mov	r22, r14
+     f92:	c8 01       	movw	r24, r16
+     f94:	72 df       	rcall	.-284    	; 0xe7a <u8g_draw_glyph>
+     f96:	e8 0e       	add	r14, r24
+    x += d;
+     f98:	d8 0e       	add	r13, r24
+    t += d;
+     f9a:	f4 cf       	rjmp	.-24     	; 0xf84 <u8g_DrawStr+0x3a>
+     f9c:	8d 2d       	mov	r24, r13
+    s++;
+  }
+  return t;
+}
+     f9e:	0f 90       	pop	r0
+     fa0:	0f 90       	pop	r0
+     fa2:	df 91       	pop	r29
+     fa4:	cf 91       	pop	r28
+     fa6:	1f 91       	pop	r17
+     fa8:	0f 91       	pop	r16
+     faa:	ff 90       	pop	r15
+     fac:	ef 90       	pop	r14
+     fae:	df 90       	pop	r13
+     fb0:	bf 90       	pop	r11
+     fb2:	af 90       	pop	r10
+     fb4:	08 95       	ret
+
+00000fb6 <u8g_UpdateRefHeight>:
+
+/*========================================================================*/
+/* set ascent/descent for reference point calculation */
+
+void u8g_UpdateRefHeight(u8g_t *u8g)
+{
+     fb6:	dc 01       	movw	r26, r24
+  uint16_t ls;
+  if ( u8g->font == NULL )
+     fb8:	14 96       	adiw	r26, 0x04	; 4
+     fba:	8d 91       	ld	r24, X+
+     fbc:	9c 91       	ld	r25, X
+     fbe:	15 97       	sbiw	r26, 0x05	; 5
+     fc0:	00 97       	sbiw	r24, 0x00	; 0
+     fc2:	09 f4       	brne	.+2      	; 0xfc6 <u8g_UpdateRefHeight+0x10>
+     fc4:	3f c0       	rjmp	.+126    	; 0x1044 <u8g_UpdateRefHeight+0x8e>
+    return;
+  if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_TEXT )
+     fc6:	57 96       	adiw	r26, 0x17	; 23
+     fc8:	2c 91       	ld	r18, X
+     fca:	57 97       	sbiw	r26, 0x17	; 23
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     fcc:	fc 01       	movw	r30, r24
+void u8g_UpdateRefHeight(u8g_t *u8g)
+{
+  uint16_t ls;
+  if ( u8g->font == NULL )
+    return;
+  if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_TEXT )
+     fce:	21 11       	cpse	r18, r1
+     fd0:	08 c0       	rjmp	.+16     	; 0xfe2 <u8g_UpdateRefHeight+0x2c>
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     fd2:	35 96       	adiw	r30, 0x05	; 5
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     fd4:	e4 91       	lpm	r30, Z
+  uint16_t ls;
+  if ( u8g->font == NULL )
+    return;
+  if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_TEXT )
+  {
+    u8g->font_ref_ascent = u8g_font_GetCapitalAHeight(u8g->font);
+     fd6:	58 96       	adiw	r26, 0x18	; 24
+     fd8:	ec 93       	st	X, r30
+     fda:	58 97       	sbiw	r26, 0x18	; 24
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     fdc:	fc 01       	movw	r30, r24
+     fde:	3c 96       	adiw	r30, 0x0c	; 12
+     fe0:	11 c0       	rjmp	.+34     	; 0x1004 <u8g_UpdateRefHeight+0x4e>
+  if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_TEXT )
+  {
+    u8g->font_ref_ascent = u8g_font_GetCapitalAHeight(u8g->font);
+    u8g->font_ref_descent = u8g_font_GetLowerGDescent(u8g->font);
+  }
+  else if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_XTEXT )
+     fe2:	21 30       	cpi	r18, 0x01	; 1
+     fe4:	41 f4       	brne	.+16     	; 0xff6 <u8g_UpdateRefHeight+0x40>
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     fe6:	3f 96       	adiw	r30, 0x0f	; 15
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     fe8:	e4 91       	lpm	r30, Z
+    u8g->font_ref_ascent = u8g_font_GetCapitalAHeight(u8g->font);
+    u8g->font_ref_descent = u8g_font_GetLowerGDescent(u8g->font);
+  }
+  else if ( u8g->font_height_mode == U8G_FONT_HEIGHT_MODE_XTEXT )
+  {
+    u8g->font_ref_ascent = u8g_font_GetFontXAscent(u8g->font);
+     fea:	58 96       	adiw	r26, 0x18	; 24
+     fec:	ec 93       	st	X, r30
+     fee:	58 97       	sbiw	r26, 0x18	; 24
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+     ff0:	fc 01       	movw	r30, r24
+     ff2:	70 96       	adiw	r30, 0x10	; 16
+     ff4:	07 c0       	rjmp	.+14     	; 0x1004 <u8g_UpdateRefHeight+0x4e>
+     ff6:	3d 96       	adiw	r30, 0x0d	; 13
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+     ff8:	e4 91       	lpm	r30, Z
+    u8g->font_ref_ascent = u8g_font_GetFontXAscent(u8g->font);
+    u8g->font_ref_descent = u8g_font_GetFontXDescent(u8g->font);
+  }
+  else
+  {
+    u8g->font_ref_ascent = u8g_font_GetFontAscent(u8g->font);
+     ffa:	58 96       	adiw	r26, 0x18	; 24
+     ffc:	ec 93       	st	X, r30
+     ffe:	58 97       	sbiw	r26, 0x18	; 24
+
+/* removed NOINLINE, because it leads to smaller code, might also be faster */
+//static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset) U8G_NOINLINE;
+static uint8_t u8g_font_get_byte(const u8g_fntpgm_uint8_t *font, uint8_t offset)
+{
+  font += offset;
+    1000:	fc 01       	movw	r30, r24
+    1002:	3e 96       	adiw	r30, 0x0e	; 14
+  return u8g_pgm_read( (u8g_pgm_uint8_t *)font );  
+    1004:	84 91       	lpm	r24, Z
+    u8g->font_ref_descent = u8g_font_GetFontXDescent(u8g->font);
+  }
+  else
+  {
+    u8g->font_ref_ascent = u8g_font_GetFontAscent(u8g->font);
+    u8g->font_ref_descent = u8g_font_GetFontDescent(u8g->font);
+    1006:	59 96       	adiw	r26, 0x19	; 25
+    1008:	8c 93       	st	X, r24
+    100a:	59 97       	sbiw	r26, 0x19	; 25
+  }
+  
+  ls = u8g->font_ref_ascent - u8g->font_ref_descent;
+    100c:	58 96       	adiw	r26, 0x18	; 24
+    100e:	8c 91       	ld	r24, X
+    1010:	58 97       	sbiw	r26, 0x18	; 24
+    1012:	99 27       	eor	r25, r25
+    1014:	87 fd       	sbrc	r24, 7
+    1016:	90 95       	com	r25
+    1018:	59 96       	adiw	r26, 0x19	; 25
+    101a:	2c 91       	ld	r18, X
+    101c:	59 97       	sbiw	r26, 0x19	; 25
+    101e:	82 1b       	sub	r24, r18
+    1020:	91 09       	sbc	r25, r1
+    1022:	27 fd       	sbrc	r18, 7
+    1024:	93 95       	inc	r25
+  if ( u8g->font_line_spacing_factor != 64 )
+    1026:	5a 96       	adiw	r26, 0x1a	; 26
+    1028:	2c 91       	ld	r18, X
+    102a:	5a 97       	sbiw	r26, 0x1a	; 26
+    102c:	20 34       	cpi	r18, 0x40	; 64
+    102e:	41 f0       	breq	.+16     	; 0x1040 <u8g_UpdateRefHeight+0x8a>
+  {
+    ls &= 255;
+    ls *= u8g->font_line_spacing_factor;
+    1030:	82 9f       	mul	r24, r18
+    1032:	c0 01       	movw	r24, r0
+    1034:	11 24       	eor	r1, r1
+    ls >>= 6;
+    1036:	f6 e0       	ldi	r31, 0x06	; 6
+    1038:	96 95       	lsr	r25
+    103a:	87 95       	ror	r24
+    103c:	fa 95       	dec	r31
+    103e:	e1 f7       	brne	.-8      	; 0x1038 <u8g_UpdateRefHeight+0x82>
+  }
+  u8g->line_spacing = ls;
+    1040:	5b 96       	adiw	r26, 0x1b	; 27
+    1042:	8c 93       	st	X, r24
+    1044:	08 95       	ret
+
+00001046 <u8g_SetFontPosBaseline>:
+  return 0;
+}
+
+void u8g_SetFontPosBaseline(u8g_t *u8g)
+{
+  u8g->font_calc_vref = u8g_font_calc_vref_font;
+    1046:	2c e9       	ldi	r18, 0x9C	; 156
+    1048:	36 e0       	ldi	r19, 0x06	; 6
+    104a:	fc 01       	movw	r30, r24
+    104c:	36 8b       	std	Z+22, r19	; 0x16
+    104e:	25 8b       	std	Z+21, r18	; 0x15
+    1050:	08 95       	ret
+
+00001052 <u8g_SetFont>:
+    buf.y_max = cap_a;
+  u8g_font_get_str_box_fill_args(u8g, s, &buf, x, y, width, height);
+}
+
+void u8g_SetFont(u8g_t *u8g, const u8g_fntpgm_uint8_t  *font)
+{
+    1052:	cf 93       	push	r28
+    1054:	df 93       	push	r29
+    1056:	ec 01       	movw	r28, r24
+  if ( u8g->font != font )
+    1058:	8c 81       	ldd	r24, Y+4	; 0x04
+    105a:	9d 81       	ldd	r25, Y+5	; 0x05
+    105c:	86 17       	cp	r24, r22
+    105e:	97 07       	cpc	r25, r23
+    1060:	41 f0       	breq	.+16     	; 0x1072 <u8g_SetFont+0x20>
+  {
+    u8g->font = font;
+    1062:	7d 83       	std	Y+5, r23	; 0x05
+    1064:	6c 83       	std	Y+4, r22	; 0x04
+    u8g_UpdateRefHeight(u8g);
+    1066:	ce 01       	movw	r24, r28
+    1068:	a6 df       	rcall	.-180    	; 0xfb6 <u8g_UpdateRefHeight>
+    106a:	8c e9       	ldi	r24, 0x9C	; 156
+  return 0;
+}
+
+void u8g_SetFontPosBaseline(u8g_t *u8g)
+{
+  u8g->font_calc_vref = u8g_font_calc_vref_font;
+    106c:	96 e0       	ldi	r25, 0x06	; 6
+    106e:	9e 8b       	std	Y+22, r25	; 0x16
+    1070:	8d 8b       	std	Y+21, r24	; 0x15
+    1072:	df 91       	pop	r29
+  {
+    u8g->font = font;
+    u8g_UpdateRefHeight(u8g);
+    u8g_SetFontPosBaseline(u8g);
+  }
+}
+    1074:	cf 91       	pop	r28
+    1076:	08 95       	ret
+
+00001078 <u8g_init_data>:
+  /* 9 Dec 2012: u8g_scale.c requires update of current page */
+  u8g_call_dev_fn(u8g, u8g->dev, U8G_DEV_MSG_GET_PAGE_BOX, &(u8g->current_page));
+}
+
+static void u8g_init_data(u8g_t *u8g)
+{
+    1078:	1f 93       	push	r17
+    107a:	cf 93       	push	r28
+    107c:	df 93       	push	r29
+    107e:	ec 01       	movw	r28, r24
+  u8g->font = NULL;
+    1080:	1d 82       	std	Y+5, r1	; 0x05
+    1082:	1c 82       	std	Y+4, r1	; 0x04
+  u8g->cursor_font = NULL;
+    1084:	1f 82       	std	Y+7, r1	; 0x07
+    1086:	1e 82       	std	Y+6, r1	; 0x06
+  u8g->cursor_bg_color = 0;
+    1088:	19 86       	std	Y+9, r1	; 0x09
+  u8g->cursor_fg_color = 1;
+    108a:	81 e0       	ldi	r24, 0x01	; 1
+    108c:	88 87       	std	Y+8, r24	; 0x08
+  u8g->cursor_encoding = 34;
+    108e:	82 e2       	ldi	r24, 0x22	; 34
+    1090:	8a 87       	std	Y+10, r24	; 0x0a
+  u8g->cursor_fn = (u8g_draw_cursor_fn)0;
+    1092:	1f 86       	std	Y+15, r1	; 0x0f
+    1094:	1e 86       	std	Y+14, r1	; 0x0e
+    1096:	80 e0       	ldi	r24, 0x00	; 0
+    1098:	90 e0       	ldi	r25, 0x00	; 0
+
+#if defined(U8G_WITH_PINLIST)  
+  {
+    uint8_t i;
+    for( i = 0; i < U8G_PIN_LIST_LEN; i++ )
+      u8g->pin_list[i] = U8G_PIN_NONE;
+    109a:	2f ef       	ldi	r18, 0xFF	; 255
+    109c:	fe 01       	movw	r30, r28
+    109e:	e8 0f       	add	r30, r24
+    10a0:	f9 1f       	adc	r31, r25
+    10a2:	23 a3       	std	Z+35, r18	; 0x23
+    10a4:	01 96       	adiw	r24, 0x01	; 1
+  u8g->cursor_fn = (u8g_draw_cursor_fn)0;
+
+#if defined(U8G_WITH_PINLIST)  
+  {
+    uint8_t i;
+    for( i = 0; i < U8G_PIN_LIST_LEN; i++ )
+    10a6:	8e 30       	cpi	r24, 0x0E	; 14
+    10a8:	91 05       	cpc	r25, r1
+    10aa:	c1 f7       	brne	.-16     	; 0x109c <u8g_init_data+0x24>
+  u8g_call_dev_fn(u8g, u8g->dev, U8G_DEV_MSG_SET_COLOR_ENTRY, &irgb);
+}
+
+void u8g_SetColorIndex(u8g_t *u8g, uint8_t idx)
+{
+  u8g->arg_pixel.color = idx;
+    10ac:	11 e0       	ldi	r17, 0x01	; 1
+    10ae:	18 a3       	std	Y+32, r17	; 0x20
+  }
+#endif
+  
+  u8g_SetColorIndex(u8g, 1);
+
+  u8g_SetFontPosBaseline(u8g);
+    10b0:	ce 01       	movw	r24, r28
+    10b2:	c9 df       	rcall	.-110    	; 0x1046 <u8g_SetFontPosBaseline>
+    10b4:	1f 8b       	std	Y+23, r17	; 0x17
+  
+  u8g->font_height_mode = U8G_FONT_HEIGHT_MODE_XTEXT;
+    10b6:	18 8e       	std	Y+24, r1	; 0x18
+  u8g->font_ref_ascent = 0;
+    10b8:	19 8e       	std	Y+25, r1	; 0x19
+  u8g->font_ref_descent = 0;
+    10ba:	80 e4       	ldi	r24, 0x40	; 64
+  u8g->font_line_spacing_factor = 64;           /* 64 = 1.0, 77 = 1.2 line spacing factor */
+    10bc:	8a 8f       	std	Y+26, r24	; 0x1a
+    10be:	1b 8e       	std	Y+27, r1	; 0x1b
+  u8g->line_spacing = 0;
+    10c0:	8a e6       	ldi	r24, 0x6A	; 106
+  
+  u8g->state_cb = u8g_state_dummy_cb;
+    10c2:	9a e0       	ldi	r25, 0x0A	; 10
+    10c4:	9a ab       	std	Y+50, r25	; 0x32
+    10c6:	89 ab       	std	Y+49, r24	; 0x31
+    10c8:	df 91       	pop	r29
+
+}
+    10ca:	cf 91       	pop	r28
+    10cc:	1f 91       	pop	r17
+    10ce:	08 95       	ret
+
+000010d0 <u8g_call_dev_fn>:
+#include <stddef.h>
+#include "u8g.h"
+
+uint8_t u8g_call_dev_fn(u8g_t *u8g, u8g_dev_t *dev, uint8_t msg, void *arg)
+{
+  return dev->dev_fn(u8g, dev, msg, arg); 
+    10d0:	db 01       	movw	r26, r22
+    10d2:	ed 91       	ld	r30, X+
+    10d4:	fc 91       	ld	r31, X
+    10d6:	09 95       	icall
+}
+    10d8:	08 95       	ret
+
+000010da <u8g_InitLL>:
+
+/*====================================================================*/
+
+uint8_t u8g_InitLL(u8g_t *u8g, u8g_dev_t *dev)
+{
+    10da:	ef 92       	push	r14
+    10dc:	ff 92       	push	r15
+    10de:	1f 93       	push	r17
+    10e0:	cf 93       	push	r28
+    10e2:	df 93       	push	r29
+    10e4:	00 d0       	rcall	.+0      	; 0x10e6 <u8g_InitLL+0xc>
+    10e6:	cd b7       	in	r28, 0x3d	; 61
+    10e8:	de b7       	in	r29, 0x3e	; 62
+    10ea:	7c 01       	movw	r14, r24
+  uint8_t r;
+  u8g->state_cb(U8G_STATE_MSG_BACKUP_ENV);
+    10ec:	dc 01       	movw	r26, r24
+    10ee:	d1 96       	adiw	r26, 0x31	; 49
+    10f0:	ed 91       	ld	r30, X+
+    10f2:	fc 91       	ld	r31, X
+    10f4:	d2 97       	sbiw	r26, 0x32	; 50
+    10f6:	82 e0       	ldi	r24, 0x02	; 2
+    10f8:	69 83       	std	Y+1, r22	; 0x01
+    10fa:	7a 83       	std	Y+2, r23	; 0x02
+    10fc:	09 95       	icall
+  r =  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_INIT, NULL);
+    10fe:	20 e0       	ldi	r18, 0x00	; 0
+    1100:	30 e0       	ldi	r19, 0x00	; 0
+    1102:	4a e0       	ldi	r20, 0x0A	; 10
+    1104:	69 81       	ldd	r22, Y+1	; 0x01
+    1106:	7a 81       	ldd	r23, Y+2	; 0x02
+    1108:	c7 01       	movw	r24, r14
+    110a:	e2 df       	rcall	.-60     	; 0x10d0 <u8g_call_dev_fn>
+    110c:	18 2f       	mov	r17, r24
+    110e:	d7 01       	movw	r26, r14
+  u8g->state_cb(U8G_STATE_MSG_BACKUP_U8G);
+    1110:	d1 96       	adiw	r26, 0x31	; 49
+    1112:	ed 91       	ld	r30, X+
+    1114:	fc 91       	ld	r31, X
+    1116:	d2 97       	sbiw	r26, 0x32	; 50
+    1118:	83 e0       	ldi	r24, 0x03	; 3
+    111a:	09 95       	icall
+    111c:	d7 01       	movw	r26, r14
+  u8g->state_cb(U8G_STATE_MSG_RESTORE_ENV);
+    111e:	d1 96       	adiw	r26, 0x31	; 49
+    1120:	ed 91       	ld	r30, X+
+    1122:	fc 91       	ld	r31, X
+    1124:	d2 97       	sbiw	r26, 0x32	; 50
+    1126:	80 e0       	ldi	r24, 0x00	; 0
+    1128:	09 95       	icall
+    112a:	81 2f       	mov	r24, r17
+  return r;
+}
+    112c:	0f 90       	pop	r0
+    112e:	0f 90       	pop	r0
+    1130:	df 91       	pop	r29
+    1132:	cf 91       	pop	r28
+    1134:	1f 91       	pop	r17
+    1136:	ff 90       	pop	r15
+    1138:	ef 90       	pop	r14
+    113a:	08 95       	ret
+
+0000113c <u8g_FirstPageLL>:
+
+void u8g_FirstPageLL(u8g_t *u8g, u8g_dev_t *dev)
+{  
+    113c:	0f 93       	push	r16
+    113e:	1f 93       	push	r17
+    1140:	cf 93       	push	r28
+    1142:	df 93       	push	r29
+    1144:	ec 01       	movw	r28, r24
+    1146:	8b 01       	movw	r16, r22
+  u8g->state_cb(U8G_STATE_MSG_BACKUP_ENV);
+    1148:	e9 a9       	ldd	r30, Y+49	; 0x31
+    114a:	fa a9       	ldd	r31, Y+50	; 0x32
+    114c:	82 e0       	ldi	r24, 0x02	; 2
+    114e:	09 95       	icall
+  u8g->state_cb(U8G_STATE_MSG_RESTORE_U8G);
+    1150:	e9 a9       	ldd	r30, Y+49	; 0x31
+    1152:	fa a9       	ldd	r31, Y+50	; 0x32
+    1154:	81 e0       	ldi	r24, 0x01	; 1
+    1156:	09 95       	icall
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_PAGE_FIRST, NULL);
+    1158:	20 e0       	ldi	r18, 0x00	; 0
+    115a:	30 e0       	ldi	r19, 0x00	; 0
+    115c:	44 e1       	ldi	r20, 0x14	; 20
+    115e:	b8 01       	movw	r22, r16
+    1160:	ce 01       	movw	r24, r28
+    1162:	b6 df       	rcall	.-148    	; 0x10d0 <u8g_call_dev_fn>
+    1164:	9e 01       	movw	r18, r28
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_GET_PAGE_BOX, &(u8g->current_page));
+    1166:	2d 5c       	subi	r18, 0xCD	; 205
+    1168:	3f 4f       	sbci	r19, 0xFF	; 255
+    116a:	47 e1       	ldi	r20, 0x17	; 23
+    116c:	b8 01       	movw	r22, r16
+    116e:	ce 01       	movw	r24, r28
+    1170:	af df       	rcall	.-162    	; 0x10d0 <u8g_call_dev_fn>
+    1172:	e9 a9       	ldd	r30, Y+49	; 0x31
+    1174:	fa a9       	ldd	r31, Y+50	; 0x32
+  u8g->state_cb(U8G_STATE_MSG_RESTORE_ENV);
+    1176:	80 e0       	ldi	r24, 0x00	; 0
+    1178:	09 95       	icall
+    117a:	df 91       	pop	r29
+    117c:	cf 91       	pop	r28
+}
+    117e:	1f 91       	pop	r17
+    1180:	0f 91       	pop	r16
+    1182:	08 95       	ret
+
+00001184 <u8g_NextPageLL>:
+
+uint8_t u8g_NextPageLL(u8g_t *u8g, u8g_dev_t *dev)
+{  
+    1184:	ff 92       	push	r15
+    1186:	0f 93       	push	r16
+    1188:	1f 93       	push	r17
+    118a:	cf 93       	push	r28
+    118c:	df 93       	push	r29
+    118e:	ec 01       	movw	r28, r24
+    1190:	8b 01       	movw	r16, r22
+  uint8_t r;
+  u8g->state_cb(U8G_STATE_MSG_BACKUP_ENV);
+    1192:	e9 a9       	ldd	r30, Y+49	; 0x31
+    1194:	fa a9       	ldd	r31, Y+50	; 0x32
+    1196:	82 e0       	ldi	r24, 0x02	; 2
+    1198:	09 95       	icall
+  u8g->state_cb(U8G_STATE_MSG_RESTORE_U8G);
+    119a:	e9 a9       	ldd	r30, Y+49	; 0x31
+    119c:	fa a9       	ldd	r31, Y+50	; 0x32
+    119e:	81 e0       	ldi	r24, 0x01	; 1
+    11a0:	09 95       	icall
+  r = u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_PAGE_NEXT, NULL);
+    11a2:	20 e0       	ldi	r18, 0x00	; 0
+    11a4:	30 e0       	ldi	r19, 0x00	; 0
+    11a6:	45 e1       	ldi	r20, 0x15	; 21
+    11a8:	b8 01       	movw	r22, r16
+    11aa:	ce 01       	movw	r24, r28
+    11ac:	91 df       	rcall	.-222    	; 0x10d0 <u8g_call_dev_fn>
+    11ae:	f8 2e       	mov	r15, r24
+    11b0:	88 23       	and	r24, r24
+  if ( r != 0 )
+    11b2:	39 f0       	breq	.+14     	; 0x11c2 <u8g_NextPageLL+0x3e>
+    11b4:	9e 01       	movw	r18, r28
+  {
+    u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_GET_PAGE_BOX, &(u8g->current_page));
+    11b6:	2d 5c       	subi	r18, 0xCD	; 205
+    11b8:	3f 4f       	sbci	r19, 0xFF	; 255
+    11ba:	47 e1       	ldi	r20, 0x17	; 23
+    11bc:	b8 01       	movw	r22, r16
+    11be:	ce 01       	movw	r24, r28
+    11c0:	87 df       	rcall	.-242    	; 0x10d0 <u8g_call_dev_fn>
+    11c2:	e9 a9       	ldd	r30, Y+49	; 0x31
+    11c4:	fa a9       	ldd	r31, Y+50	; 0x32
+  }
+  u8g->state_cb(U8G_STATE_MSG_RESTORE_ENV);
+    11c6:	80 e0       	ldi	r24, 0x00	; 0
+    11c8:	09 95       	icall
+    11ca:	8f 2d       	mov	r24, r15
+    11cc:	cd b7       	in	r28, 0x3d	; 61
+  return r;
+}
+    11ce:	de b7       	in	r29, 0x3e	; 62
+    11d0:	e5 e0       	ldi	r30, 0x05	; 5
+    11d2:	e5 c2       	rjmp	.+1482   	; 0x179e <__epilogue_restores__+0x1a>
+
+000011d4 <u8g_GetWidthLL>:
+#endif
+
+
+
+u8g_uint_t u8g_GetWidthLL(u8g_t *u8g, u8g_dev_t *dev)
+{
+    11d4:	a1 e0       	ldi	r26, 0x01	; 1
+    11d6:	b0 e0       	ldi	r27, 0x00	; 0
+    11d8:	ef ee       	ldi	r30, 0xEF	; 239
+    11da:	f8 e0       	ldi	r31, 0x08	; 8
+    11dc:	c7 c2       	rjmp	.+1422   	; 0x176c <__prologue_saves__+0x20>
+    11de:	9e 01       	movw	r18, r28
+  u8g_uint_t r;
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_GET_WIDTH, &r);
+    11e0:	2f 5f       	subi	r18, 0xFF	; 255
+    11e2:	3f 4f       	sbci	r19, 0xFF	; 255
+    11e4:	46 e4       	ldi	r20, 0x46	; 70
+    11e6:	74 df       	rcall	.-280    	; 0x10d0 <u8g_call_dev_fn>
+    11e8:	89 81       	ldd	r24, Y+1	; 0x01
+    11ea:	21 96       	adiw	r28, 0x01	; 1
+  return r;
+}
+    11ec:	e2 e0       	ldi	r30, 0x02	; 2
+    11ee:	da c2       	rjmp	.+1460   	; 0x17a4 <__epilogue_restores__+0x20>
+
+000011f0 <u8g_GetHeightLL>:
+
+u8g_uint_t u8g_GetHeightLL(u8g_t *u8g, u8g_dev_t *dev)
+{       
+    11f0:	a1 e0       	ldi	r26, 0x01	; 1
+    11f2:	b0 e0       	ldi	r27, 0x00	; 0
+    11f4:	ed ef       	ldi	r30, 0xFD	; 253
+    11f6:	f8 e0       	ldi	r31, 0x08	; 8
+    11f8:	b9 c2       	rjmp	.+1394   	; 0x176c <__prologue_saves__+0x20>
+    11fa:	9e 01       	movw	r18, r28
+  u8g_uint_t r;
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_GET_HEIGHT, &r);
+    11fc:	2f 5f       	subi	r18, 0xFF	; 255
+    11fe:	3f 4f       	sbci	r19, 0xFF	; 255
+    1200:	47 e4       	ldi	r20, 0x47	; 71
+    1202:	66 df       	rcall	.-308    	; 0x10d0 <u8g_call_dev_fn>
+    1204:	89 81       	ldd	r24, Y+1	; 0x01
+    1206:	21 96       	adiw	r28, 0x01	; 1
+  return r;
+}
+    1208:	e2 e0       	ldi	r30, 0x02	; 2
+    120a:	cc c2       	rjmp	.+1432   	; 0x17a4 <__epilogue_restores__+0x20>
+
+0000120c <u8g_GetModeLL>:
+
+u8g_uint_t u8g_GetModeLL(u8g_t *u8g, u8g_dev_t *dev)
+{       
+  return u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_GET_MODE, NULL);
+    120c:	20 e0       	ldi	r18, 0x00	; 0
+    120e:	30 e0       	ldi	r19, 0x00	; 0
+    1210:	48 e4       	ldi	r20, 0x48	; 72
+    1212:	5e cf       	rjmp	.-324    	; 0x10d0 <u8g_call_dev_fn>
+
+00001214 <u8g_UpdateDimension>:
+
+
+/*====================================================================*/
+
+void u8g_UpdateDimension(u8g_t *u8g)
+{
+    1214:	cf 93       	push	r28
+    1216:	df 93       	push	r29
+    1218:	ec 01       	movw	r28, r24
+  u8g->width = u8g_GetWidthLL(u8g, u8g->dev);
+    121a:	6a 81       	ldd	r22, Y+2	; 0x02
+    121c:	7b 81       	ldd	r23, Y+3	; 0x03
+    121e:	da df       	rcall	.-76     	; 0x11d4 <u8g_GetWidthLL>
+    1220:	88 83       	st	Y, r24
+    1222:	6a 81       	ldd	r22, Y+2	; 0x02
+  u8g->height = u8g_GetHeightLL(u8g, u8g->dev);
+    1224:	7b 81       	ldd	r23, Y+3	; 0x03
+    1226:	ce 01       	movw	r24, r28
+    1228:	e3 df       	rcall	.-58     	; 0x11f0 <u8g_GetHeightLL>
+    122a:	89 83       	std	Y+1, r24	; 0x01
+    122c:	6a 81       	ldd	r22, Y+2	; 0x02
+    122e:	7b 81       	ldd	r23, Y+3	; 0x03
+  u8g->mode = u8g_GetModeLL(u8g, u8g->dev);
+    1230:	ce 01       	movw	r24, r28
+    1232:	ec df       	rcall	.-40     	; 0x120c <u8g_GetModeLL>
+    1234:	8b 87       	std	Y+11, r24	; 0x0b
+    1236:	9e 01       	movw	r18, r28
+    1238:	2d 5c       	subi	r18, 0xCD	; 205
+    123a:	3f 4f       	sbci	r19, 0xFF	; 255
+  /* 9 Dec 2012: u8g_scale.c requires update of current page */
+  u8g_call_dev_fn(u8g, u8g->dev, U8G_DEV_MSG_GET_PAGE_BOX, &(u8g->current_page));
+    123c:	6a 81       	ldd	r22, Y+2	; 0x02
+    123e:	7b 81       	ldd	r23, Y+3	; 0x03
+    1240:	47 e1       	ldi	r20, 0x17	; 23
+    1242:	ce 01       	movw	r24, r28
+    1244:	45 df       	rcall	.-374    	; 0x10d0 <u8g_call_dev_fn>
+    1246:	df 91       	pop	r29
+    1248:	cf 91       	pop	r28
+    124a:	08 95       	ret
+
+0000124c <u8g_Begin>:
+  u8g->state_cb = u8g_state_dummy_cb;
+
+}
+
+uint8_t u8g_Begin(u8g_t *u8g)
+{
+    124c:	cf 93       	push	r28
+    124e:	df 93       	push	r29
+    1250:	ec 01       	movw	r28, r24
+  /* call and init low level driver and com device */
+  if ( u8g_InitLL(u8g, u8g->dev) == 0 )
+    1252:	6a 81       	ldd	r22, Y+2	; 0x02
+    1254:	7b 81       	ldd	r23, Y+3	; 0x03
+    1256:	41 df       	rcall	.-382    	; 0x10da <u8g_InitLL>
+    1258:	88 23       	and	r24, r24
+    125a:	21 f0       	breq	.+8      	; 0x1264 <u8g_Begin+0x18>
+    125c:	ce 01       	movw	r24, r28
+    return 0;
+  /* fetch width and height from the low level */
+  u8g_UpdateDimension(u8g);
+    125e:	da df       	rcall	.-76     	; 0x1214 <u8g_UpdateDimension>
+    1260:	81 e0       	ldi	r24, 0x01	; 1
+    1262:	01 c0       	rjmp	.+2      	; 0x1266 <u8g_Begin+0x1a>
+  return 1;
+    1264:	80 e0       	ldi	r24, 0x00	; 0
+    1266:	df 91       	pop	r29
+
+uint8_t u8g_Begin(u8g_t *u8g)
+{
+  /* call and init low level driver and com device */
+  if ( u8g_InitLL(u8g, u8g->dev) == 0 )
+    return 0;
+    1268:	cf 91       	pop	r28
+  /* fetch width and height from the low level */
+  u8g_UpdateDimension(u8g);
+  return 1;
+}
+    126a:	08 95       	ret
+
+0000126c <u8g_InitI2C>:
+  
+  return u8g_Begin(u8g);
+}
+
+uint8_t u8g_InitI2C(u8g_t *u8g, u8g_dev_t *dev, uint8_t options)
+{
+    126c:	a1 e0       	ldi	r26, 0x01	; 1
+    126e:	b0 e0       	ldi	r27, 0x00	; 0
+    1270:	eb e3       	ldi	r30, 0x3B	; 59
+    1272:	f9 e0       	ldi	r31, 0x09	; 9
+    1274:	77 c2       	rjmp	.+1262   	; 0x1764 <__prologue_saves__+0x18>
+    1276:	7c 01       	movw	r14, r24
+    1278:	8b 01       	movw	r16, r22
+    127a:	49 83       	std	Y+1, r20	; 0x01
+  /* fill data structure with some suitable values */
+  u8g_init_data(u8g);
+    127c:	fd de       	rcall	.-518    	; 0x1078 <u8g_init_data>
+    127e:	f7 01       	movw	r30, r14
+    1280:	13 83       	std	Z+3, r17	; 0x03
+  u8g->dev = dev;
+    1282:	02 83       	std	Z+2, r16	; 0x02
+    1284:	49 81       	ldd	r20, Y+1	; 0x01
+    1286:	46 a7       	std	Z+46, r20	; 0x2e
+    
+  u8g->pin_list[U8G_PI_I2C_OPTION] = options;
+    1288:	c7 01       	movw	r24, r14
+    128a:	e0 df       	rcall	.-64     	; 0x124c <u8g_Begin>
+  
+  return u8g_Begin(u8g);
+    128c:	21 96       	adiw	r28, 0x01	; 1
+    128e:	e6 e0       	ldi	r30, 0x06	; 6
+    1290:	85 c2       	rjmp	.+1290   	; 0x179c <__epilogue_restores__+0x18>
+
+00001292 <u8g_FirstPage>:
+}
+#endif /* defined(U8G_WITH_PINLIST)  */
+
+void u8g_FirstPage(u8g_t *u8g)
+{
+  u8g_FirstPageLL(u8g, u8g->dev);
+    1292:	fc 01       	movw	r30, r24
+    1294:	62 81       	ldd	r22, Z+2	; 0x02
+    1296:	73 81       	ldd	r23, Z+3	; 0x03
+    1298:	51 cf       	rjmp	.-350    	; 0x113c <u8g_FirstPageLL>
+
+0000129a <u8g_NextPage>:
+}
+
+uint8_t u8g_NextPage(u8g_t *u8g)
+{
+    129a:	cf 93       	push	r28
+    129c:	df 93       	push	r29
+    129e:	ec 01       	movw	r28, r24
+  if  ( u8g->cursor_fn != (u8g_draw_cursor_fn)0 )
+    12a0:	ee 85       	ldd	r30, Y+14	; 0x0e
+    12a2:	ff 85       	ldd	r31, Y+15	; 0x0f
+    12a4:	30 97       	sbiw	r30, 0x00	; 0
+    12a6:	09 f0       	breq	.+2      	; 0x12aa <u8g_NextPage+0x10>
+  {
+    u8g->cursor_fn(u8g);
+    12a8:	09 95       	icall
+  }
+  return u8g_NextPageLL(u8g, u8g->dev);
+    12aa:	6a 81       	ldd	r22, Y+2	; 0x02
+    12ac:	7b 81       	ldd	r23, Y+3	; 0x03
+    12ae:	ce 01       	movw	r24, r28
+    12b0:	69 df       	rcall	.-302    	; 0x1184 <u8g_NextPageLL>
+    12b2:	df 91       	pop	r29
+}
+    12b4:	cf 91       	pop	r28
+    12b6:	08 95       	ret
+
+000012b8 <u8g_Draw8Pixel>:
+{
+  u8g_DrawPixelLL(u8g, u8g->dev, x, y);
+}
+
+void u8g_Draw8Pixel(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, uint8_t dir, uint8_t pixel)
+{
+    12b8:	0f 93       	push	r16
+    12ba:	fc 01       	movw	r30, r24
+  u8g_Draw8PixelLL(u8g, u8g->dev, x, y, dir, pixel);
+    12bc:	82 81       	ldd	r24, Z+2	; 0x02
+    12be:	93 81       	ldd	r25, Z+3	; 0x03
+}
+
+void u8g_Draw8PixelLL(u8g_t *u8g, u8g_dev_t *dev, u8g_uint_t x, u8g_uint_t y, uint8_t dir, uint8_t pixel)
+{
+  u8g_dev_arg_pixel_t *arg = &(u8g->arg_pixel);
+  arg->x = x;
+    12c0:	64 8f       	std	Z+28, r22	; 0x1c
+  arg->y = y;
+    12c2:	45 8f       	std	Z+29, r20	; 0x1d
+  arg->dir = dir;
+    12c4:	27 8f       	std	Z+31, r18	; 0x1f
+  arg->pixel = pixel;
+    12c6:	06 8f       	std	Z+30, r16	; 0x1e
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_SET_PIXEL, arg);
+}
+
+void u8g_Draw8PixelLL(u8g_t *u8g, u8g_dev_t *dev, u8g_uint_t x, u8g_uint_t y, uint8_t dir, uint8_t pixel)
+{
+  u8g_dev_arg_pixel_t *arg = &(u8g->arg_pixel);
+    12c8:	9f 01       	movw	r18, r30
+    12ca:	24 5e       	subi	r18, 0xE4	; 228
+    12cc:	3f 4f       	sbci	r19, 0xFF	; 255
+  arg->x = x;
+  arg->y = y;
+  arg->dir = dir;
+  arg->pixel = pixel;
+  u8g_call_dev_fn(u8g, dev, U8G_DEV_MSG_SET_8PIXEL, arg);
+    12ce:	4b e3       	ldi	r20, 0x3B	; 59
+    12d0:	bc 01       	movw	r22, r24
+    12d2:	cf 01       	movw	r24, r30
+    12d4:	fd de       	rcall	.-518    	; 0x10d0 <u8g_call_dev_fn>
+    12d6:	0f 91       	pop	r16
+}
+
+void u8g_Draw8Pixel(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, uint8_t dir, uint8_t pixel)
+{
+  u8g_Draw8PixelLL(u8g, u8g->dev, x, y, dir, pixel);
+}
+    12d8:	08 95       	ret
+
+000012da <u8g_SetColorIndex>:
+  u8g_call_dev_fn(u8g, u8g->dev, U8G_DEV_MSG_SET_COLOR_ENTRY, &irgb);
+}
+
+void u8g_SetColorIndex(u8g_t *u8g, uint8_t idx)
+{
+  u8g->arg_pixel.color = idx;
+    12da:	fc 01       	movw	r30, r24
+    12dc:	60 a3       	std	Z+32, r22	; 0x20
+    12de:	08 95       	ret
+
+000012e0 <u8g_pb8v1_set_pixel>:
+}
+
+void u8g_pb8v1_set_pixel(u8g_pb_t *b, u8g_uint_t x, u8g_uint_t y, uint8_t color_index)
+{
+  register uint8_t mask;
+  uint8_t *ptr = b->buf;
+    12e0:	dc 01       	movw	r26, r24
+    12e2:	16 96       	adiw	r26, 0x06	; 6
+    12e4:	ed 91       	ld	r30, X+
+    12e6:	fc 91       	ld	r31, X
+    12e8:	17 97       	sbiw	r26, 0x07	; 7
+  
+  y -= b->p.page_y0;
+    12ea:	12 96       	adiw	r26, 0x02	; 2
+    12ec:	8c 91       	ld	r24, X
+    12ee:	48 1b       	sub	r20, r24
+  mask = 1;
+  y &= 0x07;
+    12f0:	47 70       	andi	r20, 0x07	; 7
+  mask <<= y;
+    12f2:	81 e0       	ldi	r24, 0x01	; 1
+    12f4:	90 e0       	ldi	r25, 0x00	; 0
+    12f6:	04 2e       	mov	r0, r20
+    12f8:	01 c0       	rjmp	.+2      	; 0x12fc <u8g_pb8v1_set_pixel+0x1c>
+    12fa:	88 0f       	add	r24, r24
+    12fc:	0a 94       	dec	r0
+    12fe:	ea f7       	brpl	.-6      	; 0x12fa <u8g_pb8v1_set_pixel+0x1a>
+  ptr += x;
+    1300:	e6 0f       	add	r30, r22
+    1302:	f1 1d       	adc	r31, r1
+    1304:	30 81       	ld	r19, Z
+  if ( color_index )
+    1306:	22 23       	and	r18, r18
+    1308:	11 f0       	breq	.+4      	; 0x130e <u8g_pb8v1_set_pixel+0x2e>
+  {
+    *ptr |= mask;
+    130a:	83 2b       	or	r24, r19
+    130c:	02 c0       	rjmp	.+4      	; 0x1312 <u8g_pb8v1_set_pixel+0x32>
+  }
+  else
+  {
+    mask ^=0xff;
+    130e:	80 95       	com	r24
+    *ptr &= mask;
+    1310:	83 23       	and	r24, r19
+    1312:	80 83       	st	Z, r24
+    1314:	08 95       	ret
+
+00001316 <u8g_pb8v1_SetPixel>:
+  }
+}
+
+
+void u8g_pb8v1_SetPixel(u8g_pb_t *b, const u8g_dev_arg_pixel_t * const arg_pixel)
+{
+    1316:	fb 01       	movw	r30, r22
+  if ( arg_pixel->y < b->p.page_y0 )
+    1318:	41 81       	ldd	r20, Z+1	; 0x01
+    131a:	dc 01       	movw	r26, r24
+    131c:	12 96       	adiw	r26, 0x02	; 2
+    131e:	2c 91       	ld	r18, X
+    1320:	12 97       	sbiw	r26, 0x02	; 2
+    1322:	42 17       	cp	r20, r18
+    1324:	60 f0       	brcs	.+24     	; 0x133e <u8g_pb8v1_SetPixel+0x28>
+    return;
+  if ( arg_pixel->y > b->p.page_y1 )
+    1326:	13 96       	adiw	r26, 0x03	; 3
+    1328:	2c 91       	ld	r18, X
+    132a:	13 97       	sbiw	r26, 0x03	; 3
+    132c:	24 17       	cp	r18, r20
+    132e:	38 f0       	brcs	.+14     	; 0x133e <u8g_pb8v1_SetPixel+0x28>
+    return;
+  if ( arg_pixel->x >= b->width )
+    1330:	60 81       	ld	r22, Z
+    1332:	15 96       	adiw	r26, 0x05	; 5
+    1334:	2c 91       	ld	r18, X
+    1336:	62 17       	cp	r22, r18
+    1338:	10 f4       	brcc	.+4      	; 0x133e <u8g_pb8v1_SetPixel+0x28>
+    return;
+  u8g_pb8v1_set_pixel(b, arg_pixel->x, arg_pixel->y, arg_pixel->color);
+    133a:	24 81       	ldd	r18, Z+4	; 0x04
+    133c:	d1 cf       	rjmp	.-94     	; 0x12e0 <u8g_pb8v1_set_pixel>
+    133e:	08 95       	ret
+
+00001340 <u8g_pb8v1_Set8PixelOpt2>:
+  } while( pixel != 0  );
+}
+
+
+void u8g_pb8v1_Set8PixelOpt2(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+    1340:	cf 92       	push	r12
+    1342:	df 92       	push	r13
+    1344:	ff 92       	push	r15
+    1346:	0f 93       	push	r16
+    1348:	1f 93       	push	r17
+    134a:	cf 93       	push	r28
+    134c:	df 93       	push	r29
+    134e:	00 d0       	rcall	.+0      	; 0x1350 <u8g_pb8v1_Set8PixelOpt2+0x10>
+    1350:	cd b7       	in	r28, 0x3d	; 61
+    1352:	de b7       	in	r29, 0x3e	; 62
+    1354:	8c 01       	movw	r16, r24
+    1356:	6b 01       	movw	r12, r22
+  register uint8_t pixel = arg_pixel->pixel;
+    1358:	fb 01       	movw	r30, r22
+    135a:	f2 80       	ldd	r15, Z+2	; 0x02
+  u8g_uint_t dx = 0;
+  u8g_uint_t dy = 0;
+  
+  switch( arg_pixel->dir )
+    135c:	83 81       	ldd	r24, Z+3	; 0x03
+    135e:	81 30       	cpi	r24, 0x01	; 1
+    1360:	39 f0       	breq	.+14     	; 0x1370 <u8g_pb8v1_Set8PixelOpt2+0x30>
+    1362:	70 f0       	brcs	.+28     	; 0x1380 <u8g_pb8v1_Set8PixelOpt2+0x40>
+    1364:	82 30       	cpi	r24, 0x02	; 2
+    1366:	39 f0       	breq	.+14     	; 0x1376 <u8g_pb8v1_Set8PixelOpt2+0x36>
+    1368:	83 30       	cpi	r24, 0x03	; 3
+    136a:	41 f0       	breq	.+16     	; 0x137c <u8g_pb8v1_Set8PixelOpt2+0x3c>
+
+void u8g_pb8v1_Set8PixelOpt2(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  register uint8_t pixel = arg_pixel->pixel;
+  u8g_uint_t dx = 0;
+  u8g_uint_t dy = 0;
+    136c:	20 e0       	ldi	r18, 0x00	; 0
+    136e:	01 c0       	rjmp	.+2      	; 0x1372 <u8g_pb8v1_Set8PixelOpt2+0x32>
+  
+  switch( arg_pixel->dir )
+  {
+    case 0: dx++; break;
+    case 1: dy++; break;
+    1370:	21 e0       	ldi	r18, 0x01	; 1
+
+
+void u8g_pb8v1_Set8PixelOpt2(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  register uint8_t pixel = arg_pixel->pixel;
+  u8g_uint_t dx = 0;
+    1372:	30 e0       	ldi	r19, 0x00	; 0
+  u8g_uint_t dy = 0;
+  
+  switch( arg_pixel->dir )
+  {
+    case 0: dx++; break;
+    case 1: dy++; break;
+    1374:	07 c0       	rjmp	.+14     	; 0x1384 <u8g_pb8v1_Set8PixelOpt2+0x44>
+
+void u8g_pb8v1_Set8PixelOpt2(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  register uint8_t pixel = arg_pixel->pixel;
+  u8g_uint_t dx = 0;
+  u8g_uint_t dy = 0;
+    1376:	20 e0       	ldi	r18, 0x00	; 0
+  
+  switch( arg_pixel->dir )
+  {
+    case 0: dx++; break;
+    case 1: dy++; break;
+    case 2: dx--; break;
+    1378:	3f ef       	ldi	r19, 0xFF	; 255
+    137a:	04 c0       	rjmp	.+8      	; 0x1384 <u8g_pb8v1_Set8PixelOpt2+0x44>
+    case 3: dy--; break;
+    137c:	2f ef       	ldi	r18, 0xFF	; 255
+    137e:	f9 cf       	rjmp	.-14     	; 0x1372 <u8g_pb8v1_Set8PixelOpt2+0x32>
+
+void u8g_pb8v1_Set8PixelOpt2(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  register uint8_t pixel = arg_pixel->pixel;
+  u8g_uint_t dx = 0;
+  u8g_uint_t dy = 0;
+    1380:	20 e0       	ldi	r18, 0x00	; 0
+  
+  switch( arg_pixel->dir )
+  {
+    case 0: dx++; break;
+    1382:	31 e0       	ldi	r19, 0x01	; 1
+    case 3: dy--; break;
+  }
+  
+  do
+  {
+    if ( pixel & 128 )
+    1384:	f7 fe       	sbrs	r15, 7
+    1386:	07 c0       	rjmp	.+14     	; 0x1396 <u8g_pb8v1_Set8PixelOpt2+0x56>
+      u8g_pb8v1_SetPixel(b, arg_pixel);
+    1388:	b6 01       	movw	r22, r12
+    138a:	c8 01       	movw	r24, r16
+    138c:	29 83       	std	Y+1, r18	; 0x01
+    138e:	3a 83       	std	Y+2, r19	; 0x02
+    1390:	c2 df       	rcall	.-124    	; 0x1316 <u8g_pb8v1_SetPixel>
+    1392:	3a 81       	ldd	r19, Y+2	; 0x02
+    1394:	29 81       	ldd	r18, Y+1	; 0x01
+    1396:	f6 01       	movw	r30, r12
+    arg_pixel->x += dx;
+    1398:	80 81       	ld	r24, Z
+    139a:	83 0f       	add	r24, r19
+    139c:	80 83       	st	Z, r24
+    139e:	81 81       	ldd	r24, Z+1	; 0x01
+    arg_pixel->y += dy;
+    13a0:	82 0f       	add	r24, r18
+    13a2:	81 83       	std	Z+1, r24	; 0x01
+    13a4:	ff 0c       	add	r15, r15
+    pixel <<= 1;
+    13a6:	71 f7       	brne	.-36     	; 0x1384 <u8g_pb8v1_Set8PixelOpt2+0x44>
+  } while( pixel != 0  );
+    13a8:	0f 90       	pop	r0
+  
+}
+    13aa:	0f 90       	pop	r0
+    13ac:	df 91       	pop	r29
+    13ae:	cf 91       	pop	r28
+    13b0:	1f 91       	pop	r17
+    13b2:	0f 91       	pop	r16
+    13b4:	ff 90       	pop	r15
+    13b6:	df 90       	pop	r13
+    13b8:	cf 90       	pop	r12
+    13ba:	08 95       	ret
+
+000013bc <u8g_dev_pb8v1_base_fn>:
+
+uint8_t u8g_dev_pb8v1_base_fn(u8g_t *u8g, u8g_dev_t *dev, uint8_t msg, void *arg)
+{
+    13bc:	0f 93       	push	r16
+    13be:	1f 93       	push	r17
+    13c0:	cf 93       	push	r28
+    13c2:	df 93       	push	r29
+    13c4:	89 01       	movw	r16, r18
+  u8g_pb_t *pb = (u8g_pb_t *)(dev->dev_mem);
+    13c6:	fb 01       	movw	r30, r22
+    13c8:	c2 81       	ldd	r28, Z+2	; 0x02
+    13ca:	d3 81       	ldd	r29, Z+3	; 0x03
+  switch(msg)
+    13cc:	42 33       	cpi	r20, 0x32	; 50
+    13ce:	d9 f0       	breq	.+54     	; 0x1406 <u8g_dev_pb8v1_base_fn+0x4a>
+    13d0:	58 f4       	brcc	.+22     	; 0x13e8 <u8g_dev_pb8v1_base_fn+0x2c>
+    13d2:	45 31       	cpi	r20, 0x15	; 21
+    13d4:	e1 f0       	breq	.+56     	; 0x140e <u8g_dev_pb8v1_base_fn+0x52>
+    13d6:	47 31       	cpi	r20, 0x17	; 23
+    13d8:	09 f1       	breq	.+66     	; 0x141c <u8g_dev_pb8v1_base_fn+0x60>
+    13da:	44 31       	cpi	r20, 0x14	; 20
+    13dc:	41 f5       	brne	.+80     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    case U8G_DEV_MSG_INIT:
+      break;
+    case U8G_DEV_MSG_STOP:
+      break;
+    case U8G_DEV_MSG_PAGE_FIRST:
+      u8g_pb_Clear(pb);
+    13de:	ce 01       	movw	r24, r28
+    13e0:	2e d0       	rcall	.+92     	; 0x143e <u8g_pb_Clear>
+    13e2:	ce 01       	movw	r24, r28
+      u8g_page_First(&(pb->p));
+    13e4:	96 d1       	rcall	.+812    	; 0x1712 <u8g_page_First>
+    13e6:	23 c0       	rjmp	.+70     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    13e8:	46 34       	cpi	r20, 0x46	; 70
+    13ea:	e1 f0       	breq	.+56     	; 0x1424 <u8g_dev_pb8v1_base_fn+0x68>
+}
+
+uint8_t u8g_dev_pb8v1_base_fn(u8g_t *u8g, u8g_dev_t *dev, uint8_t msg, void *arg)
+{
+  u8g_pb_t *pb = (u8g_pb_t *)(dev->dev_mem);
+  switch(msg)
+    13ec:	47 34       	cpi	r20, 0x47	; 71
+    13ee:	e1 f0       	breq	.+56     	; 0x1428 <u8g_dev_pb8v1_base_fn+0x6c>
+    13f0:	4b 33       	cpi	r20, 0x3B	; 59
+    13f2:	e9 f4       	brne	.+58     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    13f4:	b9 01       	movw	r22, r18
+    13f6:	ce 01       	movw	r24, r28
+  {
+    case U8G_DEV_MSG_SET_8PIXEL:
+      if ( u8g_pb_Is8PixelVisible(pb, (u8g_dev_arg_pixel_t *)arg) )
+    13f8:	57 d0       	rcall	.+174    	; 0x14a8 <u8g_pb_Is8PixelVisible>
+    13fa:	88 23       	and	r24, r24
+    13fc:	c1 f0       	breq	.+48     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    13fe:	b8 01       	movw	r22, r16
+    1400:	ce 01       	movw	r24, r28
+    1402:	9e df       	rcall	.-196    	; 0x1340 <u8g_pb8v1_Set8PixelOpt2>
+        u8g_pb8v1_Set8PixelOpt2(pb, (u8g_dev_arg_pixel_t *)arg);
+    1404:	14 c0       	rjmp	.+40     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    1406:	b9 01       	movw	r22, r18
+    1408:	ce 01       	movw	r24, r28
+    140a:	85 df       	rcall	.-246    	; 0x1316 <u8g_pb8v1_SetPixel>
+    140c:	10 c0       	rjmp	.+32     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+      break;
+    case U8G_DEV_MSG_SET_PIXEL:
+        u8g_pb8v1_SetPixel(pb, (u8g_dev_arg_pixel_t *)arg);
+    140e:	ce 01       	movw	r24, r28
+    1410:	87 d1       	rcall	.+782    	; 0x1720 <u8g_page_Next>
+    1412:	88 23       	and	r24, r24
+    1414:	71 f0       	breq	.+28     	; 0x1432 <u8g_dev_pb8v1_base_fn+0x76>
+    1416:	ce 01       	movw	r24, r28
+    case U8G_DEV_MSG_PAGE_FIRST:
+      u8g_pb_Clear(pb);
+      u8g_page_First(&(pb->p));
+      break;
+    case U8G_DEV_MSG_PAGE_NEXT:
+      if ( u8g_page_Next(&(pb->p)) == 0 )
+    1418:	12 d0       	rcall	.+36     	; 0x143e <u8g_pb_Clear>
+    141a:	09 c0       	rjmp	.+18     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    141c:	b9 01       	movw	r22, r18
+    141e:	ce 01       	movw	r24, r28
+    1420:	33 d0       	rcall	.+102    	; 0x1488 <u8g_pb_GetPageBox>
+        return 0;
+      u8g_pb_Clear(pb);
+    1422:	05 c0       	rjmp	.+10     	; 0x142e <u8g_dev_pb8v1_base_fn+0x72>
+    1424:	8d 81       	ldd	r24, Y+5	; 0x05
+    1426:	01 c0       	rjmp	.+2      	; 0x142a <u8g_dev_pb8v1_base_fn+0x6e>
+    1428:	89 81       	ldd	r24, Y+1	; 0x01
+#ifdef U8G_DEV_MSG_IS_BBX_INTERSECTION
+    case U8G_DEV_MSG_IS_BBX_INTERSECTION:
+      return u8g_pb_IsIntersection(pb, (u8g_dev_arg_bbx_t *)arg);
+#endif
+    case U8G_DEV_MSG_GET_PAGE_BOX:
+      u8g_pb_GetPageBox(pb, (u8g_box_t *)arg);
+    142a:	f8 01       	movw	r30, r16
+    142c:	80 83       	st	Z, r24
+    142e:	81 e0       	ldi	r24, 0x01	; 1
+    1430:	01 c0       	rjmp	.+2      	; 0x1434 <u8g_dev_pb8v1_base_fn+0x78>
+    1432:	80 e0       	ldi	r24, 0x00	; 0
+      break;
+    case U8G_DEV_MSG_GET_WIDTH:
+      *((u8g_uint_t *)arg) = pb->width;
+    1434:	df 91       	pop	r29
+    1436:	cf 91       	pop	r28
+      break;
+    case U8G_DEV_MSG_GET_HEIGHT:
+      *((u8g_uint_t *)arg) = pb->p.total_height;
+    1438:	1f 91       	pop	r17
+    143a:	0f 91       	pop	r16
+    143c:	08 95       	ret
+
+0000143e <u8g_pb_Clear>:
+
+#include "u8g.h"
+
+void u8g_pb_Clear(u8g_pb_t *b)
+{
+  uint8_t *ptr = (uint8_t *)b->buf;
+    143e:	dc 01       	movw	r26, r24
+    1440:	16 96       	adiw	r26, 0x06	; 6
+    1442:	ed 91       	ld	r30, X+
+    1444:	fc 91       	ld	r31, X
+    1446:	17 97       	sbiw	r26, 0x07	; 7
+  uint8_t *end_ptr = ptr;
+  end_ptr += b->width;
+    1448:	15 96       	adiw	r26, 0x05	; 5
+    144a:	8c 91       	ld	r24, X
+    144c:	9f 01       	movw	r18, r30
+    144e:	28 0f       	add	r18, r24
+    1450:	31 1d       	adc	r19, r1
+    1452:	c9 01       	movw	r24, r18
+  do
+  {
+    *ptr++ = 0;
+    1454:	11 92       	st	Z+, r1
+  } while( ptr != end_ptr );
+    1456:	e8 17       	cp	r30, r24
+    1458:	f9 07       	cpc	r31, r25
+    145a:	e1 f7       	brne	.-8      	; 0x1454 <u8g_pb_Clear+0x16>
+}
+    145c:	08 95       	ret
+
+0000145e <u8g_pb_IsYIntersection>:
+  return 0;
+}
+*/
+
+uint8_t u8g_pb_IsYIntersection(u8g_pb_t *pb, u8g_uint_t v0, u8g_uint_t v1)
+{
+    145e:	fc 01       	movw	r30, r24
+  uint8_t c1, c2, c3, tmp;
+  c1 = v0 <= pb->p.page_y1;
+    1460:	91 e0       	ldi	r25, 0x01	; 1
+    1462:	83 81       	ldd	r24, Z+3	; 0x03
+    1464:	86 17       	cp	r24, r22
+    1466:	08 f4       	brcc	.+2      	; 0x146a <u8g_pb_IsYIntersection+0xc>
+    1468:	90 e0       	ldi	r25, 0x00	; 0
+  c2 = v1 >= pb->p.page_y0;
+  c3 = v0 > v1;
+    146a:	21 e0       	ldi	r18, 0x01	; 1
+    146c:	46 17       	cp	r20, r22
+    146e:	08 f0       	brcs	.+2      	; 0x1472 <u8g_pb_IsYIntersection+0x14>
+    1470:	20 e0       	ldi	r18, 0x00	; 0
+  
+  tmp = c1;
+  c1 &= c2;
+  c2 &= c3;
+  c3 &= tmp;
+  c1 |= c2;
+    1472:	32 2f       	mov	r19, r18
+    1474:	39 2b       	or	r19, r25
+
+uint8_t u8g_pb_IsYIntersection(u8g_pb_t *pb, u8g_uint_t v0, u8g_uint_t v1)
+{
+  uint8_t c1, c2, c3, tmp;
+  c1 = v0 <= pb->p.page_y1;
+  c2 = v1 >= pb->p.page_y0;
+    1476:	81 e0       	ldi	r24, 0x01	; 1
+    1478:	52 81       	ldd	r21, Z+2	; 0x02
+    147a:	45 17       	cp	r20, r21
+    147c:	08 f4       	brcc	.+2      	; 0x1480 <u8g_pb_IsYIntersection+0x22>
+    147e:	80 e0       	ldi	r24, 0x00	; 0
+  
+  tmp = c1;
+  c1 &= c2;
+  c2 &= c3;
+  c3 &= tmp;
+  c1 |= c2;
+    1480:	83 23       	and	r24, r19
+  */
+  
+  tmp = c1;
+  c1 &= c2;
+  c2 &= c3;
+  c3 &= tmp;
+    1482:	92 23       	and	r25, r18
+  c1 |= c2;
+  c1 |= c3;
+  return c1 & 1;
+}
+    1484:	89 2b       	or	r24, r25
+    1486:	08 95       	ret
+
+00001488 <u8g_pb_GetPageBox>:
+    
+  return u8g_pb_IsXIntersection(pb, bbx->x, tmp);
+}
+
+void u8g_pb_GetPageBox(u8g_pb_t *pb, u8g_box_t *box)
+{
+    1488:	dc 01       	movw	r26, r24
+    148a:	fb 01       	movw	r30, r22
+  box->x0 = 0;
+    148c:	10 82       	st	Z, r1
+  box->y0 = pb->p.page_y0;
+    148e:	12 96       	adiw	r26, 0x02	; 2
+    1490:	8c 91       	ld	r24, X
+    1492:	12 97       	sbiw	r26, 0x02	; 2
+    1494:	81 83       	std	Z+1, r24	; 0x01
+  box->x1 = pb->width;
+  box->x1--;
+    1496:	15 96       	adiw	r26, 0x05	; 5
+    1498:	8c 91       	ld	r24, X
+    149a:	15 97       	sbiw	r26, 0x05	; 5
+    149c:	81 50       	subi	r24, 0x01	; 1
+    149e:	82 83       	std	Z+2, r24	; 0x02
+  box->y1 = pb->p.page_y1;
+    14a0:	13 96       	adiw	r26, 0x03	; 3
+    14a2:	8c 91       	ld	r24, X
+    14a4:	83 83       	std	Z+3, r24	; 0x03
+    14a6:	08 95       	ret
+
+000014a8 <u8g_pb_Is8PixelVisible>:
+
+
+uint8_t u8g_pb_Is8PixelVisible(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  u8g_uint_t v0, v1;
+  v0 = arg_pixel->y;
+    14a8:	fb 01       	movw	r30, r22
+    14aa:	41 81       	ldd	r20, Z+1	; 0x01
+  v1 = v0;
+  switch( arg_pixel->dir )
+    14ac:	23 81       	ldd	r18, Z+3	; 0x03
+    14ae:	21 30       	cpi	r18, 0x01	; 1
+    14b0:	29 f0       	breq	.+10     	; 0x14bc <u8g_pb_Is8PixelVisible+0x14>
+    14b2:	23 30       	cpi	r18, 0x03	; 3
+    14b4:	31 f4       	brne	.+12     	; 0x14c2 <u8g_pb_Is8PixelVisible+0x1a>
+      v1 += 8;          /* this is independent from the page height */
+      break;
+    case 2:  
+      break;
+    case 3: 
+      v0 -= 8;
+    14b6:	68 ef       	ldi	r22, 0xF8	; 248
+    14b8:	64 0f       	add	r22, r20
+      break;
+    14ba:	04 c0       	rjmp	.+8      	; 0x14c4 <u8g_pb_Is8PixelVisible+0x1c>
+
+
+uint8_t u8g_pb_Is8PixelVisible(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  u8g_uint_t v0, v1;
+  v0 = arg_pixel->y;
+    14bc:	64 2f       	mov	r22, r20
+  switch( arg_pixel->dir )
+  {
+    case 0:
+      break;
+    case 1:  
+      v1 += 8;          /* this is independent from the page height */
+    14be:	48 5f       	subi	r20, 0xF8	; 248
+      break;
+    14c0:	01 c0       	rjmp	.+2      	; 0x14c4 <u8g_pb_Is8PixelVisible+0x1c>
+
+
+uint8_t u8g_pb_Is8PixelVisible(u8g_pb_t *b, u8g_dev_arg_pixel_t *arg_pixel)
+{
+  u8g_uint_t v0, v1;
+  v0 = arg_pixel->y;
+    14c2:	64 2f       	mov	r22, r20
+      break;
+    case 3: 
+      v0 -= 8;
+      break;
+  }
+  return u8g_pb_IsYIntersection(b, v0, v1);
+    14c4:	cc cf       	rjmp	.-104    	; 0x145e <u8g_pb_IsYIntersection>
+
+000014c6 <u8g_pb_WriteBuffer>:
+}
+
+
+
+uint8_t u8g_pb_WriteBuffer(u8g_pb_t *b, u8g_t *u8g, u8g_dev_t *dev)
+{
+    14c6:	fc 01       	movw	r30, r24
+    14c8:	cb 01       	movw	r24, r22
+    14ca:	ba 01       	movw	r22, r20
+  return u8g_WriteSequence(u8g, dev, b->width, b->buf);  
+    14cc:	26 81       	ldd	r18, Z+6	; 0x06
+    14ce:	37 81       	ldd	r19, Z+7	; 0x07
+    14d0:	45 81       	ldd	r20, Z+5	; 0x05
+    14d2:	61 c0       	rjmp	.+194    	; 0x1596 <u8g_WriteSequence>
+
+000014d4 <u8g_state_dummy_cb>:
+
+#include <stddef.h>
+#include "u8g.h"
+
+void u8g_state_dummy_cb(uint8_t msg)
+{
+    14d4:	08 95       	ret
+
+000014d6 <u8g_IsBBXIntersection>:
+  }
+}
+
+
+uint8_t u8g_IsBBXIntersection(u8g_t *u8g, u8g_uint_t x, u8g_uint_t y, u8g_uint_t w, u8g_uint_t h)
+{
+    14d6:	0f 93       	push	r16
+    14d8:	fc 01       	movw	r30, r24
+  register u8g_uint_t tmp;
+  tmp = y;
+  tmp += h;
+    14da:	01 50       	subi	r16, 0x01	; 1
+  tmp--;
+    14dc:	04 0f       	add	r16, r20
+  if ( u8g_is_intersection_decision_tree(u8g->current_page.y0, u8g->current_page.y1, y, tmp) == 0 )
+    14de:	84 a9       	ldd	r24, Z+52	; 0x34
+//static uint8_t u8g_is_intersection_decision_tree(u8g_uint_t a0, u8g_uint_t a1, u8g_uint_t v0, u8g_uint_t v1) U8G_ALWAYS_INLINE;
+static uint8_t U8G_ALWAYS_INLINE u8g_is_intersection_decision_tree(u8g_uint_t a0, u8g_uint_t a1, u8g_uint_t v0, u8g_uint_t v1) 
+{
+  /* surprisingly the macro leads to larger code */
+  /* return U8G_IS_INTERSECTION_MACRO(a0,a1,v0,v1); */
+  if ( v0 <= a1 )
+    14e0:	96 a9       	ldd	r25, Z+54	; 0x36
+    14e2:	94 17       	cp	r25, r20
+    14e4:	18 f0       	brcs	.+6      	; 0x14ec <u8g_IsBBXIntersection+0x16>
+  {
+    if ( v1 >= a0 )
+    14e6:	08 17       	cp	r16, r24
+    14e8:	28 f4       	brcc	.+10     	; 0x14f4 <u8g_IsBBXIntersection+0x1e>
+    14ea:	02 c0       	rjmp	.+4      	; 0x14f0 <u8g_IsBBXIntersection+0x1a>
+      }
+    }
+  }
+  else
+  {
+    if ( v1 >= a0 )
+    14ec:	08 17       	cp	r16, r24
+    14ee:	50 f0       	brcs	.+20     	; 0x1504 <u8g_IsBBXIntersection+0x2e>
+    {
+      if ( v0 > v1 )
+    14f0:	04 17       	cp	r16, r20
+    14f2:	40 f4       	brcc	.+16     	; 0x1504 <u8g_IsBBXIntersection+0x2e>
+  tmp--;
+  if ( u8g_is_intersection_decision_tree(u8g->current_page.y0, u8g->current_page.y1, y, tmp) == 0 )
+    return 0; 
+  
+  tmp = x;
+  tmp += w;
+    14f4:	21 50       	subi	r18, 0x01	; 1
+  tmp--;
+    14f6:	26 0f       	add	r18, r22
+  return u8g_is_intersection_decision_tree(u8g->current_page.x0, u8g->current_page.x1, x, tmp);
+    14f8:	83 a9       	ldd	r24, Z+51	; 0x33
+//static uint8_t u8g_is_intersection_decision_tree(u8g_uint_t a0, u8g_uint_t a1, u8g_uint_t v0, u8g_uint_t v1) U8G_ALWAYS_INLINE;
+static uint8_t U8G_ALWAYS_INLINE u8g_is_intersection_decision_tree(u8g_uint_t a0, u8g_uint_t a1, u8g_uint_t v0, u8g_uint_t v1) 
+{
+  /* surprisingly the macro leads to larger code */
+  /* return U8G_IS_INTERSECTION_MACRO(a0,a1,v0,v1); */
+  if ( v0 <= a1 )
+    14fa:	95 a9       	ldd	r25, Z+53	; 0x35
+    14fc:	96 17       	cp	r25, r22
+    14fe:	20 f4       	brcc	.+8      	; 0x1508 <u8g_IsBBXIntersection+0x32>
+      }
+    }
+  }
+  else
+  {
+    if ( v1 >= a0 )
+    1500:	28 17       	cp	r18, r24
+    1502:	20 f4       	brcc	.+8      	; 0x150c <u8g_IsBBXIntersection+0x36>
+  register u8g_uint_t tmp;
+  tmp = y;
+  tmp += h;
+  tmp--;
+  if ( u8g_is_intersection_decision_tree(u8g->current_page.y0, u8g->current_page.y1, y, tmp) == 0 )
+    return 0; 
+    1504:	80 e0       	ldi	r24, 0x00	; 0
+    1506:	07 c0       	rjmp	.+14     	; 0x1516 <u8g_IsBBXIntersection+0x40>
+{
+  /* surprisingly the macro leads to larger code */
+  /* return U8G_IS_INTERSECTION_MACRO(a0,a1,v0,v1); */
+  if ( v0 <= a1 )
+  {
+    if ( v1 >= a0 )
+    1508:	28 17       	cp	r18, r24
+    150a:	20 f4       	brcc	.+8      	; 0x1514 <u8g_IsBBXIntersection+0x3e>
+  }
+  else
+  {
+    if ( v1 >= a0 )
+    {
+      if ( v0 > v1 )
+    150c:	81 e0       	ldi	r24, 0x01	; 1
+    150e:	26 17       	cp	r18, r22
+    1510:	10 f0       	brcs	.+4      	; 0x1516 <u8g_IsBBXIntersection+0x40>
+    1512:	f8 cf       	rjmp	.-16     	; 0x1504 <u8g_IsBBXIntersection+0x2e>
+  /* return U8G_IS_INTERSECTION_MACRO(a0,a1,v0,v1); */
+  if ( v0 <= a1 )
+  {
+    if ( v1 >= a0 )
+    {
+      return 1;
+    1514:	81 e0       	ldi	r24, 0x01	; 1
+  
+  tmp = x;
+  tmp += w;
+  tmp--;
+  return u8g_is_intersection_decision_tree(u8g->current_page.x0, u8g->current_page.x1, x, tmp);
+}
+    1516:	0f 91       	pop	r16
+    1518:	08 95       	ret
+
+0000151a <u8g_InitCom>:
+
+#include "u8g.h"
+
+uint8_t u8g_InitCom(u8g_t *u8g, u8g_dev_t *dev, uint8_t clk_cycle_time)
+{
+  return dev->com_fn(u8g, U8G_COM_MSG_INIT, clk_cycle_time, NULL);
+    151a:	db 01       	movw	r26, r22
+    151c:	14 96       	adiw	r26, 0x04	; 4
+    151e:	ed 91       	ld	r30, X+
+    1520:	fc 91       	ld	r31, X
+    1522:	15 97       	sbiw	r26, 0x05	; 5
+    1524:	20 e0       	ldi	r18, 0x00	; 0
+    1526:	30 e0       	ldi	r19, 0x00	; 0
+    1528:	61 e0       	ldi	r22, 0x01	; 1
+    152a:	09 95       	icall
+}
+    152c:	08 95       	ret
+
+0000152e <u8g_SetChipSelect>:
+}
+
+/* cs contains the chip number, which should be enabled */
+void u8g_SetChipSelect(u8g_t *u8g, u8g_dev_t *dev, uint8_t cs)
+{
+  dev->com_fn(u8g, U8G_COM_MSG_CHIP_SELECT, cs, NULL);
+    152e:	db 01       	movw	r26, r22
+    1530:	14 96       	adiw	r26, 0x04	; 4
+    1532:	ed 91       	ld	r30, X+
+    1534:	fc 91       	ld	r31, X
+    1536:	15 97       	sbiw	r26, 0x05	; 5
+    1538:	20 e0       	ldi	r18, 0x00	; 0
+    153a:	30 e0       	ldi	r19, 0x00	; 0
+    153c:	63 e0       	ldi	r22, 0x03	; 3
+    153e:	09 95       	icall
+    1540:	08 95       	ret
+
+00001542 <u8g_SetResetLow>:
+}
+
+void u8g_SetResetLow(u8g_t *u8g, u8g_dev_t *dev)
+{
+  dev->com_fn(u8g, U8G_COM_MSG_RESET, 0, NULL);
+    1542:	db 01       	movw	r26, r22
+    1544:	14 96       	adiw	r26, 0x04	; 4
+    1546:	ed 91       	ld	r30, X+
+    1548:	fc 91       	ld	r31, X
+    154a:	15 97       	sbiw	r26, 0x05	; 5
+    154c:	20 e0       	ldi	r18, 0x00	; 0
+    154e:	30 e0       	ldi	r19, 0x00	; 0
+    1550:	40 e0       	ldi	r20, 0x00	; 0
+    1552:	64 e0       	ldi	r22, 0x04	; 4
+    1554:	09 95       	icall
+    1556:	08 95       	ret
+
+00001558 <u8g_SetResetHigh>:
+}
+
+void u8g_SetResetHigh(u8g_t *u8g, u8g_dev_t *dev)
+{
+  dev->com_fn(u8g, U8G_COM_MSG_RESET, 1, NULL);
+    1558:	db 01       	movw	r26, r22
+    155a:	14 96       	adiw	r26, 0x04	; 4
+    155c:	ed 91       	ld	r30, X+
+    155e:	fc 91       	ld	r31, X
+    1560:	15 97       	sbiw	r26, 0x05	; 5
+    1562:	20 e0       	ldi	r18, 0x00	; 0
+    1564:	30 e0       	ldi	r19, 0x00	; 0
+    1566:	41 e0       	ldi	r20, 0x01	; 1
+    1568:	64 e0       	ldi	r22, 0x04	; 4
+    156a:	09 95       	icall
+    156c:	08 95       	ret
+
+0000156e <u8g_SetAddress>:
+}
+
+
+void u8g_SetAddress(u8g_t *u8g, u8g_dev_t *dev, uint8_t address)
+{
+  dev->com_fn(u8g, U8G_COM_MSG_ADDRESS, address, NULL);
+    156e:	db 01       	movw	r26, r22
+    1570:	14 96       	adiw	r26, 0x04	; 4
+    1572:	ed 91       	ld	r30, X+
+    1574:	fc 91       	ld	r31, X
+    1576:	15 97       	sbiw	r26, 0x05	; 5
+    1578:	20 e0       	ldi	r18, 0x00	; 0
+    157a:	30 e0       	ldi	r19, 0x00	; 0
+    157c:	62 e0       	ldi	r22, 0x02	; 2
+    157e:	09 95       	icall
+    1580:	08 95       	ret
+
+00001582 <u8g_WriteByte>:
+}
+
+uint8_t u8g_WriteByte(u8g_t *u8g, u8g_dev_t *dev, uint8_t val)
+{
+  return dev->com_fn(u8g, U8G_COM_MSG_WRITE_BYTE, val, NULL);
+    1582:	db 01       	movw	r26, r22
+    1584:	14 96       	adiw	r26, 0x04	; 4
+    1586:	ed 91       	ld	r30, X+
+    1588:	fc 91       	ld	r31, X
+    158a:	15 97       	sbiw	r26, 0x05	; 5
+    158c:	20 e0       	ldi	r18, 0x00	; 0
+    158e:	30 e0       	ldi	r19, 0x00	; 0
+    1590:	65 e0       	ldi	r22, 0x05	; 5
+    1592:	09 95       	icall
+}
+    1594:	08 95       	ret
+
+00001596 <u8g_WriteSequence>:
+
+uint8_t u8g_WriteSequence(u8g_t *u8g, u8g_dev_t *dev, uint8_t cnt, uint8_t *seq)
+{
+  return dev->com_fn(u8g, U8G_COM_MSG_WRITE_SEQ, cnt, seq);
+    1596:	db 01       	movw	r26, r22
+    1598:	14 96       	adiw	r26, 0x04	; 4
+    159a:	ed 91       	ld	r30, X+
+    159c:	fc 91       	ld	r31, X
+    159e:	15 97       	sbiw	r26, 0x05	; 5
+    15a0:	66 e0       	ldi	r22, 0x06	; 6
+    15a2:	09 95       	icall
+}
+    15a4:	08 95       	ret
+
+000015a6 <u8g_WriteEscSeqP>:
+#define U8G_ESC_255 255, 255
+#define U8G_ESC_RST(x) 255, (0xc0 | ((x)&0x0f))
+
+*/
+uint8_t u8g_WriteEscSeqP(u8g_t *u8g, u8g_dev_t *dev, const uint8_t *esc_seq)
+{
+    15a6:	a1 e0       	ldi	r26, 0x01	; 1
+    15a8:	b0 e0       	ldi	r27, 0x00	; 0
+    15aa:	e8 ed       	ldi	r30, 0xD8	; 216
+    15ac:	fa e0       	ldi	r31, 0x0A	; 10
+    15ae:	d6 c0       	rjmp	.+428    	; 0x175c <__prologue_saves__+0x10>
+    15b0:	5c 01       	movw	r10, r24
+    15b2:	8b 01       	movw	r16, r22
+    15b4:	7a 01       	movw	r14, r20
+    15b6:	80 e0       	ldi	r24, 0x00	; 0
+  uint8_t is_escape = 0;
+    15b8:	f7 01       	movw	r30, r14
+  uint8_t value;
+  for(;;)
+  {
+    value = u8g_pgm_read(esc_seq);
+    15ba:	44 91       	lpm	r20, Z
+    15bc:	81 11       	cpse	r24, r1
+    if ( is_escape == 0 )
+    15be:	08 c0       	rjmp	.+16     	; 0x15d0 <u8g_WriteEscSeqP+0x2a>
+    15c0:	4f 3f       	cpi	r20, 0xFF	; 255
+    {
+      if ( value != 255 )
+    15c2:	a1 f1       	breq	.+104    	; 0x162c <u8g_WriteEscSeqP+0x86>
+    15c4:	b8 01       	movw	r22, r16
+      {
+        if ( u8g_WriteByte(u8g, dev, value) == 0 )
+    15c6:	c5 01       	movw	r24, r10
+    15c8:	dc df       	rcall	.-72     	; 0x1582 <u8g_WriteByte>
+    15ca:	81 11       	cpse	r24, r1
+    15cc:	28 c0       	rjmp	.+80     	; 0x161e <u8g_WriteEscSeqP+0x78>
+    15ce:	33 c0       	rjmp	.+102    	; 0x1636 <u8g_WriteEscSeqP+0x90>
+    15d0:	4f 3f       	cpi	r20, 0xFF	; 255
+    15d2:	c1 f3       	breq	.-16     	; 0x15c4 <u8g_WriteEscSeqP+0x1e>
+        is_escape = 1;
+      }
+    }
+    else
+    {
+      if ( value == 255 )
+    15d4:	4e 3f       	cpi	r20, 0xFE	; 254
+    15d6:	89 f1       	breq	.+98     	; 0x163a <u8g_WriteEscSeqP+0x94>
+      {
+        if ( u8g_WriteByte(u8g, dev, value) == 0 )
+          return 0;
+      }
+      else if ( value == 254 )
+    15d8:	40 3f       	cpi	r20, 0xF0	; 240
+    15da:	08 f5       	brcc	.+66     	; 0x161e <u8g_WriteEscSeqP+0x78>
+      {
+        break;
+      }
+      else if ( value >= 0x0f0 )
+    15dc:	40 3e       	cpi	r20, 0xE0	; 224
+    15de:	28 f0       	brcs	.+10     	; 0x15ea <u8g_WriteEscSeqP+0x44>
+      {
+        /* not yet used, do nothing */
+      }
+      else if ( value >= 0xe0  )
+    15e0:	4f 70       	andi	r20, 0x0F	; 15
+    15e2:	b8 01       	movw	r22, r16
+      {
+        u8g_SetAddress(u8g, dev, value & 0x0f);
+    15e4:	c5 01       	movw	r24, r10
+    15e6:	c3 df       	rcall	.-122    	; 0x156e <u8g_SetAddress>
+    15e8:	1a c0       	rjmp	.+52     	; 0x161e <u8g_WriteEscSeqP+0x78>
+    15ea:	40 3d       	cpi	r20, 0xD0	; 208
+    15ec:	28 f0       	brcs	.+10     	; 0x15f8 <u8g_WriteEscSeqP+0x52>
+    15ee:	4f 70       	andi	r20, 0x0F	; 15
+      }
+      else if ( value >= 0xd0 )
+    15f0:	b8 01       	movw	r22, r16
+    15f2:	c5 01       	movw	r24, r10
+      {
+        u8g_SetChipSelect(u8g, dev, value & 0x0f);
+    15f4:	9c df       	rcall	.-200    	; 0x152e <u8g_SetChipSelect>
+    15f6:	13 c0       	rjmp	.+38     	; 0x161e <u8g_WriteEscSeqP+0x78>
+    15f8:	40 3c       	cpi	r20, 0xC0	; 192
+    15fa:	98 f0       	brcs	.+38     	; 0x1622 <u8g_WriteEscSeqP+0x7c>
+    15fc:	b8 01       	movw	r22, r16
+    15fe:	c5 01       	movw	r24, r10
+      }
+      else if ( value >= 0xc0 )
+    1600:	49 83       	std	Y+1, r20	; 0x01
+    1602:	9f df       	rcall	.-194    	; 0x1542 <u8g_SetResetLow>
+      {
+        u8g_SetResetLow(u8g, dev);
+    1604:	49 81       	ldd	r20, Y+1	; 0x01
+    1606:	42 95       	swap	r20
+    1608:	40 7f       	andi	r20, 0xF0	; 240
+    160a:	4e 5f       	subi	r20, 0xFE	; 254
+    160c:	c4 2e       	mov	r12, r20
+        value &= 0x0f;
+        value <<= 4;
+    160e:	d1 2c       	mov	r13, r1
+    1610:	c6 01       	movw	r24, r12
+    1612:	20 db       	rcall	.-2496   	; 0xc54 <u8g_Delay>
+        value+=2;
+    1614:	b8 01       	movw	r22, r16
+        u8g_Delay(value);
+    1616:	c5 01       	movw	r24, r10
+    1618:	9f df       	rcall	.-194    	; 0x1558 <u8g_SetResetHigh>
+    161a:	c6 01       	movw	r24, r12
+    161c:	1b db       	rcall	.-2506   	; 0xc54 <u8g_Delay>
+    161e:	80 e0       	ldi	r24, 0x00	; 0
+        u8g_SetResetHigh(u8g, dev);
+    1620:	06 c0       	rjmp	.+12     	; 0x162e <u8g_WriteEscSeqP+0x88>
+    1622:	47 fd       	sbrc	r20, 7
+    1624:	fc cf       	rjmp	.-8      	; 0x161e <u8g_WriteEscSeqP+0x78>
+    1626:	84 2f       	mov	r24, r20
+        u8g_Delay(value);
+    1628:	90 e0       	ldi	r25, 0x00	; 0
+    162a:	f8 cf       	rjmp	.-16     	; 0x161c <u8g_WriteEscSeqP+0x76>
+    162c:	81 e0       	ldi	r24, 0x01	; 1
+      }
+      else if ( value <= 127 )
+      {
+        u8g_Delay(value);
+      }
+      is_escape = 0;
+    162e:	ff ef       	ldi	r31, 0xFF	; 255
+    1630:	ef 1a       	sub	r14, r31
+      else if ( value >= 0xbe )
+      {
+	/* not yet implemented */
+        /* u8g_SetVCC(u8g, dev, value & 0x01); */
+      }
+      else if ( value <= 127 )
+    1632:	ff 0a       	sbc	r15, r31
+    1634:	c1 cf       	rjmp	.-126    	; 0x15b8 <u8g_WriteEscSeqP+0x12>
+      {
+        u8g_Delay(value);
+    1636:	80 e0       	ldi	r24, 0x00	; 0
+    1638:	01 c0       	rjmp	.+2      	; 0x163c <u8g_WriteEscSeqP+0x96>
+    163a:	81 e0       	ldi	r24, 0x01	; 1
+        if ( u8g_WriteByte(u8g, dev, value) == 0 )
+          return 0;
+      }
+      else
+      {
+        is_escape = 1;
+    163c:	21 96       	adiw	r28, 0x01	; 1
+      {
+        u8g_Delay(value);
+      }
+      is_escape = 0;
+    }
+    esc_seq++;
+    163e:	ea e0       	ldi	r30, 0x0A	; 10
+    1640:	a9 c0       	rjmp	.+338    	; 0x1794 <__epilogue_restores__+0x10>
+
+00001642 <u8g_com_arduino_ssd_start_sequence>:
+//#define I2C_CMD_MODE  0x080
+#define I2C_CMD_MODE    0x000
+#define I2C_DATA_MODE   0x040
+
+uint8_t u8g_com_arduino_ssd_start_sequence(u8g_t *u8g)
+{
+    1642:	cf 93       	push	r28
+    1644:	df 93       	push	r29
+    1646:	ec 01       	movw	r28, r24
+  /* are we requested to set the a0 state? */
+  if ( u8g->pin_list[U8G_PI_SET_A0] == 0 )
+    1648:	8b a5       	ldd	r24, Y+43	; 0x2b
+    164a:	88 23       	and	r24, r24
+    164c:	71 f0       	breq	.+28     	; 0x166a <u8g_com_arduino_ssd_start_sequence+0x28>
+    return 1;
+
+  /* setup bus, might be a repeated start */
+  if ( u8g_i2c_start(I2C_SLA) == 0 )
+    164e:	88 e7       	ldi	r24, 0x78	; 120
+    1650:	2f da       	rcall	.-2978   	; 0xab0 <u8g_i2c_start>
+    1652:	88 23       	and	r24, r24
+    1654:	61 f0       	breq	.+24     	; 0x166e <u8g_com_arduino_ssd_start_sequence+0x2c>
+    1656:	8e a1       	ldd	r24, Y+38	; 0x26
+    return 0;
+  if ( u8g->pin_list[U8G_PI_A0_STATE] == 0 )
+    1658:	81 11       	cpse	r24, r1
+    165a:	05 c0       	rjmp	.+10     	; 0x1666 <u8g_com_arduino_ssd_start_sequence+0x24>
+    165c:	57 da       	rcall	.-2898   	; 0xb0c <u8g_i2c_send_byte>
+  {
+    if ( u8g_i2c_send_byte(I2C_CMD_MODE) == 0 )
+    165e:	88 23       	and	r24, r24
+    1660:	31 f0       	breq	.+12     	; 0x166e <u8g_com_arduino_ssd_start_sequence+0x2c>
+    1662:	1b a6       	std	Y+43, r1	; 0x2b
+    1664:	02 c0       	rjmp	.+4      	; 0x166a <u8g_com_arduino_ssd_start_sequence+0x28>
+  {
+    if ( u8g_i2c_send_byte(I2C_DATA_MODE) == 0 )
+      return 0;
+  }
+
+  u8g->pin_list[U8G_PI_SET_A0] = 0;
+    1666:	80 e4       	ldi	r24, 0x40	; 64
+    1668:	f9 cf       	rjmp	.-14     	; 0x165c <u8g_com_arduino_ssd_start_sequence+0x1a>
+    if ( u8g_i2c_send_byte(I2C_CMD_MODE) == 0 )
+      return 0;
+  }
+  else
+  {
+    if ( u8g_i2c_send_byte(I2C_DATA_MODE) == 0 )
+    166a:	81 e0       	ldi	r24, 0x01	; 1
+    166c:	01 c0       	rjmp	.+2      	; 0x1670 <u8g_com_arduino_ssd_start_sequence+0x2e>
+
+uint8_t u8g_com_arduino_ssd_start_sequence(u8g_t *u8g)
+{
+  /* are we requested to set the a0 state? */
+  if ( u8g->pin_list[U8G_PI_SET_A0] == 0 )
+    return 1;
+    166e:	80 e0       	ldi	r24, 0x00	; 0
+    1670:	df 91       	pop	r29
+
+  /* setup bus, might be a repeated start */
+  if ( u8g_i2c_start(I2C_SLA) == 0 )
+    return 0;
+    1672:	cf 91       	pop	r28
+      return 0;
+  }
+
+  u8g->pin_list[U8G_PI_SET_A0] = 0;
+  return 1;
+}
+    1674:	08 95       	ret
+
+00001676 <u8g_com_arduino_ssd_i2c_fn>:
+
+uint8_t u8g_com_arduino_ssd_i2c_fn(u8g_t *u8g, uint8_t msg, uint8_t arg_val, void *arg_ptr)
+{
+    1676:	1f 93       	push	r17
+    1678:	cf 93       	push	r28
+    167a:	df 93       	push	r29
+    167c:	14 2f       	mov	r17, r20
+    167e:	e9 01       	movw	r28, r18
+  switch(msg)
+    1680:	63 30       	cpi	r22, 0x03	; 3
+    1682:	b1 f0       	breq	.+44     	; 0x16b0 <u8g_com_arduino_ssd_i2c_fn+0x3a>
+    1684:	50 f4       	brcc	.+20     	; 0x169a <u8g_com_arduino_ssd_i2c_fn+0x24>
+    1686:	61 30       	cpi	r22, 0x01	; 1
+    1688:	79 f0       	breq	.+30     	; 0x16a8 <u8g_com_arduino_ssd_i2c_fn+0x32>
+    168a:	62 30       	cpi	r22, 0x02	; 2
+    168c:	09 f0       	breq	.+2      	; 0x1690 <u8g_com_arduino_ssd_i2c_fn+0x1a>
+    168e:	3a c0       	rjmp	.+116    	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+      }
+      // u8g_i2c_stop();
+      break;
+      
+    case U8G_COM_MSG_ADDRESS:                     /* define cmd (arg_val = 0) or data mode (arg_val = 1) */
+      u8g->pin_list[U8G_PI_A0_STATE] = arg_val;
+    1690:	fc 01       	movw	r30, r24
+    1692:	46 a3       	std	Z+38, r20	; 0x26
+      u8g->pin_list[U8G_PI_SET_A0] = 1;		/* force a0 to set again */
+    1694:	21 e0       	ldi	r18, 0x01	; 1
+    1696:	23 a7       	std	Z+43, r18	; 0x2b
+    1698:	35 c0       	rjmp	.+106    	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+  return 1;
+}
+
+uint8_t u8g_com_arduino_ssd_i2c_fn(u8g_t *u8g, uint8_t msg, uint8_t arg_val, void *arg_ptr)
+{
+  switch(msg)
+    169a:	66 30       	cpi	r22, 0x06	; 6
+    169c:	d9 f0       	breq	.+54     	; 0x16d4 <u8g_com_arduino_ssd_i2c_fn+0x5e>
+    169e:	67 30       	cpi	r22, 0x07	; 7
+    16a0:	21 f1       	breq	.+72     	; 0x16ea <u8g_com_arduino_ssd_i2c_fn+0x74>
+    16a2:	65 30       	cpi	r22, 0x05	; 5
+    16a4:	79 f5       	brne	.+94     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+    16a6:	0c c0       	rjmp	.+24     	; 0x16c0 <u8g_com_arduino_ssd_i2c_fn+0x4a>
+    case U8G_COM_MSG_INIT:
+      //u8g_com_arduino_digital_write(u8g, U8G_PI_SCL, HIGH);
+      //u8g_com_arduino_digital_write(u8g, U8G_PI_SDA, HIGH);
+      //u8g->pin_list[U8G_PI_A0_STATE] = 0;       /* inital RS state: unknown mode */
+    
+      u8g_i2c_init(u8g->pin_list[U8G_PI_I2C_OPTION]);
+    16a8:	fc 01       	movw	r30, r24
+    16aa:	86 a5       	ldd	r24, Z+46	; 0x2e
+    16ac:	d3 d9       	rcall	.-3162   	; 0xa54 <u8g_i2c_init>
+    16ae:	2a c0       	rjmp	.+84     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+    16b0:	fc 01       	movw	r30, r24
+      /* Currently disabled, but it could be enable. Previous restrictions have been removed */
+      /* u8g_com_arduino_digital_write(u8g, U8G_PI_RESET, arg_val); */
+      break;
+      
+    case U8G_COM_MSG_CHIP_SELECT:
+      u8g->pin_list[U8G_PI_A0_STATE] = 0;
+    16b2:	16 a2       	std	Z+38, r1	; 0x26
+    16b4:	21 e0       	ldi	r18, 0x01	; 1
+      u8g->pin_list[U8G_PI_SET_A0] = 1;		/* force a0 to set again, also forces start condition */
+    16b6:	23 a7       	std	Z+43, r18	; 0x2b
+    16b8:	41 11       	cpse	r20, r1
+      if ( arg_val == 0 )
+    16ba:	24 c0       	rjmp	.+72     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+    16bc:	41 da       	rcall	.-2942   	; 0xb40 <u8g_i2c_stop>
+      {
+        /* disable chip, send stop condition */
+	u8g_i2c_stop();
+    16be:	22 c0       	rjmp	.+68     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+    16c0:	c0 df       	rcall	.-128    	; 0x1642 <u8g_com_arduino_ssd_start_sequence>
+    16c2:	81 11       	cpse	r24, r1
+      }
+      break;
+
+    case U8G_COM_MSG_WRITE_BYTE:
+      //u8g->pin_list[U8G_PI_SET_A0] = 1;
+      if ( u8g_com_arduino_ssd_start_sequence(u8g) == 0 )
+    16c4:	02 c0       	rjmp	.+4      	; 0x16ca <u8g_com_arduino_ssd_i2c_fn+0x54>
+    16c6:	3c da       	rcall	.-2952   	; 0xb40 <u8g_i2c_stop>
+    16c8:	1f c0       	rjmp	.+62     	; 0x1708 <u8g_com_arduino_ssd_i2c_fn+0x92>
+    16ca:	81 2f       	mov	r24, r17
+	return u8g_i2c_stop(), 0;
+    16cc:	1f da       	rcall	.-3010   	; 0xb0c <u8g_i2c_send_byte>
+    16ce:	81 11       	cpse	r24, r1
+    16d0:	19 c0       	rjmp	.+50     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+      if ( u8g_i2c_send_byte(arg_val) == 0 )
+    16d2:	f9 cf       	rjmp	.-14     	; 0x16c6 <u8g_com_arduino_ssd_i2c_fn+0x50>
+    16d4:	b6 df       	rcall	.-148    	; 0x1642 <u8g_com_arduino_ssd_start_sequence>
+    16d6:	88 23       	and	r24, r24
+    16d8:	b1 f3       	breq	.-20     	; 0x16c6 <u8g_com_arduino_ssd_i2c_fn+0x50>
+    16da:	11 23       	and	r17, r17
+    16dc:	99 f0       	breq	.+38     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+      // u8g_i2c_stop();
+      break;
+    
+    case U8G_COM_MSG_WRITE_SEQ:
+      //u8g->pin_list[U8G_PI_SET_A0] = 1;
+      if ( u8g_com_arduino_ssd_start_sequence(u8g) == 0 )
+    16de:	89 91       	ld	r24, Y+
+    16e0:	15 da       	rcall	.-3030   	; 0xb0c <u8g_i2c_send_byte>
+    16e2:	88 23       	and	r24, r24
+    16e4:	81 f3       	breq	.-32     	; 0x16c6 <u8g_com_arduino_ssd_i2c_fn+0x50>
+	return u8g_i2c_stop(), 0;
+      {
+        register uint8_t *ptr = arg_ptr;
+        while( arg_val > 0 )
+    16e6:	11 50       	subi	r17, 0x01	; 1
+    16e8:	f8 cf       	rjmp	.-16     	; 0x16da <u8g_com_arduino_ssd_i2c_fn+0x64>
+        {
+	  if ( u8g_i2c_send_byte(*ptr++) == 0 )
+    16ea:	ab df       	rcall	.-170    	; 0x1642 <u8g_com_arduino_ssd_start_sequence>
+    16ec:	88 23       	and	r24, r24
+    16ee:	59 f3       	breq	.-42     	; 0x16c6 <u8g_com_arduino_ssd_i2c_fn+0x50>
+    16f0:	11 23       	and	r17, r17
+    16f2:	41 f0       	breq	.+16     	; 0x1704 <u8g_com_arduino_ssd_i2c_fn+0x8e>
+	    return u8g_i2c_stop(), 0;
+          arg_val--;
+    16f4:	fe 01       	movw	r30, r28
+    16f6:	84 91       	lpm	r24, Z
+      // u8g_i2c_stop();
+      break;
+
+    case U8G_COM_MSG_WRITE_SEQ_P:
+      //u8g->pin_list[U8G_PI_SET_A0] = 1;
+      if ( u8g_com_arduino_ssd_start_sequence(u8g) == 0 )
+    16f8:	09 da       	rcall	.-3054   	; 0xb0c <u8g_i2c_send_byte>
+    16fa:	88 23       	and	r24, r24
+    16fc:	29 f0       	breq	.+10     	; 0x1708 <u8g_com_arduino_ssd_i2c_fn+0x92>
+    16fe:	21 96       	adiw	r28, 0x01	; 1
+	return u8g_i2c_stop(), 0;
+      {
+        register uint8_t *ptr = arg_ptr;
+        while( arg_val > 0 )
+    1700:	11 50       	subi	r17, 0x01	; 1
+    1702:	f6 cf       	rjmp	.-20     	; 0x16f0 <u8g_com_arduino_ssd_i2c_fn+0x7a>
+        {
+	  if ( u8g_i2c_send_byte(u8g_pgm_read(ptr)) == 0 )
+    1704:	81 e0       	ldi	r24, 0x01	; 1
+    1706:	01 c0       	rjmp	.+2      	; 0x170a <u8g_com_arduino_ssd_i2c_fn+0x94>
+    1708:	80 e0       	ldi	r24, 0x00	; 0
+    170a:	df 91       	pop	r29
+    170c:	cf 91       	pop	r28
+    170e:	1f 91       	pop	r17
+	    return 0;
+          ptr++;
+    1710:	08 95       	ret
+
+00001712 <u8g_page_First>:
+  p->page = 0;
+  u8g_page_First(p);
+}
+
+void u8g_page_First(u8g_page_t *p)
+{
+    1712:	fc 01       	movw	r30, r24
+  p->page_y0 = 0;
+    1714:	12 82       	std	Z+2, r1	; 0x02
+  p->page_y1 = p->page_height;
+  p->page_y1--;
+    1716:	80 81       	ld	r24, Z
+    1718:	81 50       	subi	r24, 0x01	; 1
+    171a:	83 83       	std	Z+3, r24	; 0x03
+  p->page = 0;
+    171c:	14 82       	std	Z+4, r1	; 0x04
+    171e:	08 95       	ret
+
+00001720 <u8g_page_Next>:
+}
+
+uint8_t u8g_page_Next(u8g_page_t * p)
+{
+    1720:	fc 01       	movw	r30, r24
+  register u8g_uint_t y1;
+  p->page_y0 += p->page_height;
+    1722:	20 81       	ld	r18, Z
+    1724:	82 81       	ldd	r24, Z+2	; 0x02
+    1726:	82 0f       	add	r24, r18
+    1728:	82 83       	std	Z+2, r24	; 0x02
+  if ( p->page_y0 >= p->total_height )
+    172a:	91 81       	ldd	r25, Z+1	; 0x01
+    172c:	89 17       	cp	r24, r25
+    172e:	60 f4       	brcc	.+24     	; 0x1748 <u8g_page_Next+0x28>
+    return 0;
+  p->page++;
+    1730:	84 81       	ldd	r24, Z+4	; 0x04
+    1732:	8f 5f       	subi	r24, 0xFF	; 255
+    1734:	84 83       	std	Z+4, r24	; 0x04
+  y1 = p->page_y1;
+    1736:	83 81       	ldd	r24, Z+3	; 0x03
+  y1 += p->page_height;
+    1738:	82 0f       	add	r24, r18
+  if ( y1 >= p->total_height )
+    173a:	89 17       	cp	r24, r25
+    173c:	10 f0       	brcs	.+4      	; 0x1742 <u8g_page_Next+0x22>
+  {
+    y1 = p->total_height;
+    y1--;
+    173e:	8f ef       	ldi	r24, 0xFF	; 255
+    1740:	89 0f       	add	r24, r25
+  }
+  p->page_y1 = y1;
+    1742:	83 83       	std	Z+3, r24	; 0x03
+  
+  return 1;
+    1744:	81 e0       	ldi	r24, 0x01	; 1
+    1746:	08 95       	ret
+uint8_t u8g_page_Next(u8g_page_t * p)
+{
+  register u8g_uint_t y1;
+  p->page_y0 += p->page_height;
+  if ( p->page_y0 >= p->total_height )
+    return 0;
+    1748:	80 e0       	ldi	r24, 0x00	; 0
+    y1--;
+  }
+  p->page_y1 = y1;
+  
+  return 1;
+}
+    174a:	08 95       	ret
+
+0000174c <__prologue_saves__>:
+    174c:	2f 92       	push	r2
+    174e:	3f 92       	push	r3
+    1750:	4f 92       	push	r4
+    1752:	5f 92       	push	r5
+    1754:	6f 92       	push	r6
+    1756:	7f 92       	push	r7
+    1758:	8f 92       	push	r8
+    175a:	9f 92       	push	r9
+    175c:	af 92       	push	r10
+    175e:	bf 92       	push	r11
+    1760:	cf 92       	push	r12
+    1762:	df 92       	push	r13
+    1764:	ef 92       	push	r14
+    1766:	ff 92       	push	r15
+    1768:	0f 93       	push	r16
+    176a:	1f 93       	push	r17
+    176c:	cf 93       	push	r28
+    176e:	df 93       	push	r29
+    1770:	cd b7       	in	r28, 0x3d	; 61
+    1772:	de b7       	in	r29, 0x3e	; 62
+    1774:	ca 1b       	sub	r28, r26
+    1776:	db 0b       	sbc	r29, r27
+    1778:	0f b6       	in	r0, 0x3f	; 63
+    177a:	f8 94       	cli
+    177c:	de bf       	out	0x3e, r29	; 62
+    177e:	0f be       	out	0x3f, r0	; 63
+    1780:	cd bf       	out	0x3d, r28	; 61
+    1782:	09 94       	ijmp
+
+00001784 <__epilogue_restores__>:
+    1784:	2a 88       	ldd	r2, Y+18	; 0x12
+    1786:	39 88       	ldd	r3, Y+17	; 0x11
+    1788:	48 88       	ldd	r4, Y+16	; 0x10
+    178a:	5f 84       	ldd	r5, Y+15	; 0x0f
+    178c:	6e 84       	ldd	r6, Y+14	; 0x0e
+    178e:	7d 84       	ldd	r7, Y+13	; 0x0d
+    1790:	8c 84       	ldd	r8, Y+12	; 0x0c
+    1792:	9b 84       	ldd	r9, Y+11	; 0x0b
+    1794:	aa 84       	ldd	r10, Y+10	; 0x0a
+    1796:	b9 84       	ldd	r11, Y+9	; 0x09
+    1798:	c8 84       	ldd	r12, Y+8	; 0x08
+    179a:	df 80       	ldd	r13, Y+7	; 0x07
+    179c:	ee 80       	ldd	r14, Y+6	; 0x06
+    179e:	fd 80       	ldd	r15, Y+5	; 0x05
+    17a0:	0c 81       	ldd	r16, Y+4	; 0x04
+    17a2:	1b 81       	ldd	r17, Y+3	; 0x03
+    17a4:	aa 81       	ldd	r26, Y+2	; 0x02
+    17a6:	b9 81       	ldd	r27, Y+1	; 0x01
+    17a8:	ce 0f       	add	r28, r30
+    17aa:	d1 1d       	adc	r29, r1
+    17ac:	0f b6       	in	r0, 0x3f	; 63
+    17ae:	f8 94       	cli
+    17b0:	de bf       	out	0x3e, r29	; 62
+    17b2:	0f be       	out	0x3f, r0	; 63
+    17b4:	cd bf       	out	0x3d, r28	; 61
+    17b6:	ed 01       	movw	r28, r26
+    17b8:	08 95       	ret
+
+000017ba <memcpy_P>:
+    17ba:	fb 01       	movw	r30, r22
+    17bc:	dc 01       	movw	r26, r24
+    17be:	02 c0       	rjmp	.+4      	; 0x17c4 <memcpy_P+0xa>
+    17c0:	05 90       	lpm	r0, Z+
+    17c2:	0d 92       	st	X+, r0
+    17c4:	41 50       	subi	r20, 0x01	; 1
+    17c6:	50 40       	sbci	r21, 0x00	; 0
+    17c8:	d8 f7       	brcc	.-10     	; 0x17c0 <memcpy_P+0x6>
+    17ca:	08 95       	ret
+
+000017cc <_exit>:
+    17cc:	f8 94       	cli
+
+000017ce <__stop_program>:
+    17ce:	ff cf       	rjmp	.-2      	; 0x17ce <__stop_program>
